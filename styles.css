@@ -1900,3 +1900,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
 html { overflow-x: visible; }
 body { overflow-x: clip; }
 @media (max-width: 720px) { html { overflow-x: clip; } }
+
+/* Gallery: one softened corner per image, alternating for rhythm */
+.g img { border-radius: 0; }
+.g-1 img, .g-3 img, .g-5 img, .g-7 img { border-top-right-radius: 8px; }
+.g-2 img, .g-4 img, .g-6 img { border-bottom-left-radius: 8px; }
