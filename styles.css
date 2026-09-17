@@ -1454,3 +1454,10 @@ address { font-style: normal; }
 
 .arch__ficha em { font-style: normal; display: inline-flex; align-items: center; gap: 10px; }
 .arch__ficha .edge { margin: 0; }
+
+/* Amenities: smaller words so the list never touches the block edge */
+.amenity__name { font-size: clamp(44px, 5.4vw, 88px); }
+.amenity { padding: 14px 0; }
+.amenities__inner { padding-top: clamp(80px, 8vw, 120px); padding-bottom: clamp(64px, 6vw, 96px); align-items: center; }
+.amenity.is-active .amenity__items { max-height: 48px; margin-top: 6px; }
+.amenity__items { font-size: 11px; }
