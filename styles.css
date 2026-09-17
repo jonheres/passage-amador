@@ -1783,3 +1783,5 @@ address { font-style: normal; }
   .footer__social { margin-top: 12px; }
   .footer__bottom { gap: 12px; font-size: 10px; }
 }
+
+.nav__burger { color: inherit; }
