@@ -181,3 +181,23 @@
     r.addEventListener("focus", () => set(r.dataset.unit));
   });
 })();
+
+/* Tipologías CTA: preselect the model in the form */
+(function () {
+  const select = document.getElementById("f-interes");
+  if (!select) return;
+  document.querySelectorAll("[data-interes]").forEach((a) => {
+    a.addEventListener("click", () => {
+      const v = a.dataset.interes;
+      if ([...select.options].some((o) => o.value === v)) select.value = v;
+    });
+  });
+})();
+
+/* FAQ: only one open at a time */
+(function () {
+  const items = [...document.querySelectorAll(".faq__item")];
+  items.forEach((d) => d.addEventListener("toggle", () => {
+    if (d.open) items.forEach((o) => { if (o !== d) o.open = false; });
+  }));
+})();
