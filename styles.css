@@ -1047,3 +1047,9 @@ address { font-style: normal; }
 .g { z-index: 1; position: relative; }
 .g img { position: relative; z-index: 1; }
 .gallery__thread-nodes circle { r: 4; }
+
+/* Thread: quieter — dotted, thinner, sand-toned */
+.gallery__thread-path { stroke: rgba(14,14,13,0.26); stroke-width: 1; stroke-linecap: round; stroke-dasharray: 0.1 6; }
+.gallery__thread-mask { fill: none; stroke: #fff; stroke-width: 6; }
+.gallery__thread-nodes circle { r: 3; fill: var(--paper); stroke: rgba(14,14,13,0.4); stroke-width: 1; transition: fill .4s, stroke .4s; }
+.gallery__thread-nodes circle.is-on { fill: var(--sunset); stroke: var(--sunset); }

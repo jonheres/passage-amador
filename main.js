@@ -88,6 +88,7 @@
   if (!grid) return;
   const svg = grid.querySelector(".gallery__thread");
   const path = svg.querySelector(".gallery__thread-path");
+  const maskPath = svg.querySelector(".gallery__thread-mask");
   const nodesG = svg.querySelector(".gallery__thread-nodes");
   const figs = [...grid.querySelectorAll(".g")];
   let length = 0, pts = [];
@@ -108,9 +109,10 @@
       d += ` C${a.x} ${a.y + dy}, ${b.x} ${b.y - dy}, ${b.x} ${b.y}`;
     }
     path.setAttribute("d", d);
-    length = path.getTotalLength();
-    path.style.strokeDasharray = `${length}`;
-    path.style.strokeDashoffset = `${length}`;
+    maskPath.setAttribute("d", d);
+    length = maskPath.getTotalLength();
+    maskPath.style.strokeDasharray = `${length}`;
+    maskPath.style.strokeDashoffset = `${length}`;
     nodesG.innerHTML = pts.map((p) => `<circle cx="${p.x}" cy="${p.y}" r="3.5"/>`).join("");
     draw();
   };
@@ -122,7 +124,7 @@
     // progress: 0 when grid top reaches 75% of viewport, 1 when grid bottom reaches 55%
     const start = vh * 0.75, end = vh * 0.55;
     const p = Math.min(1, Math.max(0, (start - gb.top) / (gb.height - (vh - end) + start - vh + (vh - end))));
-    path.style.strokeDashoffset = `${length * (1 - p)}`;
+    maskPath.style.strokeDashoffset = `${length * (1 - p)}`;
     const reached = Math.floor(p * pts.length + 0.001);
     nodesG.querySelectorAll("circle").forEach((c, i) => c.classList.toggle("is-on", i < reached || p >= 0.999));
   };
