@@ -1083,3 +1083,29 @@ address { font-style: normal; }
 .orn-1 { grid-column: 1 / 3; grid-row: 6 / 9; }
 .orn-3 { grid-column: 4 / 9; grid-row: 10 / 12; -webkit-mask-position: right top; mask-position: right top; }
 .orn { opacity: .5; }
+
+/* ==========================================================
+   SCROLL LINE — the hero's animated rule, reused at section thresholds
+   ========================================================== */
+.scroll-line {
+  position: relative;
+  width: 1px;
+  height: 64px;
+  margin: clamp(72px, 8vw, 128px) auto 0;
+  overflow: hidden;
+  background: rgba(14,14,13,0.16);
+}
+.scroll-line span {
+  position: absolute; inset: 0;
+  background: var(--ink);
+  transform: translateY(-100%);
+  animation: scrollLine 2.4s var(--ease) infinite;
+}
+.scroll-line--light { background: rgba(244,241,235,0.22); }
+.scroll-line--light span { background: var(--paper); }
+.scroll-line--tight { margin-top: clamp(48px, 5vw, 80px); }
+/* sections that had no bottom padding: give the line room, then let the next section start */
+.residences .scroll-line { margin-bottom: 0; }
+.location .scroll-line { position: relative; z-index: 2; margin-bottom: -20px; }
+.types .scroll-line, .gallery .scroll-line, .intro .scroll-line { margin-bottom: calc(-1 * clamp(40px, 4vw, 64px)); }
+@media (prefers-reduced-motion: reduce) { .scroll-line span { animation: none; transform: none; } }
