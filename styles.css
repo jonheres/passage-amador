@@ -1135,3 +1135,4 @@ address { font-style: normal; }
   top: calc(-1 * clamp(120px, 12vw, 200px));
   right: 0;
 }
+.gallery__head > .orn-head { transform: rotate(90deg) translateX(100%); transform-origin: top right; }
