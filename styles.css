@@ -938,3 +938,18 @@ address { font-style: normal; }
   .location__text { max-width: none; }
   .hero__actions { grid-template-columns: 1fr; }
 }
+
+/* Round 2 corrections */
+.intro__head { grid-template-columns: 0.8fr 1.9fr 1fr; }
+.intro__head .intro__title { white-space: nowrap; }
+.intro__panorama figcaption {
+  position: static;
+  color: var(--ink);
+  text-shadow: none;
+  padding: 16px var(--gutter) 0;
+  opacity: .6;
+}
+.location { min-height: 0; }
+.location__map { left: 22%; top: -4%; bottom: -4%; }
+.location__map .map text { font-size: 10.5px; }
+.location__map .map-project text { font-size: 11px; }
