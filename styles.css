@@ -1451,3 +1451,6 @@ address { font-style: normal; }
 
 .ledger--behind { grid-column: auto; grid-row: auto; padding: 0; }
 .ledger--light { grid-column: auto; grid-row: auto; padding: 0; }
+
+.arch__ficha em { font-style: normal; display: inline-flex; align-items: center; gap: 10px; }
+.arch__ficha .edge { margin: 0; }
