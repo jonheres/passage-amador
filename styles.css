@@ -1915,3 +1915,5 @@ body { overflow-x: clip; }
   .keyline { margin: 0 0 28px; }
   .theme__icon { right: 0; top: 26px; width: 26px; height: 26px; }
 }
+.ledger--behind small a { text-decoration: underline; text-underline-offset: 3px; }
+.ledger--behind .ledger__row { padding: 26px 0; }
