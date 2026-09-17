@@ -1448,3 +1448,6 @@ address { font-style: normal; }
   .behind__head { position: static; }
   .amenity { grid-template-areas: "n name" ". desc" ". items"; }
 }
+
+.ledger--behind { grid-column: auto; grid-row: auto; padding: 0; }
+.ledger--light { grid-column: auto; grid-row: auto; padding: 0; }
