@@ -1017,3 +1017,16 @@ address { font-style: normal; }
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 78%, transparent 100%);
           mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 78%, transparent 100%);
 }
+
+/* Location text column: smaller, tighter, room to breathe */
+.location { padding: clamp(110px, 11vw, 170px) var(--gutter); }
+.location__text { max-width: 440px; padding-right: 24px; }
+.location__title { font-size: clamp(36px, 3.6vw, 56px); line-height: 0.98; margin-bottom: 26px; }
+.location__lead { font-size: 15px; line-height: 1.6; max-width: 380px; margin-bottom: 56px; color: rgba(244,241,235,0.72); }
+.destinations li { padding: 16px 0; }
+.d-name { font-size: 15px; }
+.d-time { font-size: 26px; }
+.d-time small { font-size: 10px; }
+.d-time--text { font-size: 11px; }
+.location .section-index { margin-bottom: 40px; }
+.location__map { left: 34%; }
