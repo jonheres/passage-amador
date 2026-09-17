@@ -1785,3 +1785,11 @@ address { font-style: normal; }
 }
 
 .nav__burger { color: inherit; }
+
+/* Post-audit fixes */
+.faq__item[open]:not(.is-open) summary span::after { transform: rotate(90deg); }
+@media (max-width: 1100px) {
+  .intro__head, .intro .intro__head { grid-template-columns: 1fr !important; }
+  .intro__head .intro__title { grid-column: 1; grid-row: auto; white-space: normal; }
+  .intro__lead { grid-column: 1; grid-row: auto; max-width: 560px; }
+}
