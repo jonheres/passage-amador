@@ -1129,3 +1129,9 @@ address { font-style: normal; }
 .gallery__head > .orn-head { z-index: 0; }
 .gallery__head > .orn-head { position: absolute; right: 0; top: -56px; width: min(36vw, 560px); z-index: 0; }
 .gallery__head > .orn-head { top: calc(-1 * clamp(120px, 12vw, 200px) + 8px); width: min(26vw, 400px); opacity: .62; }
+.gallery__head > .orn-head {
+  transform: rotate(90deg);
+  transform-origin: top right;
+  top: calc(-1 * clamp(120px, 12vw, 200px));
+  right: 0;
+}
