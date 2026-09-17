@@ -5,7 +5,7 @@ const path = require("path");
 const src = path.join(__dirname, "..", "..", "recursos", "Captura de pantalla 2026-09-17 032239.png");
 const out = path.join(__dirname, "..", "..", "img");
 // manual crops (x, y, w, h) — the three pieces overlap horizontally
-const boxes = [[70, 70, 375, 365], [450, 220, 220, 385], [575, 75, 545, 400]];
+const boxes = [[70, 70, 375, 365], [450, 220, 220, 385], [600, 75, 520, 400]];
 (async () => {
   const img = await Jimp.read(src);
   console.log("source", img.bitmap.width, img.bitmap.height);

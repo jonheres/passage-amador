@@ -1127,3 +1127,4 @@ address { font-style: normal; }
 }
 .gallery__head > * { position: relative; z-index: 1; }
 .gallery__head > .orn-head { z-index: 0; }
+.gallery__head > .orn-head { position: absolute; right: 0; top: -56px; width: min(36vw, 560px); z-index: 0; }
