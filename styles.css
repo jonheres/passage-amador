@@ -1043,3 +1043,7 @@ address { font-style: normal; }
 .g figcaption { background: var(--paper); padding-right: 10px; z-index: 3; }
 .g figcaption span { display: inline-block; min-width: 22px; }
 @media (max-width: 720px) { .gallery__thread { display: none; } }
+.gallery__thread { z-index: 0; }
+.g { z-index: 1; position: relative; }
+.g img { position: relative; z-index: 1; }
+.gallery__thread-nodes circle { r: 4; }
