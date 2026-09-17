@@ -1053,3 +1053,13 @@ address { font-style: normal; }
 .gallery__thread-mask { fill: none; stroke: #fff; stroke-width: 6; }
 .gallery__thread-nodes circle { r: 3; fill: var(--paper); stroke: rgba(14,14,13,0.4); stroke-width: 1; transition: fill .4s, stroke .4s; }
 .gallery__thread-nodes circle.is-on { fill: var(--sunset); stroke: var(--sunset); }
+
+/* ==========================================================
+   AMENITIES — scroll-pinned chapter (desktop)
+   ========================================================== */
+@media (min-width: 1101px) {
+  .amenities { height: calc(100vh * 4.6); min-height: 0; }
+  .amenities__pin { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+  .amenities__pin .amenities__media { position: absolute; inset: 0; }
+  .amenities__pin .amenities__inner { min-height: 100vh; }
+}

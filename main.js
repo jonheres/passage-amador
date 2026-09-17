@@ -134,3 +134,32 @@
   window.addEventListener("scroll", draw, { passive: true });
   build();
 })();
+
+/* Amenities: pinned chapter — scrolling steps through the items */
+(function () {
+  const section = document.getElementById("amenidades");
+  const items = [...document.querySelectorAll(".amenity")];
+  if (!section || !items.length) return;
+  const mq = window.matchMedia("(min-width: 1101px)");
+  let last = -1;
+  const setActive = (i) => {
+    if (i === last) return;
+    last = i;
+    const key = items[i].dataset.amenity;
+    items.forEach((li) => li.classList.toggle("is-active", li.dataset.amenity === key));
+    document.querySelectorAll(".amenities__media img").forEach((img) => img.classList.toggle("is-active", img.dataset.amenity === key));
+  };
+  const onScroll = () => {
+    if (!mq.matches) return;
+    const r = section.getBoundingClientRect();
+    const travel = r.height - window.innerHeight;
+    if (travel <= 0) return;
+    const p = Math.min(1, Math.max(0, -r.top / travel));
+    // hold the first item a little, then step evenly
+    const idx = Math.min(items.length - 1, Math.floor(p * items.length * 0.999));
+    setActive(idx);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  onScroll();
+})();
