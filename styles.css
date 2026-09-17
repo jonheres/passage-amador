@@ -1340,3 +1340,12 @@ address { font-style: normal; }
   .type-row { grid-template-columns: 1fr 1fr; }
   .type-row__cta { grid-column: 1 / 3; justify-self: start; opacity: 1; transform: none; }
 }
+
+/* Structure pass — fixes after live review */
+.statement__text { max-width: 20ch; }
+.types__thead, .type-row { grid-template-columns: 1.1fr 1.5fr 0.75fr 175px; }
+.type-row__cta { white-space: nowrap; }
+.type-row__beds { font-size: 15px; white-space: nowrap; }
+.arch__title { font-size: clamp(36px, 3.7vw, 60px); }
+.orn-faq { color: var(--sand); fill: var(--sand); top: 50%; opacity: .55; }
+#orn1-path { fill: currentColor; }
