@@ -194,10 +194,16 @@
   });
 })();
 
-/* FAQ: only one open at a time */
+/* FAQ: animated accordion, one open at a time */
 (function () {
   const items = [...document.querySelectorAll(".faq__item")];
-  items.forEach((d) => d.addEventListener("toggle", () => {
-    if (d.open) items.forEach((o) => { if (o !== d) o.open = false; });
-  }));
+  items.forEach((d) => {
+    d.open = true; // content stays in the DOM; visibility is animated via class
+    d.querySelector("summary").addEventListener("click", (e) => {
+      e.preventDefault();
+      const wasOpen = d.classList.contains("is-open");
+      items.forEach((o) => o.classList.remove("is-open"));
+      if (!wasOpen) d.classList.add("is-open");
+    });
+  });
 })();

@@ -1538,3 +1538,13 @@ address { font-style: normal; }
 .behind--dark .ledger--behind .big { color: var(--paper); }
 .behind--dark .ledger--behind small { color: rgba(244,241,235,0.6); opacity: 1; }
 .behind--dark .ledger .dash { background: var(--paper); }
+
+/* FAQ: smooth open/close, ornament anchored so it never jumps */
+.faq__body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .55s var(--ease); }
+.faq__body > div { overflow: hidden; }
+.faq__item.is-open .faq__body { grid-template-rows: 1fr; }
+.faq__item p { opacity: 0; transform: translateY(-4px); transition: opacity .45s var(--ease) .1s, transform .45s var(--ease) .1s; }
+.faq__item.is-open p { opacity: .75; transform: none; }
+.faq__item summary span::after { transform: rotate(90deg); }
+.faq__item.is-open summary span::after { transform: rotate(0); }
+.orn-faq { top: 300px; }
