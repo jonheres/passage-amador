@@ -1548,3 +1548,11 @@ address { font-style: normal; }
 .faq__item summary span::after { transform: rotate(90deg); }
 .faq__item.is-open summary span::after { transform: rotate(0); }
 .orn-faq { top: 300px; }
+
+/* Gallery: captions that invite; last piece brought down to scale */
+.g figcaption { bottom: auto; top: calc(100% + 14px); flex-direction: column; align-items: flex-start; gap: 6px; opacity: 1; max-width: 360px; }
+.g figcaption span { font-size: 11px; letter-spacing: 0.16em; opacity: .5; }
+.g figcaption b { font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
+.g figcaption em { font-style: normal; font-size: 14px; line-height: 1.45; opacity: .62; letter-spacing: 0; }
+.g-7 { grid-column: 3 / 11; grid-row: 16 / 20; }
+.gallery__grid { row-gap: 64px; }
