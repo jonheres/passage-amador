@@ -957,3 +957,29 @@ address { font-style: normal; }
 .location__map .map text { font-size: 8.5px; letter-spacing: 0.1em; }
 .location__map .map-project text { font-size: 9px; }
 .location__map::after { background: linear-gradient(180deg, var(--ocean-deep) 0%, rgba(15,43,54,0) 12%, rgba(15,43,54,0) 88%, var(--ocean-deep) 100%); inset: -8% 0; }
+
+/* ==========================================================
+   MAP v2 — real OSM geometry
+   ========================================================== */
+.location__map { left: 24%; top: 4%; bottom: 4%; right: 0; }
+.location__map .map text { font-size: 10px; letter-spacing: 0.12em; }
+.map-land { fill: #163C4A; stroke: rgba(244,241,235,0.42); stroke-width: 0.9; stroke-linejoin: round; }
+.map-land-tex { fill: url(#landLines); stroke: none; }
+.map-roads path { fill: none; stroke: rgba(244,241,235,0.16); stroke-width: 0.8; }
+.map-causeway { fill: none; stroke: var(--sunset); stroke-width: 1.6; stroke-dasharray: none; opacity: .9; }
+.map-bridge { fill: none; stroke: var(--paper); stroke-width: 1.4; stroke-dasharray: 3 3; opacity: .8; }
+.map-rings circle { fill: none; stroke: rgba(244,241,235,0.16); stroke-width: 0.8; stroke-dasharray: 2 4; }
+.map-rings text { font-size: 8.5px !important; fill: rgba(244,241,235,0.4); letter-spacing: 0.1em; }
+.map-water { fill: rgba(244,241,235,0.32); letter-spacing: 0.3em !important; font-size: 10px; text-transform: uppercase; }
+.map-soft { fill: rgba(244,241,235,0.45); font-size: 8.5px !important; text-transform: uppercase; }
+.map-point circle { fill: var(--paper); transition: r .4s var(--ease), fill .4s; }
+.map-point text { fill: rgba(244,241,235,0.85); text-transform: uppercase; transition: fill .4s; }
+.map-point--soft circle { fill: rgba(244,241,235,0.6); }
+.map-point--causeway text { fill: var(--sunset); font-size: 8.5px !important; letter-spacing: 0.22em; opacity: .85; }
+.map-point.is-hot circle { fill: var(--sunset); r: 5.5; }
+.map-point.is-hot text { fill: var(--sunset); }
+.map-project circle { fill: var(--sunset); }
+.map-project__halo { fill: rgba(217,161,106,0.22) !important; animation: halo 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.map-project text { fill: var(--paper); font-weight: 500; font-size: 11px !important; letter-spacing: 0.2em; text-transform: uppercase; }
+.map-scale line, .map-compass line { stroke: rgba(244,241,235,0.45); stroke-width: 1; }
+.map-scale text, .map-compass text { fill: rgba(244,241,235,0.5); font-size: 8.5px !important; }
