@@ -837,3 +837,30 @@ address { font-style: normal; }
   .intro__title, .intro__body, .intro__figure { grid-column: 1; }
   .intro__figure { max-width: none; }
 }
+
+/* ==========================================================
+   BRAND ASSETS + REFINEMENTS
+   ========================================================== */
+:root { --green: #2F4A10; }
+
+.nav__brand { display: block; line-height: 0; }
+.nav__logo { height: 34px; width: auto; display: block; }
+.nav__logo--dark { display: none; }
+.nav.is-solid .nav__logo--light { display: none; }
+.nav.is-solid .nav__logo--dark { display: block; }
+.nav.is-solid .nav__logo { height: 28px; }
+.footer__logo-img { height: 56px; width: auto; display: block; }
+
+/* Hero title: never wrap a line, give it the wider column */
+.hero__frame { grid-template-columns: 1.45fr 1fr; }
+.hero__title { font-size: clamp(56px, 8.2vw, 132px); }
+.hero__title .line { white-space: nowrap; }
+.hero__media img { object-position: center 55%; }
+
+/* Green as the "naturaleza" accent, used sparingly */
+.intro__themes li:nth-child(3) i { color: var(--green); opacity: 1; }
+.type-row__status { color: var(--green); }
+.btn--dark:hover { background: var(--green); border-color: var(--green); }
+.section-index .idx { color: var(--green); }
+.section-index--light .idx { color: var(--sunset); }
+.intro__index .idx { color: var(--green); }
