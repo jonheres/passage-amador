@@ -207,3 +207,22 @@
     });
   });
 })();
+
+/* Mobile menu */
+(function () {
+  const nav = document.getElementById("nav");
+  const burger = document.getElementById("navBurger");
+  const menu = document.getElementById("mobileMenu");
+  if (!burger || !menu) return;
+  const set = (open) => {
+    nav.classList.toggle("is-open", open);
+    menu.classList.toggle("is-open", open);
+    document.body.classList.toggle("menu-open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    menu.setAttribute("aria-hidden", String(!open));
+    burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  };
+  burger.addEventListener("click", () => set(!menu.classList.contains("is-open")));
+  menu.querySelectorAll("a[href^='#']").forEach((a) => a.addEventListener("click", () => set(false)));
+  window.addEventListener("keydown", (e) => { if (e.key === "Escape") set(false); });
+})();
