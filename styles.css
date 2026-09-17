@@ -1109,3 +1109,7 @@ address { font-style: normal; }
 .location .scroll-line { position: relative; z-index: 2; margin-bottom: -20px; }
 .types .scroll-line, .gallery .scroll-line, .intro .scroll-line { margin-bottom: calc(-1 * clamp(40px, 4vw, 64px)); }
 @media (prefers-reduced-motion: reduce) { .scroll-line span { animation: none; transform: none; } }
+
+/* Ornaments as inline SVG (no CSS masks) */
+.orn { background: none; -webkit-mask-image: none; mask-image: none; opacity: .72; width: 100%; height: 100%; display: block; }
+.orn path { fill: var(--sand); }
