@@ -81,3 +81,54 @@
     });
   }
 })();
+
+/* Gallery thread: a line stitched through the caption numbers, drawn on scroll */
+(function () {
+  const grid = document.getElementById("galleryGrid");
+  if (!grid) return;
+  const svg = grid.querySelector(".gallery__thread");
+  const path = svg.querySelector(".gallery__thread-path");
+  const nodesG = svg.querySelector(".gallery__thread-nodes");
+  const figs = [...grid.querySelectorAll(".g")];
+  let length = 0, pts = [];
+
+  const build = () => {
+    if (window.innerWidth <= 720) return;
+    const gb = grid.getBoundingClientRect();
+    svg.setAttribute("viewBox", `0 0 ${gb.width} ${gb.height}`);
+    pts = figs.map((f) => {
+      const n = f.querySelector("figcaption span").getBoundingClientRect();
+      return { x: n.left - gb.left - 12, y: n.top - gb.top + n.height / 2 };
+    });
+    // smooth curve through anchors: vertical-ish S curves between nodes
+    let d = `M${pts[0].x} ${pts[0].y}`;
+    for (let i = 1; i < pts.length; i++) {
+      const a = pts[i - 1], b = pts[i];
+      const dy = (b.y - a.y) * 0.55;
+      d += ` C${a.x} ${a.y + dy}, ${b.x} ${b.y - dy}, ${b.x} ${b.y}`;
+    }
+    path.setAttribute("d", d);
+    length = path.getTotalLength();
+    path.style.strokeDasharray = `${length}`;
+    path.style.strokeDashoffset = `${length}`;
+    nodesG.innerHTML = pts.map((p) => `<circle cx="${p.x}" cy="${p.y}" r="3.5"/>`).join("");
+    draw();
+  };
+
+  const draw = () => {
+    if (!length) return;
+    const gb = grid.getBoundingClientRect();
+    const vh = window.innerHeight;
+    // progress: 0 when grid top reaches 75% of viewport, 1 when grid bottom reaches 55%
+    const start = vh * 0.75, end = vh * 0.55;
+    const p = Math.min(1, Math.max(0, (start - gb.top) / (gb.height - (vh - end) + start - vh + (vh - end))));
+    path.style.strokeDashoffset = `${length * (1 - p)}`;
+    const reached = Math.floor(p * pts.length + 0.001);
+    nodesG.querySelectorAll("circle").forEach((c, i) => c.classList.toggle("is-on", i < reached || p >= 0.999));
+  };
+
+  window.addEventListener("load", build);
+  window.addEventListener("resize", build);
+  window.addEventListener("scroll", draw, { passive: true });
+  build();
+})();
