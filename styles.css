@@ -1793,3 +1793,7 @@ address { font-style: normal; }
   .intro__head .intro__title { grid-column: 1; grid-row: auto; white-space: normal; }
   .intro__lead { grid-column: 1; grid-row: auto; max-width: 560px; }
 }
+@media (max-width: 720px) {
+  .d-time--text { font-size: 11px; letter-spacing: 0.14em; }
+  .types__figure--side { position: relative; }
+}
