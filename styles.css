@@ -1113,3 +1113,17 @@ address { font-style: normal; }
 /* Ornaments as inline SVG (no CSS masks) */
 .orn { background: none; -webkit-mask-image: none; mask-image: none; opacity: .72; width: 100%; height: 100%; display: block; }
 .orn path { fill: var(--sand); }
+
+/* Ornament bridging Amenidades → Galería (in the gallery head's empty right side) */
+.gallery { position: relative; }
+.gallery__head { position: relative; }
+.orn-head {
+  position: absolute;
+  right: 0; top: -12px;
+  width: min(34vw, 520px); height: auto;
+  opacity: .6;
+  z-index: 0;
+  pointer-events: none;
+}
+.gallery__head > * { position: relative; z-index: 1; }
+.gallery__head > .orn-head { z-index: 0; }
