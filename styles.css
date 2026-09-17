@@ -1845,3 +1845,23 @@ address { font-style: normal; }
   .location__map .map { transform: scale(1.12); }
   .location__inner { gap: 16px; }
 }
+
+/* ==========================================================
+   MOBILE HARDENING — no horizontal scroll, footer, burger
+   ========================================================== */
+html, body { overflow-x: hidden; max-width: 100%; }
+@media (max-width: 720px) {
+  html { overflow-x: clip; }
+  main, section, footer, .nav { overflow-x: clip; }
+  .location__map { overflow: hidden; }
+  .arch__title, .intro__head .intro__title, .hero__title { width: 100%; max-width: 100%; }
+  .footer__top { grid-template-columns: 1fr !important; gap: 32px; }
+  .footer__brand { display: block; }
+  .footer__logo-img { width: 150px; height: auto; max-width: 150px; }
+  .footer__nav--cols { grid-template-columns: 1fr !important; gap: 24px; }
+  .footer__nav--cols > div { gap: 10px; }
+  .footer__meta { align-items: flex-start; text-align: left; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; }
+  .nav { width: 100%; left: 0; right: 0; }
+  .nav__burger { display: flex !important; position: absolute; right: 20px; top: 12px; transform: none; width: 44px; height: 44px; }
+}
