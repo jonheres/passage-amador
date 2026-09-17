@@ -1509,3 +1509,32 @@ address { font-style: normal; }
 .arch__title { width: 150%; font-size: clamp(64px, 8.6vw, 140px); }
 .arch__ficha { justify-self: start; margin-left: 0; }
 .arch__strip img { object-position: 55% center; }
+
+/* Close the gap Tipologías → Amenidades */
+.types { padding-bottom: 24px; }
+.types .scroll-line { margin-top: clamp(40px, 4vw, 64px); margin-bottom: 0; }
+@media (min-width: 1101px) { .amenities { margin-top: 0; } }
+.amenities { margin-top: 0; }
+
+/* FAQ as a light coda right after the gallery */
+.faq { padding: clamp(80px, 8vw, 120px) var(--gutter) clamp(80px, 8vw, 120px); }
+
+/* Quién está detrás — dark credential band before the capture */
+.behind--dark { position: relative; background: var(--ocean-deep); color: var(--paper); overflow: hidden; padding: clamp(120px, 12vw, 180px) var(--gutter); }
+.behind__ground { position: absolute; inset: 0; z-index: 0; }
+.behind__ground img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 40%;
+  opacity: .28; filter: saturate(.6);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.4) 35%, #000 70%);
+          mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.4) 35%, #000 70%);
+}
+.behind--dark::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, rgba(15,43,54,0) 18%, rgba(15,43,54,0) 82%, var(--ocean-deep) 100%); }
+.behind--dark .behind__inner { position: relative; z-index: 1; }
+.behind--dark .behind__lead { color: rgba(244,241,235,0.78); opacity: 1; }
+.behind--dark .ledger__row { border-top: var(--rule-light); }
+.behind--dark .ledger__row:last-child { border-bottom: var(--rule-light); }
+.behind--dark .ledger dt { opacity: .6; }
+.behind--dark .ledger--behind .big { color: var(--paper); }
+.behind--dark .ledger--behind small { color: rgba(244,241,235,0.6); opacity: 1; }
+.behind--dark .ledger .dash { background: var(--paper); }
