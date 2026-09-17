@@ -163,3 +163,21 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 })();
+
+/* Tipologías: hover/click a row to preview its isometric */
+(function () {
+  const rows = [...document.querySelectorAll(".type-row[data-unit]")];
+  const imgs = [...document.querySelectorAll(".types__figure img")];
+  const label = document.querySelector(".types__figure-label b");
+  if (!rows.length || !imgs.length) return;
+  const set = (key) => {
+    rows.forEach((r) => r.classList.toggle("is-active", r.dataset.unit === key));
+    imgs.forEach((i) => i.classList.toggle("is-active", i.dataset.unit === key));
+    const r = rows.find((x) => x.dataset.unit === key);
+    if (label && r) label.textContent = r.querySelector(".type-row__type").firstChild.textContent.trim();
+  };
+  rows.forEach((r) => {
+    r.addEventListener("mouseenter", () => set(r.dataset.unit));
+    r.addEventListener("focus", () => set(r.dataset.unit));
+  });
+})();

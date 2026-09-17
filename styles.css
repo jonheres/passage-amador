@@ -1136,3 +1136,45 @@ address { font-style: normal; }
   right: 0;
 }
 .gallery__head > .orn-head { transform: rotate(90deg) translateX(100%); transform-origin: top right; }
+
+/* ==========================================================
+   TIPOLOGÍAS v2 — real models with isometric preview
+   ========================================================== */
+.types__thead { grid-template-columns: 1.4fr 1fr 0.7fr 1fr 1fr 40px; }
+.type-row { grid-template-columns: 1.4fr 1fr 0.7fr 1fr 1fr 40px; padding: 36px 0; }
+.type-row__type { font-size: clamp(32px, 3vw, 48px); letter-spacing: -0.03em; display: flex; flex-direction: column; gap: 6px; }
+.type-row__type small { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; opacity: .5; font-weight: 500; }
+.type-row__beds, .type-row__baths, .type-row__area, .type-row__balcony { font-size: 17px; letter-spacing: -0.005em; opacity: .85; }
+.type-row.is-active { padding-left: 16px; }
+.type-row.is-active .type-row__arrow { opacity: 1; transform: none; }
+.type-row.is-active .type-row__type { color: var(--green); }
+
+.types__figure {
+  position: relative;
+  margin-top: 48px;
+  aspect-ratio: 1 / 1;
+  max-width: 420px;
+}
+.types__figure img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(10px) scale(.985);
+  transition: opacity .7s var(--ease), transform .9s var(--ease);
+  filter: drop-shadow(0 30px 40px rgba(14,14,13,0.14));
+}
+.types__figure img.is-active { opacity: 1; transform: none; }
+.types__figure-label {
+  position: absolute; left: 0; bottom: -8px;
+  display: flex; gap: 12px; align-items: baseline;
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.types__figure-label i { font-style: normal; opacity: .5; }
+.types__figure-label b { font-weight: 500; color: var(--green); }
+@media (max-width: 1100px) { .types__figure { display: none; } }
+@media (max-width: 720px) {
+  .types__thead { display: none; }
+  .type-row { grid-template-columns: 1fr 1fr; row-gap: 10px; }
+  .type-row__type { grid-column: 1 / 3; }
+}
