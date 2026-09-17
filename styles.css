@@ -1183,3 +1183,23 @@ address { font-style: normal; }
 .types__lead { font-size: 16px; max-width: 380px; }
 .types__figure { max-width: 340px; margin-top: 32px; }
 .types { padding-top: clamp(90px, 9vw, 140px); }
+
+/* Tipologías v3: figure sits beside the rows, at the same height */
+.types__inner { grid-template-columns: 0.9fr 1.5fr 1fr; gap: 56px; }
+.types__thead { grid-template-columns: 1.3fr 1.3fr 1fr 32px; }
+.type-row { grid-template-columns: 1.3fr 1.3fr 1fr 32px; padding: 34px 0; }
+.type-row__beds { display: flex; flex-direction: column; gap: 6px; font-size: 16px; }
+.type-row__beds small { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: .5; }
+.type-row__area { font-size: 16px; }
+.types__figure--side {
+  position: sticky; top: 120px;
+  align-self: start;
+  margin-top: 40px;
+  max-width: none; width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.types__figure--side .types__figure-label { left: 0; bottom: -4px; }
+@media (max-width: 1100px) {
+  .types__inner { grid-template-columns: 1fr; }
+  .types__figure--side { display: none; }
+}
