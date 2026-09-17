@@ -1895,3 +1895,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .type-row.is-active .type-row__cta { max-height: 40px; opacity: 1; margin-top: 12px; }
   .type-row:not(.is-active) .type-row__type { color: var(--ink); }
 }
+
+/* Desktop fix: overflow-x on <html> broke position: sticky (black gap under Amenidades). Use clip, never hidden. */
+html { overflow-x: visible; }
+body { overflow-x: clip; }
+@media (max-width: 720px) { html { overflow-x: clip; } }
