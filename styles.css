@@ -1930,3 +1930,5 @@ body { overflow-x: clip; }
 /* Hero meta: two items, coordinates flush right */
 .hero__meta { justify-content: space-between; }
 @media (max-width: 720px) { .hero__meta span:nth-child(2) { display: inline; } }
+
+.hero__meta { justify-content: center; text-align: center; }
