@@ -1178,3 +1178,8 @@ address { font-style: normal; }
   .type-row { grid-template-columns: 1fr 1fr; row-gap: 10px; }
   .type-row__type { grid-column: 1 / 3; }
 }
+.types__head { top: 96px; }
+.types__title { font-size: clamp(40px, 4.4vw, 68px); margin-bottom: 22px; }
+.types__lead { font-size: 16px; max-width: 380px; }
+.types__figure { max-width: 340px; margin-top: 32px; }
+.types { padding-top: clamp(90px, 9vw, 140px); }
