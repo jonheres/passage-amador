@@ -1917,3 +1917,12 @@ body { overflow-x: clip; }
 }
 .ledger--behind small a { text-decoration: underline; text-underline-offset: 3px; }
 .ledger--behind .ledger__row { padding: 26px 0; }
+
+/* Five rows: tighter columns so long names/specs never wrap on desktop */
+@media (min-width: 1101px) {
+  .types__thead, .type-row { grid-template-columns: 1.15fr 1.55fr 0.7fr 150px; column-gap: 16px; }
+  .type-row__type { font-size: clamp(24px, 2vw, 34px); white-space: nowrap; }
+  .type-row__beds { font-size: 14px; }
+  .type-row__area { font-size: 15px; white-space: nowrap; }
+  .type-row { padding: 26px 0; }
+}
