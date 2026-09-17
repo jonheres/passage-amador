@@ -984,3 +984,17 @@ address { font-style: normal; }
 .map-scale line, .map-compass line { stroke: rgba(244,241,235,0.45); stroke-width: 1; }
 .map-scale text, .map-compass text { fill: rgba(244,241,235,0.5); font-size: 8.5px !important; }
 .map-project__glow { fill: url(#projectGlow) !important; }
+
+/* Map: dissolve top/bottom edges into the section background */
+.location__map {
+  top: -10%; bottom: -10%;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 22%, #000 48%),
+    linear-gradient(180deg, transparent 0%, #000 30%, #000 72%, transparent 100%);
+  -webkit-mask-composite: source-in;
+          mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 22%, #000 48%),
+    linear-gradient(180deg, transparent 0%, #000 30%, #000 72%, transparent 100%);
+          mask-composite: intersect;
+}
+.location__map::after { display: none; }
