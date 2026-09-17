@@ -65,7 +65,7 @@ const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMaxYMid meet" xm
     <text x="${p.project.x + kmPx * 1.44}" y="${p.project.y - kmPx * 1.44}">2 km</text>
     <text x="${p.project.x + kmPx * 2.14}" y="${p.project.y - kmPx * 2.14}">3 km</text>
   </g>
-  ${water(200, 600, "Canal de Panamá", -62)}
+  ${water(438, 615, "Canal de Panamá", 57)}
   ${water(745, 560, "Bahía de Panamá")}
   ${water(430, 840, "Océano Pacífico")}
   ${soft(p.ancon.x, p.ancon.y, "Cerro Ancón")}
@@ -78,7 +78,7 @@ const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMaxYMid meet" xm
   ${lab("ciudad", p.ciudad.x, p.ciudad.y, "Ciudad de Panamá", "end")}
   <g class="map-point map-point--causeway" data-point="causeway"><text x="${(p.biomuseo.x + p.naos.x) / 2 + 22}" y="${(p.biomuseo.y + p.naos.y) / 2}" transform="rotate(53 ${(p.biomuseo.x + p.naos.x) / 2 + 22} ${(p.biomuseo.y + p.naos.y) / 2})" text-anchor="middle">Causeway de Amador</text></g>
   <g class="map-project">
-    <circle cx="${p.project.x}" cy="${p.project.y}" r="34" fill="url(#projectGlow)"/>
+    <circle cx="${p.project.x}" cy="${p.project.y}" r="34" class="map-project__glow"/>
     <circle cx="${p.project.x}" cy="${p.project.y}" r="16" class="map-project__halo"/>
     <circle cx="${p.project.x}" cy="${p.project.y}" r="5"/>
     <text x="${p.project.x}" y="${p.project.y - 24}" text-anchor="middle">Passage Amador</text>

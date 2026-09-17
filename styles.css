@@ -983,3 +983,4 @@ address { font-style: normal; }
 .map-project text { fill: var(--paper); font-weight: 500; font-size: 11px !important; letter-spacing: 0.2em; text-transform: uppercase; }
 .map-scale line, .map-compass line { stroke: rgba(244,241,235,0.45); stroke-width: 1; }
 .map-scale text, .map-compass text { fill: rgba(244,241,235,0.5); font-size: 8.5px !important; }
+.map-project__glow { fill: url(#projectGlow) !important; }
