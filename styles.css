@@ -1797,3 +1797,7 @@ address { font-style: normal; }
   .d-time--text { font-size: 11px; letter-spacing: 0.14em; }
   .types__figure--side { position: relative; }
 }
+@media (max-width: 720px) {
+  .types__figure--side { margin-bottom: 44px; }
+  .types__figure--side .types__figure-label { position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%); margin: 0; white-space: nowrap; }
+}
