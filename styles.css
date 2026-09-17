@@ -1504,3 +1504,8 @@ address { font-style: normal; }
   .swatches { grid-template-columns: repeat(3, 1fr); }
   .swatches img { width: 100%; height: auto; aspect-ratio: 1; }
 }
+
+.arch__inner { grid-template-columns: 1fr 42%; }
+.arch__title { width: 150%; font-size: clamp(64px, 8.6vw, 140px); }
+.arch__ficha { justify-self: start; margin-left: 0; }
+.arch__strip img { object-position: 55% center; }
