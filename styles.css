@@ -1063,3 +1063,4 @@ address { font-style: normal; }
   .amenities__pin .amenities__media { position: absolute; inset: 0; }
   .amenities__pin .amenities__inner { min-height: 100vh; }
 }
+@media (min-width: 1101px) { .amenities { overflow: visible; } }
