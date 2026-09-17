@@ -1555,4 +1555,4 @@ address { font-style: normal; }
 .g figcaption b { font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
 .g figcaption em { font-style: normal; font-size: 14px; line-height: 1.45; opacity: .62; letter-spacing: 0; }
 .g-7 { grid-column: 3 / 11; grid-row: 16 / 20; }
-.gallery__grid { row-gap: 64px; }
+.gallery__grid { row-gap: 24px; }
