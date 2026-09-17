@@ -1877,3 +1877,21 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .g-1 { order: 1; } .g-2 { order: 2; } .g-3 { order: 4; } .g-4 { order: 5; } .g-5 { order: 7; } .g-6 { order: 8; } .g-7 { order: 9; }
   .orn-faq { display: block; width: 58vw; left: -12vw; top: 36px; opacity: .32; }
 }
+
+/* Tipologías on mobile: accordion — tap a model, its render unfolds below */
+.type-row__figure { display: none; }
+@media (max-width: 720px) {
+  .types__figure--side { display: none !important; }
+  .type-row { grid-template-columns: 1fr auto; grid-template-areas: "type area" "figure figure" "beds beds" "cta cta"; row-gap: 0; padding: 20px 0; }
+  .type-row__type { grid-area: type; font-size: 30px; position: relative; padding-right: 36px; }
+  .type-row__type::after { content: ""; position: absolute; right: 8px; top: 14px; width: 10px; height: 10px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg); transition: transform .4s var(--ease); opacity: .6; }
+  .type-row.is-active .type-row__type::after { transform: rotate(225deg); top: 20px; }
+  .type-row__area { grid-area: area; }
+  .type-row__figure { grid-area: figure; display: block; overflow: hidden; max-height: 0; opacity: 0; transition: max-height .6s var(--ease), opacity .5s var(--ease), margin .5s var(--ease); }
+  .type-row__figure img { width: 78%; max-width: 300px; margin: 0 auto; display: block; filter: drop-shadow(0 24px 30px rgba(14,14,13,0.14)); }
+  .type-row.is-active .type-row__figure { max-height: 360px; opacity: 1; margin: 18px 0 10px; }
+  .type-row__beds, .type-row__cta { max-height: 0; overflow: hidden; opacity: 0; margin: 0; transition: max-height .5s var(--ease), opacity .4s, margin .4s; }
+  .type-row.is-active .type-row__beds { max-height: 80px; opacity: 1; margin-top: 6px; }
+  .type-row.is-active .type-row__cta { max-height: 40px; opacity: 1; margin-top: 12px; }
+  .type-row:not(.is-active) .type-row__type { color: var(--ink); }
+}

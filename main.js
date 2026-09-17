@@ -176,9 +176,16 @@
     const r = rows.find((x) => x.dataset.unit === key);
     if (label && r) label.textContent = r.querySelector(".type-row__type").firstChild.textContent.trim();
   };
+  const mobile = window.matchMedia("(max-width: 720px)");
   rows.forEach((r) => {
-    r.addEventListener("mouseenter", () => set(r.dataset.unit));
-    r.addEventListener("focus", () => set(r.dataset.unit));
+    r.addEventListener("mouseenter", () => { if (!mobile.matches) set(r.dataset.unit); });
+    r.addEventListener("focus", () => { if (!mobile.matches) set(r.dataset.unit); });
+    r.addEventListener("click", (e) => {
+      if (!mobile.matches) return;
+      if (e.target.closest(".type-row__cta")) return; // CTA navigates to the form
+      e.preventDefault();
+      set(r.dataset.unit);
+    });
   });
 })();
 
