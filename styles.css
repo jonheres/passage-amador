@@ -1203,3 +1203,5 @@ address { font-style: normal; }
   .types__inner { grid-template-columns: 1fr; }
   .types__figure--side { display: none; }
 }
+.type-row__type { font-size: clamp(26px, 2.3vw, 38px); padding-right: 12px; }
+.types__thead, .type-row { grid-template-columns: 1.35fr 1.35fr 0.9fr 32px; }
