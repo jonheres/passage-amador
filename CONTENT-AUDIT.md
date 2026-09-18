@@ -1,5 +1,5 @@
 # Passage Amador — Auditoría de contenido
-Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.github.io/passage-amador/
+Generado: 2026-09-18 22:30 · Fuente: index.html · Espejo: https://jonheres.github.io/passage-amador/
 
 ## Metadatos
 - **title:** Passage Amador — Residencias en la Calzada de Amador, vecinas del Canal de Panamá
@@ -8,6 +8,7 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - **og:description:** Residencias en la Calzada de Amador: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.
 - **og:image:** https://passage-amador.vercel.app/img/hero.jpg
 - **lang:** es · **tipografía:** Inter Tight (300/400/500)
+- 🔗 "Saltar al contenido" → `#intro`
 
 ## NAV
 
@@ -31,9 +32,11 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - 🔗 "Solicitar información" → `#contacto`
 - 🔗 "Contactar por WhatsApp →" → `https://wa.me/50760000000` (nueva pestaña)
 - Amador, Panamá ES · / EN
+- en Galería y Contacto. -->
 
 ## 01 HERO
 
+- sirve hero-mobile.jpg (vertical) ≤720px y hero.jpg en desktop. Título en 3 renglones (.line > span) con animación lineUp escalonada; meta con coordenadas; dos CTA (relleno claro + ghost); línea de scroll animada (.hero__scroll). -->
 - 🖼️ `img/hero.jpg` — alt: Passage Amador al atardecer en la Calzada de Amador
 - Panamá: 8°55′ N — 79°32′ O
 - Un nuevo capítulo en Amador
@@ -115,18 +118,18 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - 🖼️ `img/unit-palma-real.png` — alt: (decorativa)
 - Modelo Casia
 
-## 05 AMENIDADES
+## 06 AMENIDADES
 
-- 🖼️ `img/am-paisaje.jpg` — alt: (decorativa)
 - 🖼️ `img/am-rooftop.jpg` — alt: (decorativa)
 - 🖼️ `img/am-wellness.jpg` — alt: (decorativa)
 - 🖼️ `img/am-social.jpg` — alt: (decorativa)
+- 🖼️ `img/am-paisaje.jpg` — alt: (decorativa)
 - 05 Amenidades
-- Su mejor amenidad es su paisaje. Lo demás —el agua, el movimiento, el encuentro— nace de él.
-- 01 Paisaje Naturaleza Jardines y senderos · Huerto · Cine al aire libre
-- 02 Rooftop Vistas inolvidables Piscina infinita · Deck solar · Observatorio
-- 03 Wellness Bienestar Spa frío y calor · Cabina sensorial · Yoga deck · Fitness
-- 04 Comunidad Encuentros Garden Club y BBQ · Pádel · Treehouse · Club Living
+- Cada torre tiene su rooftop. La comunidad, su Casa Club. Y Amador, todo lo demás.
+- 01 Rooftop Privado, en cada torre Piscina infinita · Solar deck · Lounge · Área BBQ · Co-working
+- 02 Casa Club El área común de la comunidad Spa con masajes, sauna y vapor · Piscina y solárium · BBQ · Salón lounge
+- 03 Deporte En movimiento Cancha de pádel · Bike station · La Calzada para correr y pedalear
+- 04 Comunidad Amador, a la puerta Área comercial · Parque comunitario · Canchas de tenis comunitarias
 
 ## 07 ARQUITECTURA
 
@@ -136,23 +139,26 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - Arquitectura RAWA · Arq. Ricardo Arosemena
 - Paisajismo LA_AP · Arq. Luis Alfaro
 - Sostenibilidad · EDGE Certificación EDGE · paneles solares · pisos Active Plus
-- 🖼️ `img/mat-travertino.jpg` — alt: Travertino
-- 01 Travertino
-- 🖼️ `img/mat-madera.jpg` — alt: Madera cálida
-- 02 Madera cálida
-- 🖼️ `img/mat-estuco.jpg` — alt: Estuco claro
-- 03 Estuco claro
+- Acabados Pisos porcelánicos gris 1.20 × 0.60 · sobres de cuarzo blanco · mobiliario hidrófugo en roble y gris coco
+- Grifería y baños TEKA · grifería cromada de última generación y muebles de baño
+- 🖼️ `img/mat-porcelanico.jpg` — alt: Porcelánico gris
+- 01 Porcelánico gris
+- 🖼️ `img/mat-cuarzo.jpg` — alt: Cuarzo blanco
+- 02 Cuarzo blanco
+- 🖼️ `img/mat-roble.jpg` — alt: Roble
+- 03 Roble
 - 🖼️ `img/arch-facade.jpg` — alt: Fachada de Passage Amador con balcones profundos
 
 ## 08 GALERÍA
 
+- . -->
 - 07 Galería
 - La vida, mirando hacia afuera
 - Interiores abiertos a la luz, terrazas frente al paisaje y materiales elegidos para acompañar la vida junto al Pacífico.
 - 🖼️ `img/g-bedroom.jpg` — alt: Recámara principal con vista a la bahía
 - 01 Recámara principal · Despertar con la bahía como primera luz del día.
-- 🖼️ `img/g-detail.jpg` — alt: Detalle de travertino y madera
-- 02 Materiales nobles · Travertino, lino y madera: lo que se toca a diario.
+- 🖼️ `img/g-bano.jpg` — alt: Baño con porcelánico gris, mueble en roble y grifería TEKA
+- 02 Baños · Porcelánico gris, roble y grifería TEKA.
 - 🖼️ `img/g-aerial.jpg` — alt: Vista aérea del proyecto entre jardines y Pacífico
 - 03 Desde el agua · El conjunto entre jardines y Pacífico, con la Calzada al fondo.
 - 🖼️ `img/g-terrace.jpg` — alt: Terraza con vista al mar
@@ -160,12 +166,15 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - 🖼️ `img/g-clubhouse.jpg` — alt: Club house
 - 05 Club house · Un salón para reunirse sin salir de casa.
 - 🖼️ `img/g-pool.jpg` — alt: Jacuzzi al aire libre con vegetación
-- 06 Wellness · Vapor, madera y verde: el jardín de agua.
+- 06 Spa · Sauna, vapor y masajes en la Casa Club.
 - 🖼️ `img/g-architecture.jpg` — alt: Fachada lateral del proyecto
 - 07 Arquitectura · Balcones que ordenan la fachada y regalan sombra.
 
-## 10 PREGUNTAS
+## 09 PREGUNTAS
 
+- /
+- . main.js mantiene los
+- abiertos (contenido indexable) y anima la visibilidad con .is-open, uno a la vez; el signo + rota a ×. -->
 - Preguntas frecuentes
 - Lo que querrás saber
 - ¿Dónde está ubicado Passage Amador?
@@ -177,11 +186,11 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - ¿Cuándo está prevista la entrega?
 - Torres 3 y 4: primer trimestre de 2028. Torres 1 y 2: tercer trimestre de 2029. Fechas estimadas y sujetas a confirmación del desarrollador.
 - ¿Qué amenidades ofrece el proyecto?
-- Información en proceso de validación.
+- Cada torre cuenta con un rooftop privado con piscina infinita, solar deck, lounge, área de BBQ y espacio de co-working. La Casa Club, común a toda la comunidad, reúne un spa con área de masajes, sauna y vapor, piscina con área para tomar sol, BBQ y salón lounge para reuniones. El proyecto incluye además cancha de pádel y bike station; a nivel comunitario, área comercial, parque y canchas de tenis.
 - ¿Cómo puedo conocer Passage personalmente?
 - Puedes solicitar una visita y conversar con nuestro equipo en la sala de ventas de Passage en la Calzada de Amador. Déjanos tus datos o contáctanos directamente por WhatsApp para coordinar.
 
-## 09 PROYECTO
+## 10 PROYECTO
 
 - 🖼️ `img/behind-dusk.jpg` — alt: (decorativa)
 - 08 El proyecto
@@ -231,7 +240,7 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 - Gracias
 - Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir información y disponibilidad actualizada.
 
-## 09 FOOTER
+## FOOTER
 
 - 🖼️ `img/logo-white.png` — alt: Passage Panamá
 - Entre el Canal, el Pacífico y la ciudad.
@@ -273,4 +282,6 @@ Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.git
 
 ## Pendientes / placeholders
 
+- [data-unit]
+- [data-amenity]
 - Número de WhatsApp (`wa.me/50760000000`), correo de ventas (`ventas@passagepanama.com`), páginas legales (`#privacidad`, `#cookies`, `#terminos`), versión EN (switch visible, sin contenido).

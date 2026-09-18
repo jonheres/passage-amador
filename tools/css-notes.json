@@ -1,0 +1,16 @@
+{
+  "Tokens, reset y tipografía compartida": "Variables de color/tipografía/ritmo (:root), reset mínimo y piezas compartidas:\n   .section-index (índice 01…08 con regla), .btn y variantes, .reveal (fade+rise al entrar en viewport,\n   activado por main.js con la clase .in), .reveal-lines (títulos: cada renglón sube desde una máscara,\n   escalonado), .scroll-line (regla vertical animada entre secciones), .orn (ornamentos de marca).",
+  "Nav + menú móvil": "Cabecera fija: transparente sobre el hero (logo blanco) y sólida con logo negro al hacer scroll (.is-solid,\n   main.js). En ≤1100px aparece el burger y el menú a pantalla completa (.menu.is-open, body.menu-open).",
+  "01 Hero": "Imagen a pantalla completa con zoom lento (heroZoom), título en tres renglones que suben (lineUp),\n   meta con coordenadas, dos CTA y línea de scroll. <picture> cambia a hero-mobile.jpg en ≤720px.",
+  "02 Intro": "Cabecera editorial (índice + título + lead), keyline de datos, panorama con figcaption y\n   tríptico Mar / Ciudad / Naturaleza con iconos de trazo fino (.theme__icon).",
+  "03 Ubicación (mapa)": "Sección azul océano. Mapa SVG real (OSM) con desvanecidos por máscara, lista de destinos con tiempos.\n   Hover en la lista resalta el punto (.is-hot, main.js). En móvil el mapa se amplía al 112% y las etiquetas crecen.",
+  "04 Residencias": "Título, render con esquina redondeada 20px, isotipo en marca de agua, ledger (dl) con datos y segundo render.\n   .ledger--behind reutiliza el ledger en la sección Proyecto.",
+  "05 Tipologías": "Tabla de modelos (a.type-row) + figura isométrica fija a la derecha. Desktop: hover cambia el render\n   (.is-active). Móvil: acordeón, el render aparece dentro de la fila activa (.type-row__figure).",
+  "06 Amenidades": "Desktop: capítulo fijado (sticky) de 2.6 pantallas; el scroll activa cada ítem y cambia el fondo (main.js).\n   Móvil: lista normal, cada ítem es un toggle que despliega su línea de detalle (.amenity__items).",
+  "07 Arquitectura": "Franja editorial: el título invade la imagen (.arch__strip), ficha técnica (.arch__ficha) y muestras\n   de materiales (.swatches).",
+  "08 Galería (+ hilo)": "Grid de 12 columnas con 7 figuras (.g-1…g-7), leyendas en tres niveles y esquinas 20px alternas.\n   El hilo punteado (.gallery__thread) se dibuja con el scroll (main.js). En móvil: columna, sin hilo.",
+  "09 Preguntas (FAQ)": "Acordeón <details> animado: los <details> permanecen abiertos y la visibilidad se anima con .is-open\n   (main.js), el signo + rota a ×.",
+  "10 Proyecto": "Banda oscura sobre render al atardecer con ledger de credenciales (desarrollador, constructora, banco,\n   etapa, entrega, arquitectura, paisajismo).",
+  "11 Contacto + formulario": "Panel verde institucional (33%) con ornamento + formulario de 4 campos. Estados: :focus, .has-error,\n   #formSuccess. <select> personalizado vía appearance: base-select con fallback nativo.",
+  "12 Footer": "Logo, tagline, tres columnas de enlaces, coordenadas, redes y legal. Una columna en móvil."
+}

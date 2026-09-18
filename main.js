@@ -1,20 +1,42 @@
-/* PASSAGE AMADOR — interactions */
-/* Section titles: split into the lines actually rendered (after <br> AND wrapping),
-   so every visual row rises one by one, like the hero */
+/* ==========================================================================
+   PASSAGE AMADOR — interacciones
+   Vanilla JS, sin dependencias. Cada bloque es un módulo independiente (IIFE)
+   que se activa sólo si su marcado existe, en este orden:
+
+   1. Títulos escalonados   h2.reveal → cada renglón renderizado sube por separado
+   2. Nav + reveal + mapa   nav sólida al hacer scroll, .reveal → .in, hover mapa
+   3. Amenidades (móvil)    tocar un ítem cambia el fondo y despliega su detalle
+   4. Formulario            validación nativa + estado de confirmación (sin backend)
+   5. Hilo de galería       línea punteada que se dibuja con el scroll (desktop)
+   6. Amenidades (desktop)  capítulo fijado: el scroll avanza los ítems
+   7. Tipologías            hover (desktop) / acordeón (móvil) → render isométrico
+   8. FAQ                   acordeón <details> animado, uno abierto a la vez
+   9. Menú móvil            burger, cierre con Esc o al elegir un enlace
+
+   Breakpoints usados aquí (deben coincidir con styles.css):
+   móvil ≤ 720px · tablet ≤ 1100px · desktop ≥ 1101px
+   ========================================================================== */
+
+/* 1. Títulos escalonados
+   Parte cada h2.reveal en los renglones que realmente se renderizan (respeta los <br>
+   del HTML y también el ajuste de línea) y envuelve cada uno en .line > span, para que
+   suban uno a uno desde su máscara (misma animación lineUp del hero). Se recalcula al
+   cargar las fuentes y al cambiar el ancho. */
 (function () {
-  const heads = [...document.querySelectorAll('h2.reveal')].map((h) => {
+  "use strict";
+  const heads = [...document.querySelectorAll("h2.reveal")].map((h) => {
     const src = h.innerHTML.split(/<br\s*\/?>/i).map((l) => l.trim()).filter(Boolean);
     return { h, src };
   });
   const build = () => {
     heads.forEach(({ h, src }) => {
-      // 1) measure: every word in its own span, keep the authored <br> breaks
-      h.innerHTML = src.map((l) => l.split(/\s+/).map((w) => '<i class="w">' + w + '</i>').join(' ')).join('<br>');
+      // 1) medir: cada palabra en su propio <i>, conservando los <br> del autor
+      h.innerHTML = src.map((l) => l.split(/\s+/).map((w) => '<i class="w">' + w + "</i>").join(" ")).join("<br>");
       const rows = [];
       let lastTop = null, brIdx = 0;
-      src.forEach((l, li) => {
+      src.forEach((l) => {
         const words = l.split(/\s+/);
-        const nodes = [...h.querySelectorAll('.w')].slice(brIdx, brIdx + words.length);
+        const nodes = [...h.querySelectorAll(".w")].slice(brIdx, brIdx + words.length);
         brIdx += words.length;
         lastTop = null;
         nodes.forEach((n, i) => {
@@ -23,21 +45,23 @@
           rows[rows.length - 1].push(words[i]);
         });
       });
-      // 2) rebuild as masked rows
-      h.innerHTML = rows.map((r) => '<span class="line"><span>' + r.join(' ') + '</span></span>').join('');
-      h.classList.add('reveal-lines');
-      if (h.classList.contains('in')) h.classList.add('is-done');
+      // 2) reconstruir como renglones enmascarados
+      h.innerHTML = rows.map((r) => '<span class="line"><span>' + r.join(" ") + "</span></span>").join("");
+      h.classList.add("reveal-lines");
+      if (h.classList.contains("in")) h.classList.add("is-done"); // ya visible: no volver a animar
     });
   };
   build();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
-  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(build, 150); });
+  let t;
+  window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(build, 150); });
 })();
 
+/* 2. Nav, reveal on scroll, mapa, amenidades (móvil) y formulario */
 (function () {
   "use strict";
 
-  // Nav: solid once the hero is scrolled past
+  // Nav: sólida (fondo papel, logo negro) una vez que el hero queda atrás
   const nav = document.getElementById("nav");
   const hero = document.getElementById("inicio");
   const onScroll = () => {
@@ -47,7 +71,7 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // Reveal on scroll
+  // Reveal: .reveal recibe .in cuando entra en el viewport (una sola vez)
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
@@ -66,7 +90,7 @@
     revealEls.forEach((el) => el.classList.add("in"));
   }
 
-  // Location: list <-> map highlight
+  // Ubicación: hover en la lista de destinos ⇄ punto del mapa (data-point)
   const destItems = document.querySelectorAll(".destinations li");
   const mapPoints = document.querySelectorAll(".map-point");
   const setHot = (key) => {
@@ -82,7 +106,8 @@
     g.addEventListener("mouseleave", () => setHot(null));
   });
 
-  // Amenities: hover/click swaps the backdrop
+  // 3. Amenidades: hover/click en un ítem cambia el fondo (data-amenity).
+  //    En móvil el click también despliega la línea de detalle (CSS: .amenity.is-active .amenity__items)
   const amenities = document.querySelectorAll(".amenity");
   const amenityImgs = document.querySelectorAll(".amenities__media img");
   const setAmenity = (key) => {
@@ -94,7 +119,8 @@
     li.addEventListener("click", () => setAmenity(li.dataset.amenity));
   });
 
-  // Contact form: light validation + confirmation state
+  // 4. Formulario: valida los campos obligatorios y muestra #formSuccess.
+  //    Sin backend en esta versión: en producción, enviar los datos al CRM aquí.
   const form = document.getElementById("leadForm");
   const success = document.getElementById("formSuccess");
   if (form) {
@@ -108,17 +134,17 @@
         if (!ok) valid = false;
       });
       if (!valid) return;
-
-      // Sin backend en esta versión: se muestra el estado de confirmación.
-      // Para producción, enviar los datos a un endpoint / CRM aquí.
       success.hidden = false;
       form.reset();
     });
   }
 })();
 
-/* Gallery thread: a line stitched through the caption numbers, drawn on scroll */
+/* 5. Hilo de galería
+   Traza una curva suave por los números de las leyendas (.g figcaption span) y la
+   revela con el scroll mediante stroke-dashoffset sobre la máscara. Desactivado ≤ 720px. */
 (function () {
+  "use strict";
   const grid = document.getElementById("galleryGrid");
   if (!grid) return;
   const svg = grid.querySelector(".gallery__thread");
@@ -136,7 +162,7 @@
       const n = f.querySelector("figcaption span").getBoundingClientRect();
       return { x: n.left - gb.left - 12, y: n.top - gb.top + n.height / 2 };
     });
-    // smooth curve through anchors: vertical-ish S curves between nodes
+    // curvas en S entre nodos consecutivos
     let d = `M${pts[0].x} ${pts[0].y}`;
     for (let i = 1; i < pts.length; i++) {
       const a = pts[i - 1], b = pts[i];
@@ -156,7 +182,7 @@
     if (!length) return;
     const gb = grid.getBoundingClientRect();
     const vh = window.innerHeight;
-    // progress: 0 when grid top reaches 75% of viewport, 1 when grid bottom reaches 55%
+    // progreso 0 → 1 mientras el grid cruza el viewport (del 75% al 55% de la altura)
     const start = vh * 0.75, end = vh * 0.55;
     const p = Math.min(1, Math.max(0, (start - gb.top) / (gb.height - (vh - end) + start - vh + (vh - end))));
     maskPath.style.strokeDashoffset = `${length * (1 - p)}`;
@@ -170,8 +196,11 @@
   build();
 })();
 
-/* Amenities: pinned chapter — scrolling steps through the items */
+/* 6. Amenidades — capítulo fijado (sólo desktop ≥ 1101px)
+   La sección mide 2.6 pantallas (CSS) y su contenido queda sticky; el avance del
+   scroll dentro de la sección selecciona el ítem activo y su fondo. */
 (function () {
+  "use strict";
   const section = document.getElementById("amenidades");
   const items = [...document.querySelectorAll(".amenity")];
   if (!section || !items.length) return;
@@ -190,7 +219,6 @@
     const travel = r.height - window.innerHeight;
     if (travel <= 0) return;
     const p = Math.min(1, Math.max(0, -r.top / travel));
-    // hold the first item a little, then step evenly
     const idx = Math.min(items.length - 1, Math.floor(p * items.length * 0.999));
     setActive(idx);
   };
@@ -199,8 +227,12 @@
   onScroll();
 })();
 
-/* Tipologías: hover/click a row to preview its isometric */
+/* 7. Tipologías
+   Desktop: hover/focus en una fila (a.type-row[data-unit]) muestra su isométrico en la
+   figura lateral y actualiza la etiqueta "Modelo". Móvil (≤ 720px): la fila funciona
+   como acordeón (click), el CTA de la fila sigue llevando a #contacto. */
 (function () {
+  "use strict";
   const rows = [...document.querySelectorAll(".type-row[data-unit]")];
   const imgs = [...document.querySelectorAll(".types__figure img")];
   const label = document.querySelector(".types__figure-label b");
@@ -217,19 +249,21 @@
     r.addEventListener("focus", () => { if (!mobile.matches) set(r.dataset.unit); });
     r.addEventListener("click", (e) => {
       if (!mobile.matches) return;
-      if (e.target.closest(".type-row__cta")) return; // CTA scrolls to the contact section
+      if (e.target.closest(".type-row__cta")) return;
       e.preventDefault();
       set(r.dataset.unit);
     });
   });
 })();
 
-
-/* FAQ: animated accordion, one open at a time */
+/* 8. FAQ — acordeón animado
+   Los <details> se mantienen abiertos (el contenido queda en el DOM y es indexable);
+   la apertura visual se anima con la clase .is-open (CSS). Uno abierto a la vez. */
 (function () {
+  "use strict";
   const items = [...document.querySelectorAll(".faq__item")];
   items.forEach((d) => {
-    d.open = true; // content stays in the DOM; visibility is animated via class
+    d.open = true;
     d.querySelector("summary").addEventListener("click", (e) => {
       e.preventDefault();
       const wasOpen = d.classList.contains("is-open");
@@ -239,8 +273,9 @@
   });
 })();
 
-/* Mobile menu */
+/* 9. Menú móvil (burger) */
 (function () {
+  "use strict";
   const nav = document.getElementById("nav");
   const burger = document.getElementById("navBurger");
   const menu = document.getElementById("mobileMenu");

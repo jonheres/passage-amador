@@ -30,7 +30,7 @@ const flush = () => {
 };
 for (let i = 0; i < tokens.length; i++) {
   const t = tokens[i];
-  if (t.startsWith("<!--")) { const m = t.match(/<!-- =+ (.+?) =+ -->/); if (m) { flush(); section = m[1].trim(); items.push({ section, kind: "SECTION" }); } continue; }
+  if (t.startsWith("<!--")) { const m = t.match(/^<!-- ((?:NAV|FOOTER|\d\d [A-ZÁÉÍÓÚÑ ]+?)) — /); if (m) { flush(); section = m[1].trim(); items.push({ section, kind: "SECTION" }); } continue; }
   if (t.startsWith("<")) {
     const tag = (t.match(/^<\/?([a-zA-Z0-9-]+)/) || [])[1]?.toLowerCase();
     if (!tag) continue;

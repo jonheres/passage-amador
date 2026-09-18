@@ -1,6 +1,6 @@
 # PASSAGE AMADOR — Auditoría completa del sitio
 
-**Fecha:** 18 de septiembre de 2026 · **Versión auditada:** commit `main` (115 commits) · **Espejo en vivo:** https://jonheres.github.io/passage-amador/
+**Fecha:** 18 de septiembre de 2026 (actualizado tras el pase de limpieza técnica) · **Versión auditada:** rama `main` · **Espejo en vivo:** https://jonheres.github.io/passage-amador/
 **Complemento:** [CONTENT-AUDIT.md](CONTENT-AUDIT.md) contiene el inventario literal de todos los textos, enlaces, campos e imágenes en orden de página (regenerable con `node tools/content-audit.js`).
 
 ---
@@ -15,7 +15,8 @@
 | Formulario de contacto (4 campos, sin CRM) | ✅ Referencia visual/UX; sin envío real |
 | Mapa real de Amador (OSM) con puntos verificados | ✅ |
 | Versión móvil auditada bloque por bloque | ✅ |
-| Datos pendientes del cliente (WhatsApp, correo, legales, FAQ amenidades) | ⏳ Ver §11 |
+| Limpieza técnica: validación W3C 0 errores, CSS consolidada y verificada, JS documentado, QA responsive/interacción | ✅ Ver §10 |
+| Datos pendientes del cliente (WhatsApp, correo, legales, EN, dominio) | ⏳ Ver §11 |
 | Vercel (`passage-amador.vercel.app`) | ⚠️ Desactualizado: bloqueado por límite del plan gratuito desde el 17-sep; GitHub Pages es la referencia |
 | Paquete de handoff para el desarrollador WordPress/Elementor | ⏳ Pendiente (se genera al cierre) |
 
@@ -30,6 +31,8 @@
 - **Puntos de retorno (git tags):**
   - `pre-brand-copy` — antes de la alineación de copy con la guía de marca.
   - `v1-form-simplified` — formulario simplificado a 4 campos.
+  - `v2-pre-ivan-feedback` — antes de los ajustes de amenidades/acabados de Iván.
+  - `v3-pre-cleanup` — antes del pase de limpieza técnica (HTML/CSS/JS).
 - Sin build, sin dependencias, sin bundler: el sitio se sirve tal cual.
 
 ---
@@ -38,14 +41,14 @@
 
 | Archivo | Tamaño | Rol |
 |---|---|---|
-| `index.html` | 84 KB | Página completa (incluye el mapa SVG inline y los ornamentos vectorizados) |
-| `styles.css` | 98 KB | Sistema visual + responsive (50 bloques `@media`: 27 × ≤720px, 12 × ≤1100px, 7 × ≥1101px, 3 × reduced-motion) |
-| `main.js` | 11 KB | Interacciones (vanilla JS, sin librerías) |
-| `img/` | 8.1 MB (35 archivos) | Renders, isométricos, logos, materiales, ornamentos |
-| `tools/` | — | `build-map.js` / `render-map.js` / `osm.json` (mapa), `content-audit.js` (auditoría), `mobile-preview.html` (arnés de prueba 375px) |
+| `index.html` | 89 KB | Página completa, validada sin errores ni avisos (W3C Nu). Comentario descriptivo por sección. |
+| `styles.css` | 75 KB | Hoja **consolidada**: 821 reglas, 12 bloques `@media`, 9 `!important` (sólo en el mapa SVG). Verificada idéntica píxel a píxel contra la hoja original. |
+| `main.js` | 13 KB | 9 módulos documentados, `"use strict"`, sin globales, sin errores de consola |
+| `img/` | 7.2 MB (33 archivos) | Sólo activos en uso; los retirados viven en `recursos/_unused/` |
+| `tools/` | — | Mapa (`build-map.js`, `render-map.js`), auditoría de contenido, consolidación y verificación de CSS (`css-consolidate.js`, `css-verify.js`), QA de página (`qa-page.js`), servidor local (`serve.js`) |
 
 - **Tipografía:** Inter Tight 300 / 400 / 500 desde Google Fonts (`preconnect` + `display=swap`).
-- **Favicon:** SVG inline (data URI) con la "P" sobre negro.
+- **Favicon:** `img/favicon.svg` ("P" sobre negro).
 - **Compatibilidad:** CSS moderno (`clamp`, `aspect-ratio`, `mask-image`, `overflow: clip`, `appearance: base-select` con fallback nativo). Chrome/Edge/Safari/Firefox actuales.
 
 ---
@@ -60,8 +63,8 @@
 | 03 | Ubicación | `ubicacion` | Azul océano | Mapa SVG real de Amador, lista de destinos con tiempos, cierre "La ciudad queda a la vista. El ruido, no." | Ubicación |
 | 04 | Residencias | `residencias` | Papel | "Vivir abierto al horizonte", ledger (recámaras / m² / carácter), 2 renders con esquina 20px, isotipo "g" en marca de agua | Residencias |
 | 05 | Tipologías | `tipologias` | Papel | "Tu espacio en Amador", 5 modelos (Casia 51 · Almendro 80 · Cedro 116 · Panamá 122 · Palma Real 213 m²) con isométricos | Tipologías (móvil) |
-| 06 | Amenidades | `amenidades` | Render a pantalla completa | Paisaje / Rooftop / Wellness / Comunidad con línea de detalle | Estilo de vida |
-| 07 | Arquitectura | `arquitectura` | Papel editorial | "Una fachada pensada para la sombra y la brisa", ficha RAWA / LA_AP / EDGE, 3 materiales, render de fachada | Arquitectura (móvil) |
+| 06 | Amenidades | `amenidades` | Render a pantalla completa | Rooftop (privado por torre) / Casa Club / Deporte / Comunidad con línea de detalle | Estilo de vida |
+| 07 | Arquitectura | `arquitectura` | Papel editorial | "Una fachada pensada para la sombra y la brisa", ficha RAWA / LA_AP / EDGE / acabados / TEKA, 3 materiales reales (porcelánico gris, cuarzo, roble), render de fachada | Arquitectura (móvil) |
 | 08 | Galería | `galeria` | Papel | 7 imágenes con leyendas en tres niveles y "hilo" punteado | Galería (móvil) |
 | 09 | Preguntas | `preguntas` | Papel | "Lo que querrás saber", 6 preguntas | — |
 | 10 | Proyecto | `proyecto` | `img/behind-dusk.jpg` oscuro | "Quienes lo hacen posible": desarrollador, constructora, banco, etapa, entrega, arquitectura, paisajismo | Proyecto |
@@ -102,7 +105,7 @@ Ornamentos de marca (swashes vectorizados): entre Amenidades→Galería (rotado 
 | Hero | Zoom lento de la imagen; línea de scroll animada | Imagen alternativa vertical |
 | Mapa | Hover en lista ⇄ marcador; halo pulsante en Passage; brújula y escala | Escalado 112% con máscaras de desvanecido en los cuatro bordes; etiquetas más grandes (Passage ≈2×) |
 | Tipologías | Hover en fila → crossfade del isométrico, etiqueta "Modelo X" | Acordeón: Casia abierta al inicio, tocar otra cierra la anterior y muestra su render debajo |
-| Amenidades | Capítulo fijado (sticky, `calc(100vh·2.6)`): el scroll avanza los 4 ítems y cambia el fondo | Toggle: tocar un ítem cambia el fondo y despliega su línea de detalle; Paisaje abierto por defecto |
+| Amenidades | Capítulo fijado (sticky, `calc(100vh·2.6)`): el scroll avanza los 4 ítems y cambia el fondo | Toggle: tocar un ítem cambia el fondo y despliega su línea de detalle; Rooftop abierto por defecto |
 | Galería | "Hilo" punteado que se dibuja con el scroll uniendo las leyendas | Sin hilo (grid vertical) |
 | FAQ | Acordeón animado, uno abierto a la vez, "+" rota a "×" | Igual |
 | Formulario | Validación nativa + estado de error por campo; mensaje "Gracias" al enviar; `<select>` personalizado (`appearance: base-select`) con fallback nativo | Igual, campos a ancho completo |
@@ -157,23 +160,49 @@ Ornamentos de marca (swashes vectorizados): entre Amenidades→Galería (rotado 
 
 ---
 
-## 10. SEO, accesibilidad y rendimiento — hallazgos
+## 10. Pase de limpieza técnica (18-sep-2026) — hallazgos y correcciones
 
-**Correcto**
-- `<html lang="es">`, 1 `<h1>`, 9 `<h2>` en jerarquía limpia, `title` y `meta description` con la propuesta de valor, Open Graph básico.
-- 34 `<img>`: todas con atributo `alt` (17 decorativas con `alt=""`), 21 con `loading="lazy"`; hero con `<picture>` y variante móvil.
-- 51 atributos `aria-*` (burger, menú, acordeones, iconos ocultos); navegación por teclado en FAQ, tipologías y menú.
-- Sin dependencias externas salvo Google Fonts.
+**Validación**
+- W3C Nu: 3 mensajes → **0**. Corregidos: favicon data-URI con espacios (ahora `img/favicon.svg`), `aria-label` en `<div>` sin rol (mapa: `role="img"`), sección Amenidades sin encabezado (la frase de apertura es ahora el `<h2>`).
+- JavaScript: sintaxis verificada, 0 errores de consola en 375 / 1440 px.
 
-**Recomendaciones antes de producción**
-1. `og:image` apunta a `passage-amador.vercel.app`; cambiar al dominio final y añadir `og:url`, `twitter:card`.
-2. Peso total de imágenes 8.1 MB: convertir a WebP/AVIF y servir `srcset` por ancho (los PNG de isométricos, 2.5 MB, son los principales candidatos).
-3. Alojar Inter Tight localmente si se quiere evitar la dependencia de Google Fonts (privacidad / rendimiento).
-4. Añadir `sitemap.xml`, `robots.txt`, `canonical` y datos estructurados (`RealEstateListing` / `Organization`) en el CMS.
-5. Enlaces legales (`#privacidad`, `#cookies`, `#terminos`), redes (`#`) y switch ES/EN son placeholders.
-6. Verificar contraste de textos secundarios sobre renders (leyendas de amenidades al 60–70% de opacidad) en dispositivos reales.
+**Jerarquía y semántica**
+- 1 `<h1>` (hero) · 10 `<h2>` (una por sección) · 3 `<h3>` (tríptico). Sin saltos de nivel. `<main>`, `<header>`, `<nav>`, `<footer>`, `<section id>` por bloque, `<figure>/<figcaption>`, `<dl>` para fichas, `<details>` en FAQ.
+- Enlace "Saltar al contenido" (`.skip-link`) visible con foco de teclado.
+- Cada sección lleva un comentario HTML con propósito, comportamiento, breakpoints y sugerencia de equivalente en Elementor.
 
----
+**SEO**
+- Añadidos: `canonical`, `theme-color`, Open Graph completo (`og:type/locale/url/site_name/image:width/height`), Twitter Card, JSON-LD `ApartmentComplex` (dirección, geo, amenidades). **Sustituir el dominio** `passage-amador.vercel.app` por el definitivo en canonical / og:url / og:image / JSON-LD.
+- 34 imágenes con `width`/`height` (evita CLS), 30 con `loading="lazy"`, hero con `fetchpriority="high"` y `preload` por breakpoint.
+
+**CSS**
+- La hoja acumulaba 27 rondas de diseño (988 reglas, 23 `!important`, 50 `@media`). Se reconstruyó con `tools/css-consolidate.js`: elimina declaraciones sobrescritas, selectores muertos (62), fusiona repetidos, agrupa por componente y ordena las media queries después de la base. Resultado: 821 reglas, 12 `@media`, 9 `!important` (todos en el mapa SVG, por especificidad).
+- Verificación: `tools/css-verify.js` comparó los estilos computados (+ `::before/::after`) y las cajas de los ~700 elementos entre la hoja original y la consolidada, en 375 / 1000 / 1440 / 1920 px, en estado inicial y con estados activados (menú abierto, nav sólida, FAQ, tipología, amenidad, error de formulario): **0 diferencias**.
+- Clip horizontal del isotipo en Residencias (`overflow-x: clip` en la sección) en lugar de depender del clip global.
+
+**Accesibilidad / usabilidad**
+- Áreas táctiles en móvil: enlaces del footer, menú y WhatsApp con padding para superar 24 px de alto (WCAG 2.5.8).
+- Botón burger con `type="button"`, `aria-expanded`, `aria-controls`; menú con `aria-hidden`; cierre con Esc.
+- Etiquetas `<label for>` en los 4 campos; estados de error visibles; `autocomplete` en nombre/email/teléfono.
+
+**QA de responsive e interacción (tools/qa-page.js + pruebas dirigidas)**
+
+| Viewport | Overflow horizontal | Títulos recortados | Imágenes rotas | Anclas huérfanas | Resultado |
+|---|---|---|---|---|---|
+| 375 × 812 | no | 0 | 0 | 3 (legales, placeholder) | ✅ |
+| 390 × 844 | no | 0 | 0 | 3 | ✅ |
+| 768 × 1024 | no (clip) | 0 | 0 | 3 | ✅ |
+| 1024 × 768 | no (clip) | 0 | 0 | 3 | ✅ |
+| 1280 × 800 | no (clip) | 0 | 0 | 3 | ✅ |
+| 1920 × 1080 | no (clip) | 0 | 0 | 3 | ✅ |
+
+Interacciones verificadas: burger abre/cierra (click, enlace, Esc; bloquea el scroll del body) · FAQ un ítem a la vez con altura animada · Tipologías: hover en desktop cambia render y etiqueta; acordeón en móvil · Amenidades: pasos por scroll en desktop (0→1→2→3 con sticky), toggle en móvil con fondo + detalle · Mapa: hover lista ⇄ punto · Hilo de galería construido (7 nodos) · Formulario: 4 errores al enviar vacío, éxito con datos válidos · `<select>` con `appearance: base-select` en Chromium y fallback nativo en el resto.
+
+**Pendiente de producción (no corregible desde el front)**
+1. Dominio definitivo en canonical / OG / JSON-LD.
+2. WebP/AVIF + `srcset` para los 7.2 MB de imágenes (los PNG de isométricos, 2.5 MB, son los principales candidatos).
+3. `sitemap.xml`, `robots.txt`; páginas legales y URLs de redes; versión EN.
+4. Endpoint / CRM del formulario.
 
 ## 11. Pendientes y placeholders (requieren datos del cliente)
 
@@ -184,7 +213,6 @@ Ornamentos de marca (swashes vectorizados): entre Amenidades→Galería (rotado 
 | Páginas legales | Footer, formulario | `#privacidad`, `#cookies`, `#terminos` |
 | Redes sociales | Footer | Instagram y LinkedIn → `#` |
 | Versión EN | Nav y footer | Switch visible, sin contenido |
-| FAQ · amenidades | Preguntas | "Información en proceso de validación." |
 | Superficie de Cedro | Tipologías | 116 m² (por confirmar) |
 | Variante de logo | Nav / footer | Se usa "Passage PANAMA"; confirmar si debe ser "Passage AMADOR" |
 | Etapa de obra y fechas | Proyecto, FAQ | Según Iván (T3–T4 Q1 2028 · T1–T2 Q3 2029), "sujetas a confirmación" |
