@@ -1988,3 +1988,10 @@ body { overflow-x: clip; }
   .types__figure--side img.is-active { display: block; }
   .types__figure--side .types__figure-label { position: static; margin-top: 18px; justify-content: center; }
 }
+@media (min-width: 1101px) {
+  .types__figure--side { display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto; justify-items: center; }
+  .types__figure--side img { grid-area: 1 / 1; display: block; position: static; width: 100%; aspect-ratio: 1 / 1; height: auto; object-fit: contain; }
+  .types__figure--side img:not(.is-active) { opacity: 0; }
+  .types__figure--side img.is-active { opacity: 1; }
+  .types__figure--side .types__figure-label { grid-area: 2 / 1; position: static; margin-top: 18px; }
+}
