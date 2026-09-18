@@ -2118,3 +2118,11 @@ body { overflow-x: clip; }
   .location__map .map text { stroke: none; paint-order: normal; }
   .location__map .map-project text { font-size: 27px !important; }
 }
+
+/* Map: brand cream instead of the reddish beige accent */
+.map-causeway { stroke: var(--paper); opacity: .85; }
+.map-point--causeway text { fill: var(--paper); opacity: .7; }
+.map-point.is-hot circle, .map-point.is-hot text { fill: var(--paper); }
+.map-point.is-hot text { opacity: 1; }
+.map-project circle { fill: var(--paper); }
+.map-project__halo { fill: rgba(244,241,235,0.2) !important; }
