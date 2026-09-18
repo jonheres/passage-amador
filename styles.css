@@ -1995,3 +1995,42 @@ body { overflow-x: clip; }
   .types__figure--side img.is-active { opacity: 1; }
   .types__figure--side .types__figure-label { grid-area: 2 / 1; position: static; margin-top: 18px; }
 }
+
+/* ==========================================================
+   CONTACTO v2 — narrow green panel with ornament; WhatsApp as outline button under submit
+   ========================================================== */
+.contact { grid-template-columns: 1fr 2fr; }
+.contact__left { background: var(--green); }
+.contact__left::after { display: none; }
+.contact__left-inner { padding: clamp(100px, 10vw, 160px) clamp(28px, 3.2vw, 56px); }
+.contact__title { font-size: clamp(38px, 3.4vw, 56px); }
+.contact__lead { font-size: 16px; max-width: 320px; }
+.contact__direct { justify-content: flex-start; }
+.contact__direct address { text-align: left; }
+.contact .section-index--light { border-bottom-color: rgba(244,241,235,0.22); }
+.contact .section-index--light .idx { color: var(--sunset); }
+.orn-contact {
+  position: absolute; left: -6%; bottom: -4%;
+  width: 78%; height: auto;
+  color: var(--paper); fill: var(--paper); opacity: .09;
+  pointer-events: none; z-index: 0;
+}
+.contact__right { padding-left: clamp(48px, 6vw, 110px); padding-right: clamp(48px, 6vw, 110px); }
+.form { max-width: 640px; }
+.form__foot { flex-direction: column; align-items: flex-start; gap: 28px; }
+.form__legal { max-width: 460px; }
+.form__actions { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 340px; }
+.form__actions .btn { width: 100%; }
+.btn--outline-green { color: var(--green); border-color: var(--green); background: transparent; gap: 12px; }
+.btn--outline-green:hover { background: var(--green); color: var(--paper); }
+.btn__icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+@media (max-width: 1100px) {
+  .contact { grid-template-columns: 1fr; }
+  .contact__right { padding-left: var(--gutter); padding-right: var(--gutter); }
+  .orn-contact { width: 60%; }
+}
+@media (max-width: 720px) {
+  .contact__left-inner { padding: 72px var(--gutter) 56px; }
+  .contact__title { font-size: clamp(36px, 11vw, 48px); }
+  .form__actions { max-width: none; }
+}

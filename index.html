@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609180150">
+<link rel="stylesheet" href="styles.css?v=202609180155">
 </head>
 <body>
 
@@ -500,13 +500,12 @@
 <!-- ============ 11 CONTACTO ============ -->
 <section class="contact" id="contacto">
   <div class="contact__left">
-    <img src="img/contact-bg.jpg" alt="" class="contact__bg" loading="lazy" aria-hidden="true">
+    <svg class="orn orn-contact" viewBox="0 0 375 365" aria-hidden="true" preserveAspectRatio="xMinYMax meet"><use href="#orn1-path"/></svg>
     <div class="contact__left-inner">
       <div class="section-index section-index--light section-index--coda"><span class="idx-label">Contacto</span></div>
       <h2 class="contact__title reveal">Descubre tu<br>próximo capítulo</h2>
       <p class="contact__lead reveal">Conoce las residencias, tipologías y disponibilidad actual de Passage Amador.</p>
       <div class="contact__direct reveal">
-        <a href="https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR." target="_blank" rel="noopener" class="btn btn--ghost-light">Contactar por WhatsApp</a>
         <address>
           <span>Sala de ventas</span>
           <span>Causeway de Amador, Panamá</span>
@@ -543,7 +542,10 @@
       </div>
       <div class="form__foot">
         <p class="form__legal">Al enviar tus datos, aceptas que el equipo de Passage te contacte con información del proyecto. <a href="#privacidad">Política de privacidad</a>.</p>
-        <button type="submit" class="btn btn--dark">Solicitar información</button>
+        <div class="form__actions">
+          <button type="submit" class="btn btn--dark">Solicitar información</button>
+          <a href="https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR." target="_blank" rel="noopener" class="btn btn--outline-green"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8.4 19.3L4 20z"/><path d="M9.2 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6.6 1 1.6 1.9 2.7 2.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5-.1.9-.7 1.6-1.6 1.8-1.1.2-2.6-.4-4.4-2-1.7-1.6-2.5-3.1-2.6-4.3-.1-.8.1-1.4.6-2.1z"/></svg>Contactar por WhatsApp</a>
+        </div>
       </div>
       <div class="form__success" id="formSuccess" hidden>
         <span class="idx">Gracias</span>
@@ -583,6 +585,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=202609180150"></script>
+<script src="main.js?v=202609180155"></script>
 </body>
 </html>
