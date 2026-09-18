@@ -1932,3 +1932,7 @@ body { overflow-x: clip; }
 @media (max-width: 720px) { .hero__meta span:nth-child(2) { display: inline; } }
 
 .hero__meta { justify-content: center; text-align: center; }
+
+/* Intro title: three words, keep it on two lines and let it wrap on small screens */
+.intro__head .intro__title { font-size: clamp(64px, 8.6vw, 148px); }
+@media (max-width: 720px) { .intro__head .intro__title { font-size: clamp(48px, 14.5vw, 68px); } }
