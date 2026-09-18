@@ -18,6 +18,7 @@ img/            Activos en uso (renders, isométricos, materiales, logos, orname
 recursos/       Material fuente del cliente (renders, PDFs, PPTX) y `_unused/` (activos retirados
                 y `styles.legacy.css`, la hoja original por rondas).
 tools/          Utilidades de desarrollo y QA (ver abajo).
+handoff/        Paquete para la implementación en WordPress/Elementor Pro (HANDOFF.md, snippets ES/EN, loader, CSS puente).
 SITE-AUDIT.md   Auditoría completa del sitio.
 CONTENT-AUDIT.md Inventario literal de textos, enlaces, campos e imágenes (generado).
 ```
@@ -34,6 +35,7 @@ Cada publicación cambia la versión de caché de `styles.css?v=` y `main.js?v=`
 |---|---|
 | `serve.js` | `node tools/serve.js 8787` — servidor estático local para QA. |
 | `i18n.js` | `node tools/i18n.js extract` lista los textos; `node tools/i18n.js build` genera `en/index.html` desde `index.html` + `i18n-en.json` (diccionario ES → EN). Tabla de revisión: `TRANSLATION-EN.md`. |
+| `handoff-snippets.js` | Regenera `handoff/snippets/` desde `index.html` y `en/index.html`. |
 | `content-audit.js` | `node tools/content-audit.js` — regenera `CONTENT-AUDIT.md`. |
 | `css-consolidate.js` | Reconstruye `styles.consolidated.css` a partir de `recursos/_unused/styles.legacy.css` (histórico; `styles.css` ya es la versión consolidada). Usa `qa-dead.json` (selectores sin uso) y `css-notes.json` (notas por componente). |
 | `css-verify.js` | Helper de navegador: `qaSnapshot()` / `qaCompare()` comparan los estilos computados de todos los elementos entre dos hojas. Se usó para verificar que la consolidación es idéntica píxel a píxel en 375 / 1000 / 1440 / 1920 px. |

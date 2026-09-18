@@ -18,7 +18,8 @@
 | Limpieza técnica: validación W3C 0 errores, CSS consolidada y verificada, JS documentado, QA responsive/interacción | ✅ Ver §10 |
 | Datos pendientes del cliente (WhatsApp, correo, legales, EN, dominio) | ⏳ Ver §11 |
 | Vercel (`passage-amador.vercel.app`) | ⚠️ Desactualizado: bloqueado por límite del plan gratuito desde el 17-sep; GitHub Pages es la referencia |
-| Paquete de handoff para el desarrollador WordPress/Elementor | ⏳ Pendiente (se genera al cierre) |
+| Versión EN (`/en/`, generada por diccionario, hreflang, switch) | ✅ |
+| Paquete de handoff para Sinéctica (WordPress / Elementor Pro) | ✅ `handoff/HANDOFF.md` + snippets + zip |
 
 ---
 
@@ -232,6 +233,6 @@ Interacciones verificadas: burger abre/cierra (click, enlace, Esc; bloquea el sc
 
 ---
 
-## 13. Siguiente entregable
+## 13. Handoff
 
-**HANDOFF.md** para el desarrollador WordPress/Elementor: mapa sección por sección (qué es nativo de Elementor, qué es CSS a pegar, qué es JS), código listo para copiar, lista de activos con nombres finales, tokens de diseño y lista de "no negociables" (tipografía, colores, esquinas 20px, animaciones de títulos, comportamiento móvil).
+Entregado en `handoff/` (y como `passage-amador-handoff.zip`): `HANDOFF.md` con estrategia de implementación en Elementor Pro, configuración global (breakpoints 720/1100, fuentes, colores, carga de CSS/JS), mapa sección por sección (widget nativo vs. HTML, clases/IDs obligatorios, módulo JS), activos, estrategia multilingüe (WPML / Polylang / TranslatePress) con tres vías para el mapa SVG, formulario + CRM con CSS puente para el widget Form, checklist de aceptación y pendientes. Snippets HTML por sección en ES y EN, mapa SVG por idioma, `wordpress-loader.php`, `elementor-form.css`.
