@@ -1,12 +1,37 @@
 /* PASSAGE AMADOR — interactions */
-/* Section titles: split <br> lines so they rise one by one, like the hero */
+/* Section titles: split into the lines actually rendered (after <br> AND wrapping),
+   so every visual row rises one by one, like the hero */
 (function () {
-  document.querySelectorAll('h2.reveal').forEach((h) => {
-    const lines = h.innerHTML.split(/<br\s*\/?>/i).map((l) => l.trim()).filter(Boolean);
-    if (lines.length < 2) return;
-    h.innerHTML = lines.map((l) => '<span class="line"><span>' + l + '</span></span>').join('');
-    h.classList.add('reveal-lines');
+  const heads = [...document.querySelectorAll('h2.reveal')].map((h) => {
+    const src = h.innerHTML.split(/<br\s*\/?>/i).map((l) => l.trim()).filter(Boolean);
+    return { h, src };
   });
+  const build = () => {
+    heads.forEach(({ h, src }) => {
+      // 1) measure: every word in its own span, keep the authored <br> breaks
+      h.innerHTML = src.map((l) => l.split(/\s+/).map((w) => '<i class="w">' + w + '</i>').join(' ')).join('<br>');
+      const rows = [];
+      let lastTop = null, brIdx = 0;
+      src.forEach((l, li) => {
+        const words = l.split(/\s+/);
+        const nodes = [...h.querySelectorAll('.w')].slice(brIdx, brIdx + words.length);
+        brIdx += words.length;
+        lastTop = null;
+        nodes.forEach((n, i) => {
+          const top = n.offsetTop;
+          if (lastTop === null || Math.abs(top - lastTop) > 2) { rows.push([]); lastTop = top; }
+          rows[rows.length - 1].push(words[i]);
+        });
+      });
+      // 2) rebuild as masked rows
+      h.innerHTML = rows.map((r) => '<span class="line"><span>' + r.join(' ') + '</span></span>').join('');
+      h.classList.add('reveal-lines');
+      if (h.classList.contains('in')) h.classList.add('is-done');
+    });
+  };
+  build();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(build, 150); });
 })();
 
 (function () {

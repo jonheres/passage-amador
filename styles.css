@@ -2130,3 +2130,7 @@ body { overflow-x: clip; }
 .reveal-lines.in .line:nth-child(3) > span { animation-delay: .31s; }
 .reveal-lines.in .line:nth-child(4) > span { animation-delay: .44s; }
 @media (prefers-reduced-motion: reduce) { .reveal-lines .line > span { transform: none; animation: none; } }
+.reveal-lines .w { font-style: normal; }
+.reveal-lines.is-done .line > span { animation: none; transform: none; }
+.reveal-lines.in .line:nth-child(5) > span { animation-delay: .57s; }
+.reveal-lines.in .line:nth-child(6) > span { animation-delay: .70s; }
