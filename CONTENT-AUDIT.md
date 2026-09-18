@@ -1,5 +1,5 @@
 # Passage Amador — Auditoría de contenido
-Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.github.io/passage-amador/
+Generado: 2026-09-18 08:28 · Fuente: index.html · Espejo: https://jonheres.github.io/passage-amador/
 
 ## Metadatos
 - **title:** Passage Amador — Residencias en la Calzada de Amador, vecinas del Canal de Panamá
@@ -45,7 +45,7 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 
 - 01 Passage
 - Donde la ciudad respira
-- El agua abre el horizonte, la ciudad marca el ritmo y la naturaleza devuelve la calma. Amador no es un destino: es una forma única de vivir en Panamá.
+- El agua abre el horizonte. La ciudad marca el ritmo. La naturaleza devuelve la calma. Amador no es un destino: es una forma única de vivir en Panamá.
 - Vista al Pacífico
 - Espacios desde · 51 a 213 m²
 - Calzada de Amador
@@ -65,7 +65,7 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 ## 03 UBICACIÓN
 
 - 02 Ubicación
-- Más cerca de todo lo que importa
+- Entre el Canal y la ciudad
 - En la Calzada de Amador, construida con las rocas del Corte Culebra, con el Canal de Panamá como vecino y el Casco Antiguo a minutos.
 - Biomuseo 3 · min
 - Marina de Amador 3 · min
@@ -78,7 +78,7 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 ## 04 RESIDENCIAS
 
 - 03 Residencias
-- Espacios para una vida extraordinaria
+- Vivir abierto al horizonte
 - 🖼️ `img/isotipo-g.png` — alt: (decorativa)
 - 🖼️ `img/living.jpg` — alt: Sala principal abierta a la terraza y al Pacífico
 - Ventanales de piso a techo y terrazas que borran el límite entre dentro y fuera. Cada residencia mira al Pacífico y respira la brisa de la bahía.
@@ -89,13 +89,13 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 - Carácter
 - Vistas al Pacífico Brisa cruzada en cada balcón Intimidad Oficio en cada detalle
 - 🖼️ `img/terrace-bridge.jpg` — alt: Balcón privado con vista al Puente de las Américas
-- Terrazas que extienden cada residencia hacia el horizonte
+- La residencia no termina donde comienza la terraza.
 
 ## 05 TIPOLOGÍAS
 
 - 04 Tipologías
-- Residencias a tu medida
-- Espacios pensados para distintas formas de vivir, siempre bajo una misma visión de sofisticación, amplitud y conexión con el entorno.
+- Tu espacio en Amador
+- Distintas tipologías, una misma relación con el exterior: luz, terrazas y el paisaje de Amador como parte de la vida cotidiana.
 - Modelo Recámaras · Baños Superficie
 - 🖼️ `img/unit-casia.png` — alt: (decorativa)
 - 🔗 "Casia · Single 1 recámara · 1 baño · Balcón doble acceso 51 m² Solicitar detalles · →" → `#contacto`
@@ -147,8 +147,8 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 ## 08 GALERÍA
 
 - 07 Galería
-- Historias que se viven aquí
-- Interiores luminosos, vistas abiertas, materiales nobles y una arquitectura hecha con oficio para acompañar cada momento de la vida en Amador.
+- La vida, mirando hacia afuera
+- Interiores abiertos a la luz, terrazas frente al paisaje y materiales elegidos para acompañar la vida junto al Pacífico.
 - 🖼️ `img/g-bedroom.jpg` — alt: Recámara principal con vista a la bahía
 - 01 Recámara principal · Despertar con la bahía como primera luz del día.
 - 🖼️ `img/g-detail.jpg` — alt: Detalle de travertino y madera
@@ -167,26 +167,26 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 ## 10 PREGUNTAS
 
 - Preguntas frecuentes
-- Preguntas que importan
-- ¿Dónde queda exactamente Passage?
-- En la Calzada de Amador, Ciudad de Panamá, con vista parcial al Pacífico y a minutos del Casco Antiguo.
-- ¿Qué tipos de residencias hay?
-- Cinco modelos: Casia (una recámara, 51 m²), Almendro (dos recámaras, 80 m²), Cedro (tres recámaras, 116 m²), Panamá (tres recámaras, 122 m²) y Palma Real (penthouse de 213 m² con tres recámaras y cuarto de servicio). Cocina abierta o lineal con lavandería y balcón de doble o triple acceso.
-- ¿Hay unidades disponibles?
-- [Disponibilidad actual por modelo.] Solicita información y recibirás el inventario actualizado con orientaciones y niveles.
-- ¿En qué etapa está el proyecto?
-- En infraestructura, cimientos y movimiento de tierra. Entrega estimada: Torres 3 y 4 en el primer trimestre de 2028; Torres 1 y 2 en el tercer trimestre de 2029. El avance puede verificarse en la sala de ventas.
-- ¿Qué amenidades incluye?
-- Más de 5.000 m² de paisajismo con especies nativas; rooftop con piscina infinita, deck solar y observatorio; spa frío y calor, cabina sensorial, yoga deck y fitness; Garden Club con BBQ, pádel, treehouse y piscina infantil; bike station conectada a la ciclovía del Causeway; concierge, lockers y área comercial con coffee shop, mini-market y farmacia.
-- ¿Cómo hablo con el equipo de ventas?
-- A través del formulario de esta página, por WhatsApp o en la sala de ventas en la Calzada de Amador. [Horario de atención.]
+- Lo que querrás saber
+- ¿Dónde está ubicado Passage Amador?
+- Passage está ubicado en la Calzada de Amador, Ciudad de Panamá, entre el Canal, el Pacífico y la ciudad, a minutos del Casco Antiguo.
+- ¿Qué tipos de residencias ofrece?
+- Passage ofrece distintas tipologías de residencias. En esta página presentamos una selección de cinco: Casia, Almendro, Cedro, Panamá y Palma Real, con opciones desde 51 hasta 213 m². Solicita información para conocer otras configuraciones y disponibilidad.
+- ¿Cómo puedo conocer precios y disponibilidad?
+- La disponibilidad puede variar por tipología, torre y nivel. Solicita información y nuestro equipo te compartirá las opciones y precios disponibles actualmente.
+- ¿Cuándo está prevista la entrega?
+- Torres 3 y 4: primer trimestre de 2028. Torres 1 y 2: tercer trimestre de 2029. Fechas estimadas y sujetas a confirmación del desarrollador.
+- ¿Qué amenidades ofrece el proyecto?
+- Información en proceso de validación.
+- ¿Cómo puedo conocer Passage personalmente?
+- Puedes solicitar una visita y conversar con nuestro equipo en la sala de ventas de Passage en la Calzada de Amador. Déjanos tus datos o contáctanos directamente por WhatsApp para coordinar.
 
 ## 09 PROYECTO
 
 - 🖼️ `img/behind-dusk.jpg` — alt: (decorativa)
 - 08 El proyecto
 - Quienes lo hacen posible
-- Una inversión en el patrimonio de Panamá se sostiene en quienes la firman. La trayectoria, el estado de la obra y los equipos responsables, a la vista.
+- Un proyecto de esta escala también se define por quienes están detrás de él. La trayectoria, el estado de la obra y los equipos responsables, a la vista.
 - Desarrollador
 - Inmobiliaria 360 · Desarrollo y comercialización del proyecto
 - Constructora
@@ -206,41 +206,35 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 
 ## 11 CONTACTO
 
-- 🖼️ `img/contact-bg.jpg` — alt: (decorativa)
 - Contacto
-- Hagamos realidad tu próximo capítulo
-- Déjanos tus datos y descubre más sobre Passage Amador: residencias, paisaje, amenidades y disponibilidad.
-- 🔗 "Contactar por WhatsApp" → `https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR.` (nueva pestaña)
+- Descubre tu próximo capítulo
+- Conoce las residencias, tipologías y disponibilidad actual de Passage Amador.
 - Sala de ventas Causeway de Amador, Panamá
-- 🏷️ Label: Nombre
+- 🏷️ Label: Nombre completo
 - 📝 Campo `nombre` · text · id=f-nombre · **obligatorio** · autocomplete=name
 - 🏷️ Label: Email
 - 📝 Campo `email` · email · id=f-email · **obligatorio** · autocomplete=email
 - 🏷️ Label: Teléfono / WhatsApp
-- 📝 Campo `telefono` · tel · id=f-tel · opcional · autocomplete=tel
-- 🏷️ Label: Interés
+- 📝 Campo `telefono` · tel · id=f-tel · **obligatorio** · autocomplete=tel
+- 🏷️ Label: ¿Qué estás buscando?
 - 📝 Campo `interes` · select · id=f-interes · **obligatorio**
   - `(vacío)` → "Selecciona una opción" (placeholder)
-  - `casia` → "Casia — 1 recámara"
-  - `almendro` → "Almendro — 2 recámaras"
-  - `cedro` → "Cedro — 3 recámaras"
-  - `panama` → "Panamá — 3 recámaras"
-  - `palma-real` → "Palma Real — 3 recámaras + servicio"
-  - `inversion` → "Inversión"
-  - `segunda` → "Segunda residencia"
-- 🏷️ Label: Mensaje
-- 📝 Campo `mensaje` · textarea · id=f-msg · opcional
-- Al enviar aceptas que el equipo de Passage te contacte con información del proyecto.
+  - `vivir` → "Vivir en Passage"
+  - `segunda-residencia` → "Segunda residencia"
+  - `inversion` → "Oportunidad de inversión"
+  - `opciones` → "Conocer opciones disponibles"
+- Al enviar tus datos, aceptas que el equipo de Passage te contacte con información del proyecto.
 - 🔗 "Política de privacidad" → `#privacidad`
 - .
 - 🔘 Botón: "Solicitar información"
+- 🔗 "Contactar por WhatsApp" → `https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR.` (nueva pestaña)
 - Gracias
-- Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir el brochure y la disponibilidad actualizada.
+- Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir información y disponibilidad actualizada.
 
 ## 09 FOOTER
 
 - 🖼️ `img/logo-white.png` — alt: Passage Panamá
-- Un vecino privilegiado del Canal de Panamá.
+- Entre el Canal, el Pacífico y la ciudad.
 - Proyecto
 - 🔗 "Residencias" → `#residencias`
 - 🔗 "Ubicación" → `#ubicacion`
@@ -270,16 +264,13 @@ Generado: 2026-09-18 06:15 · Fuente: index.html · Espejo: https://jonheres.git
 
 | Label | name | id | Tipo | Obligatorio | Notas |
 |---|---|---|---|---|---|
-| Nombre | `nombre` | `f-nombre` | text | sí | autocomplete=name |
+| Nombre completo | `nombre` | `f-nombre` | text | sí | autocomplete=name |
 | Email | `email` | `f-email` | email | sí | autocomplete=email |
-| Teléfono / WhatsApp | `telefono` | `f-tel` | tel | no | autocomplete=tel |
-| Interés | `interes` | `f-interes` | select | sí | valores: casia, almendro, cedro, panama, palma-real, inversion, segunda |
-| Mensaje | `mensaje` | `f-msg` | textarea | no |  |
+| Teléfono / WhatsApp | `telefono` | `f-tel` | tel | sí | autocomplete=tel |
+| ¿Qué estás buscando? | `interes` | `f-interes` | select | sí | valores: vivir, segunda-residencia, inversion, opciones |
 
-**Comportamiento actual:** sin backend; `main.js` valida los obligatorios y muestra `#formSuccess`. Las filas de Tipologías (`data-interes`) preseleccionan el `select` de interés. Botones: **Solicitar información** (submit) y **Contactar por WhatsApp** (enlace `wa.me`).
+**Comportamiento actual:** sin backend; `main.js` valida los obligatorios y muestra `#formSuccess`. Botones: **Solicitar información** (submit) y **Contactar por WhatsApp** (enlace `wa.me`).
 
 ## Pendientes / placeholders
 
-- [Disponibilidad actual por modelo.]
-- [Horario de atención.]
 - Número de WhatsApp (`wa.me/50760000000`), correo de ventas (`ventas@passagepanama.com`), páginas legales (`#privacidad`, `#cookies`, `#terminos`), versión EN (switch visible, sin contenido).

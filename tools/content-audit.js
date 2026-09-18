@@ -78,7 +78,7 @@ fields.forEach((f, i) => {
   out.push(`| ${labels[i] ? labels[i].text : ""} | \`${f.name}\` | \`${f.id}\` | ${f.type} | ${f.required ? "sí" : "no"} | ${notes} |`);
 });
 out.push("");
-out.push("**Comportamiento actual:** sin backend; `main.js` valida los obligatorios y muestra `#formSuccess`. Las filas de Tipologías (`data-interes`) preseleccionan el `select` de interés. Botones: **Solicitar información** (submit) y **Contactar por WhatsApp** (enlace `wa.me`).");
+out.push("**Comportamiento actual:** sin backend; `main.js` valida los obligatorios y muestra `#formSuccess`. Botones: **Solicitar información** (submit) y **Contactar por WhatsApp** (enlace `wa.me`).");
 out.push("");
 out.push("## Pendientes / placeholders");
 out.push("");
