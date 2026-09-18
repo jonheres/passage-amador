@@ -141,7 +141,7 @@ const pois = {
   biomuseo: { lat: 8.93193, lon: -79.54477, label: "Biomuseo" },
   marina:   { lat: 8.91140, lon: -79.52119, label: "Marina de Amador" },
   casco:    { lat: 8.95180, lon: -79.53420, label: "Casco Antiguo" },
-  ciudad:   { lat: 8.96450, lon: -79.52650, label: "Ciudad de Panamá" },
+  ciudad:   { lat: 8.97049, lon: -79.53049, label: "Ciudad de Panamá" },
   puente:   { lat: 8.94460, lon: -79.56163, label: "Puente de las Américas" },
   ancon:    { lat: 8.95765, lon: -79.54920, label: "Cerro Ancón" },
   naos:     { lat: 8.91513, lon: -79.53238, label: "Isla Naos" },
