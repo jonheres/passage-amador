@@ -2074,3 +2074,20 @@ body { overflow-x: clip; }
   .form__field select::picker-icon { transform: rotate(45deg) translate(-3px, -3px); transform-origin: center; }
   .form__field select:open::picker-icon { transform: rotate(-135deg) translate(-3px, -3px); }
 }
+
+/* Mobile map: split the fades (vertical on the SVG, horizontal on the box) — composite masks are unreliable on some phones */
+@media (max-width: 720px) {
+  .location__map {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+    -webkit-mask-composite: initial; mask-composite: initial;
+  }
+  .location__map .map {
+    transform: scale(1.12);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 78%, transparent 100%);
+            mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 78%, transparent 100%);
+  }
+  .location__map .map-project text { font-size: 15px !important; letter-spacing: 0.16em; }
+  .location__map .map-project circle:not(.map-project__halo):not(.map-project__glow) { r: 7; }
+  .location__map .map-project__halo { r: 22; }
+}
