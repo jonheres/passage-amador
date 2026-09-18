@@ -2069,3 +2069,8 @@ body { overflow-x: clip; }
   .form__field select option[disabled] { color: rgba(14,14,13,0.4); }
   .form__field selectedcontent { color: var(--ink); }
 }
+
+@supports (appearance: base-select) {
+  .form__field select::picker-icon { transform: rotate(45deg) translate(-3px, -3px); transform-origin: center; }
+  .form__field select:open::picker-icon { transform: rotate(-135deg) translate(-3px, -3px); }
+}
