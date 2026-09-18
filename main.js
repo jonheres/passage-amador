@@ -286,7 +286,7 @@
     document.body.classList.toggle("menu-open", open);
     burger.setAttribute("aria-expanded", String(open));
     menu.setAttribute("aria-hidden", String(!open));
-    burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    burger.setAttribute("aria-label", open ? (burger.dataset.labelClose || "Cerrar menú") : (burger.dataset.labelOpen || "Abrir menú"));
   };
   burger.addEventListener("click", () => set(!menu.classList.contains("is-open")));
   menu.querySelectorAll("a[href^='#']").forEach((a) => a.addEventListener("click", () => set(false)));

@@ -8,7 +8,7 @@ Landing page (desktop + móvil, español) de PASSAGE AMADOR, residencias en la C
 ## Estructura
 
 ```
-index.html      Página completa. Cada sección lleva un comentario que explica su propósito,
+index.html      Página completa (ES). en/index.html es la versión EN, generada (no editar a mano). Cada sección lleva un comentario que explica su propósito,
                 comportamiento y equivalencia sugerida en Elementor.
 styles.css      Hoja consolidada: tokens → componentes en orden de página → media queries
                 (≥1101 desktop · ≤1100 tablet · ≤720 móvil) → reduced-motion → keyframes.
@@ -33,6 +33,7 @@ Cada publicación cambia la versión de caché de `styles.css?v=` y `main.js?v=`
 | Script | Uso |
 |---|---|
 | `serve.js` | `node tools/serve.js 8787` — servidor estático local para QA. |
+| `i18n.js` | `node tools/i18n.js extract` lista los textos; `node tools/i18n.js build` genera `en/index.html` desde `index.html` + `i18n-en.json` (diccionario ES → EN). Tabla de revisión: `TRANSLATION-EN.md`. |
 | `content-audit.js` | `node tools/content-audit.js` — regenera `CONTENT-AUDIT.md`. |
 | `css-consolidate.js` | Reconstruye `styles.consolidated.css` a partir de `recursos/_unused/styles.legacy.css` (histórico; `styles.css` ya es la versión consolidada). Usa `qa-dead.json` (selectores sin uso) y `css-notes.json` (notas por componente). |
 | `css-verify.js` | Helper de navegador: `qaSnapshot()` / `qaCompare()` comparan los estilos computados de todos los elementos entre dos hojas. Se usó para verificar que la consolidación es idéntica píxel a píxel en 375 / 1000 / 1440 / 1920 px. |

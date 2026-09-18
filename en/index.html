@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO básico. NOTA HANDOFF: sustituir el dominio de canonical/og:url/og:image por el dominio definitivo. -->
-<title>Passage Amador — Residencias en la Calzada de Amador, vecinas del Canal de Panamá</title>
-<meta name="description" content="Passage Amador: residencias en la Calzada de Amador, vecinas del Canal de Panamá. Un nuevo capítulo entre el Pacífico, la naturaleza y la ciudad.">
-<link rel="canonical" href="https://passage-amador.vercel.app/">
+<title>Passage Amador — Residences on the Amador Causeway, next door to the Panama Canal</title>
+<meta name="description" content="Passage Amador: residences on the Amador Causeway, next door to the Panama Canal. A new chapter between the Pacific, nature and the city.">
+<link rel="canonical" href="https://passage-amador.vercel.app/en/">
 <link rel="alternate" hreflang="es" href="https://passage-amador.vercel.app/">
 <link rel="alternate" hreflang="en" href="https://passage-amador.vercel.app/en/">
 <link rel="alternate" hreflang="x-default" href="https://passage-amador.vercel.app/">
@@ -15,29 +15,29 @@
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_PA">
-<meta property="og:locale:alternate" content="en_US">
-<meta property="og:url" content="https://passage-amador.vercel.app/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_PA">
+<meta property="og:url" content="https://passage-amador.vercel.app/en/">
 <meta property="og:site_name" content="Passage Amador">
-<meta property="og:title" content="Passage Amador — Un nuevo capítulo en Amador">
-<meta property="og:description" content="Residencias en la Calzada de Amador: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.">
+<meta property="og:title" content="Passage Amador — A new chapter in Amador">
+<meta property="og:description" content="Residences on the Amador Causeway: next door to the Canal, between the Pacific, nature and the city.">
 <meta property="og:image" content="https://passage-amador.vercel.app/img/hero.jpg">
 <meta property="og:image:width" content="1672">
 <meta property="og:image:height" content="941">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Passage Amador — Un nuevo capítulo en Amador">
-<meta name="twitter:description" content="Residencias en la Calzada de Amador: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.">
+<meta name="twitter:title" content="Passage Amador — A new chapter in Amador">
+<meta name="twitter:description" content="Residences on the Amador Causeway: next door to the Canal, between the Pacific, nature and the city.">
 <meta name="twitter:image" content="https://passage-amador.vercel.app/img/hero.jpg">
 
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 
 <!-- Tipografía: Inter Tight 300/400/500 (única familia del sitio). -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero.jpg" media="(min-width: 721px)">
-<link rel="preload" as="image" href="img/hero-mobile.jpg" media="(max-width: 720px)">
-<link rel="stylesheet" href="styles.css?v=202609181757">
+<link rel="preload" as="image" href="../img/hero.jpg" media="(min-width: 721px)">
+<link rel="preload" as="image" href="../img/hero-mobile.jpg" media="(max-width: 720px)">
+<link rel="stylesheet" href="../styles.css?v=202609181757">
 
 <!-- Datos estructurados (schema.org). Completar teléfono/correo definitivos. -->
 <script type="application/ld+json">
@@ -45,56 +45,56 @@
   "@context": "https://schema.org",
   "@type": "ApartmentComplex",
   "name": "Passage Amador",
-  "description": "Residencias en la Calzada de Amador, vecinas del Canal de Panamá. Cinco tipologías de 51 a 213 m², rooftop privado por torre y Casa Club.",
-  "url": "https://passage-amador.vercel.app/",
+  "description": "Residences on the Amador Causeway, next door to the Panama Canal. Five layouts from 51 to 213 m², a private rooftop on every tower and a Clubhouse.",
+  "url": "https://passage-amador.vercel.app/en/",
   "image": "https://passage-amador.vercel.app/img/hero.jpg",
   "address": { "@type": "PostalAddress", "streetAddress": "Calzada de Amador", "addressLocality": "Ciudad de Panamá", "addressCountry": "PA" },
   "geo": { "@type": "GeoCoordinates", "latitude": 8.9385, "longitude": -79.5495 },
   "numberOfBedrooms": "1-3",
     "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "Rooftop privado por torre con piscina infinita" },
-    { "@type": "LocationFeatureSpecification", "name": "Casa Club con spa, piscina y salón lounge" },
-    { "@type": "LocationFeatureSpecification", "name": "Cancha de pádel" }
+    { "@type": "LocationFeatureSpecification", "name": "Private rooftop on every tower with infinity pool" },
+    { "@type": "LocationFeatureSpecification", "name": "Clubhouse with spa, pool and lounge room" },
+    { "@type": "LocationFeatureSpecification", "name": "Padel court" }
   ]
 }
 </script>
 </head>
 <body>
-<a class="skip-link" href="#intro">Saltar al contenido</a>
+<a class="skip-link" href="#intro">Skip to content</a>
 
 <!-- NAV — cabecera fija (position: fixed). Transparente sobre el hero con logo blanco;
      al pasar el hero, main.js añade .is-solid (fondo papel, logo negro, altura menor).
      ≤1100px: se ocultan enlaces y CTA, aparece el burger (#navBurger) que abre #mobileMenu.
      Elementor: Header template sticky + Nav Menu; el menú móvil es un Popup a pantalla completa. -->
 <header class="nav" id="nav">
-  <a href="#inicio" class="nav__brand" aria-label="Passage Panamá"><img src="img/logo-white.png" width="900" height="262" alt="Passage Panamá" class="nav__logo nav__logo--light"><img src="img/logo-black.png" width="900" height="262" alt="" class="nav__logo nav__logo--dark" aria-hidden="true"></a>
+  <a href="#inicio" class="nav__brand" aria-label="Passage Panama"><img src="../img/logo-white.png" width="900" height="262" alt="Passage Panama" class="nav__logo nav__logo--light"><img src="../img/logo-black.png" width="900" height="262" alt="" class="nav__logo nav__logo--dark" aria-hidden="true"></a>
   <nav class="nav__links">
-    <a href="#residencias">Residencias</a>
-    <a href="#ubicacion">Ubicación</a>
-    <a href="#amenidades">Estilo de vida</a>
-    <a href="#proyecto">Proyecto</a>
+    <a href="#residencias">Residences</a>
+    <a href="#ubicacion">Location</a>
+    <a href="#amenidades">Lifestyle</a>
+    <a href="#proyecto">Project</a>
   </nav>
   <div class="nav__right">
-    <a href="en/" class="nav__lang" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>
-    <a href="#contacto" class="nav__cta">Solicitar información</a>
+    <a href="../" class="nav__lang" aria-label="Cambiar a español" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a>
+    <a href="#contacto" class="nav__cta">Request information</a>
   </div>
-  <button type="button" class="nav__burger" id="navBurger" aria-label="Abrir menú" data-label-open="Abrir menú" data-label-close="Cerrar menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  <button type="button" class="nav__burger" id="navBurger" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
 </header>
 
 <div class="menu" id="mobileMenu" aria-hidden="true">
   <nav class="menu__links">
-    <a href="#residencias"><i>01</i>Residencias</a>
-    <a href="#ubicacion"><i>02</i>Ubicación</a>
-    <a href="#tipologias"><i>03</i>Tipologías</a>
-    <a href="#amenidades"><i>04</i>Estilo de vida</a>
-    <a href="#arquitectura"><i>05</i>Arquitectura</a>
-    <a href="#galeria"><i>06</i>Galería</a>
-    <a href="#proyecto"><i>07</i>Proyecto</a>
+    <a href="#residencias"><i>01</i>Residences</a>
+    <a href="#ubicacion"><i>02</i>Location</a>
+    <a href="#tipologias"><i>03</i>Layouts</a>
+    <a href="#amenidades"><i>04</i>Lifestyle</a>
+    <a href="#arquitectura"><i>05</i>Architecture</a>
+    <a href="#galeria"><i>06</i>Gallery</a>
+    <a href="#proyecto"><i>07</i>Project</a>
   </nav>
   <div class="menu__foot">
-    <a href="#contacto" class="btn btn--dark">Solicitar información</a>
-    <a href="https://wa.me/50760000000" target="_blank" rel="noopener" class="menu__wa">Contactar por WhatsApp →</a>
-    <div class="menu__meta"><span>Amador, Panamá</span><a href="en/" class="nav__lang" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a></div>
+    <a href="#contacto" class="btn btn--dark">Request information</a>
+    <a href="https://wa.me/50760000000" target="_blank" rel="noopener" class="menu__wa">Contact via WhatsApp →</a>
+    <div class="menu__meta"><span>Amador, Panama</span><a href="../" class="nav__lang" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a></div>
   </div>
 </div>
 
@@ -107,22 +107,22 @@
      dos CTA (relleno claro + ghost); línea de scroll animada (.hero__scroll). -->
 <section class="hero" id="inicio">
   <div class="hero__media">
-    <picture><source media="(max-width: 720px)" srcset="img/hero-mobile.jpg"><img src="img/hero.jpg" width="1672" height="941" alt="Passage Amador al atardecer en la Calzada de Amador" fetchpriority="high"></picture>
+    <picture><source media="(max-width: 720px)" srcset="../img/hero-mobile.jpg"><img src="../img/hero.jpg" width="1672" height="941" alt="Passage Amador at sunset on the Amador Causeway" fetchpriority="high"></picture>
   </div>
   <div class="hero__frame">
     <div class="hero__meta">
-      <span>Panamá: 8°55′ N — 79°32′ O</span>
+      <span>Panama: 8°55′ N — 79°32′ W</span>
     </div>
     <h1 class="hero__title">
-      <span class="line"><span>Un nuevo</span></span>
-      <span class="line"><span>capítulo</span></span>
-      <span class="line"><span>en Amador</span></span>
+      <span class="line"><span>A new</span></span>
+      <span class="line"><span>chapter</span></span>
+      <span class="line"><span>in Amador</span></span>
     </h1>
     <div class="hero__aside">
-      <p>Residencias en la Calzada: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.</p>
+      <p>Residences on the Causeway: next door to the Canal, between the Pacific, nature and the city.</p>
       <div class="hero__actions">
-        <a href="#intro" class="btn btn--light">Explorar proyecto</a>
-        <a href="#contacto" class="btn btn--ghost-light">Solicitar información</a>
+        <a href="#intro" class="btn btn--light">Explore the project</a>
+        <a href="#contacto" class="btn btn--ghost-light">Request information</a>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true"><span></span></div>
@@ -137,38 +137,38 @@
       <span class="idx">01</span>
       <span class="idx-label">Passage</span>
     </div>
-    <h2 class="intro__title reveal">Donde la<br>ciudad respira</h2>
-    <p class="intro__lead reveal">El agua abre el horizonte. La ciudad marca el ritmo. La naturaleza devuelve la calma. Amador no es un destino: es una forma única de vivir en Panamá.</p>
+    <h2 class="intro__title reveal">Where the<br>city breathes</h2>
+    <p class="intro__lead reveal">The water opens the horizon. The city sets the pace. Nature brings back the calm. Amador is not a destination: it is a singular way of living in Panama.</p>
   </div>
 
-  <ul class="keyline reveal" aria-label="Datos clave">
-    <li>Vista al Pacífico</li>
-    <li>Espacios desde · 51 a 213 m²</li>
-    <li>Calzada de Amador</li>
-    <li>15 min del centro</li>
+  <ul class="keyline reveal" aria-label="Key facts">
+    <li>Pacific views</li>
+    <li>Homes from · 51 to 213 m²</li>
+    <li>Amador Causeway</li>
+    <li>15 min from downtown</li>
   </ul>
 
   <figure class="intro__panorama reveal">
-    <img src="img/intro-panorama.jpg" width="1916" height="815" alt="Amanecer sobre el Pacífico desde la piscina del rooftop" loading="lazy">
-    <figcaption><span>Rooftop</span>Amanecer sobre el Pacífico, desde casa</figcaption>
+    <img src="../img/intro-panorama.jpg" width="1916" height="815" alt="Sunrise over the Pacific from the rooftop pool" loading="lazy">
+    <figcaption><span>Rooftop</span>Sunrise over the Pacific, from home</figcaption>
   </figure>
 
 
   <ul class="intro__themes reveal">
     <li>
       <span class="theme__n">I</span><svg class="theme__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 13c3.5 0 3.5-3 7-3s3.5 3 7 3 3.5-3 7-3 3.5 3 7 3M2 21c3.5 0 3.5-3 7-3s3.5 3 7 3 3.5-3 7-3 3.5 3 7 3"/></svg>
-      <h3 class="theme__name">Mar</h3>
-      <p>Un siglo de historia del Canal como horizonte, el Pacífico al frente y la brisa que cruza cada balcón.</p>
+      <h3 class="theme__name">Sea</h3>
+      <p>A century of Canal history on the horizon, the Pacific out front and a breeze that crosses every balcony.</p>
     </li>
     <li>
       <span class="theme__n">II</span><svg class="theme__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 28h28M5 28V14h6v14M13 28V6h7v22M22 28V11h5v17M8 17v1M8 21v1M16 10v1M16 14v1M16 18v1M16 22v1M24.5 15v1M24.5 19v1"/></svg>
-      <h3 class="theme__name">Ciudad</h3>
-      <p>El Casco Antiguo y el centro a minutos. La energía de Panamá, con el refugio de vivir a su orilla.</p>
+      <h3 class="theme__name">City</h3>
+      <p>Casco Antiguo and downtown, minutes away. The energy of Panama, with the refuge of living at its edge.</p>
     </li>
     <li>
       <span class="theme__n">III</span><svg class="theme__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M27 5C14 5 6 12 6 24c0 1 .1 2 .3 3C18 27 27 19 27 5zM6.3 27C10 19 15 13 22 9M12 21c-1 1-2 3-2 5"/></svg>
-      <h3 class="theme__name">Naturaleza</h3>
-      <p>Más de 5.000 m² de paisajismo con especies nativas envuelven las torres. Aquí, la mejor amenidad es el jardín.</p>
+      <h3 class="theme__name">Nature</h3>
+      <p>Over 5,000 m² of landscaping with native species wrap around the towers. Here, the finest amenity is the garden.</p>
     </li>
   </ul>
 
@@ -184,22 +184,22 @@
     <div class="location__text">
       <div class="section-index section-index--light">
         <span class="idx">02</span>
-        <span class="idx-label">Ubicación</span>
+        <span class="idx-label">Location</span>
       </div>
-      <h2 class="location__title reveal">Entre el Canal<br>y la ciudad</h2>
-      <p class="location__lead reveal">En la Calzada de Amador, construida con las rocas del Corte Culebra, con el Canal de Panamá como vecino y el Casco Antiguo a minutos.</p>
+      <h2 class="location__title reveal">Between<br>the Canal and the city</h2>
+      <p class="location__lead reveal">On the Amador Causeway, built with rock from the Culebra Cut, with the Panama Canal as a neighbor and Casco Antiguo minutes away.</p>
 
       <ol class="destinations reveal">
         <li data-point="biomuseo"><span class="d-name">Biomuseo</span><span class="d-time">3<small>min</small></span></li>
-        <li data-point="marina"><span class="d-name">Marina de Amador</span><span class="d-time">3<small>min</small></span></li>
+        <li data-point="marina"><span class="d-name">Amador Marina</span><span class="d-time">3<small>min</small></span></li>
         <li data-point="casco"><span class="d-name">Casco Antiguo</span><span class="d-time">10<small>min</small></span></li>
-        <li data-point="ciudad"><span class="d-name">Ciudad de Panamá</span><span class="d-time">15<small>min</small></span></li>
-        <li data-point="causeway"><span class="d-name">Causeway de Amador</span><span class="d-time d-time--text">A tus pies</span></li>
-        <li data-point="puente"><span class="d-name">Puente de las Américas</span><span class="d-time">5<small>min</small></span></li>
+        <li data-point="ciudad"><span class="d-name">Panama City</span><span class="d-time">15<small>min</small></span></li>
+        <li data-point="causeway"><span class="d-name">Amador Causeway</span><span class="d-time d-time--text">At your feet</span></li>
+        <li data-point="puente"><span class="d-name">Bridge of the Americas</span><span class="d-time">5<small>min</small></span></li>
       </ol>
     </div>
 
-    <div class="location__map" role="img" aria-label="Mapa esquemático de Amador con los puntos de interés cercanos">
+    <div class="location__map" role="img" aria-label="Schematic map of Amador with nearby points of interest">
       <svg viewBox="0 0 900 891" preserveAspectRatio="xMaxYMid meet" xmlns="http://www.w3.org/2000/svg" class="map">
         <defs>
           <pattern id="seaDots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="rgba(244,241,235,0.09)"/></pattern>
@@ -222,18 +222,18 @@
           <text x="535.947610956614" y="339.852389043386">2 km</text>
           <text x="599.6026996160792" y="276.19730038392083">3 km</text>
         </g>
-        <text class="map-water" x="438" y="615" text-anchor="middle" transform="rotate(57 438 615)">Canal de Panamá</text>
-        <text class="map-water" x="745" y="560" text-anchor="middle" transform="rotate(0 745 560)">Bahía de Panamá</text>
-        <text class="map-water" x="430" y="840" text-anchor="middle" transform="rotate(0 430 840)">Océano Pacífico</text>
-        <text class="map-soft" x="408" y="276.9" text-anchor="middle">Cerro Ancón</text>
-        <text class="map-soft" x="580.2" y="737.4" text-anchor="middle">Isla Naos</text>
-        <text class="map-soft" x="715" y="828.8" text-anchor="middle">Isla Flamenco</text>
-        <g class="map-point map-point--soft" data-point="puente"><circle cx="283.7" cy="409.1" r="3.5"/><text x="272.7" y="413.1" text-anchor="end">Puente de las Américas</text></g>
+        <text class="map-water" x="438" y="615" text-anchor="middle" transform="rotate(57 438 615)">Panama Canal</text>
+        <text class="map-water" x="745" y="560" text-anchor="middle" transform="rotate(0 745 560)">Panama Bay</text>
+        <text class="map-water" x="430" y="840" text-anchor="middle" transform="rotate(0 430 840)">Pacific Ocean</text>
+        <text class="map-soft" x="408" y="276.9" text-anchor="middle">Ancón Hill</text>
+        <text class="map-soft" x="580.2" y="737.4" text-anchor="middle">Naos Island</text>
+        <text class="map-soft" x="715" y="828.8" text-anchor="middle">Flamenco Island</text>
+        <g class="map-point map-point--soft" data-point="puente"><circle cx="283.7" cy="409.1" r="3.5"/><text x="272.7" y="413.1" text-anchor="end">Bridge of the Americas</text></g>
         <g class="map-point " data-point="biomuseo"><circle cx="452.3" cy="537.3" r="3.5"/><text x="463.3" y="541.3" text-anchor="start">Biomuseo</text></g>
-        <g class="map-point " data-point="marina"><circle cx="688.1" cy="745.2" r="3.5"/><text x="677.1" y="749.2" text-anchor="end">Marina de Amador</text></g>
+        <g class="map-point " data-point="marina"><circle cx="688.1" cy="745.2" r="3.5"/><text x="677.1" y="749.2" text-anchor="end">Amador Marina</text></g>
         <g class="map-point " data-point="casco"><circle cx="558" cy="336.1" r="3.5"/><text x="569" y="340.1" text-anchor="start">Casco Antiguo</text></g>
-        <g class="map-point " data-point="ciudad"><circle cx="595.1" cy="146.9" r="3.5"/><text x="606.1" y="150.9" text-anchor="start">Ciudad de Panamá</text></g>
-        <g class="map-point map-point--causeway" data-point="causeway"><text x="536.25" y="622.3499999999999" transform="rotate(53 536.25 622.3499999999999)" text-anchor="middle">Causeway de Amador</text></g>
+        <g class="map-point " data-point="ciudad"><circle cx="595.1" cy="146.9" r="3.5"/><text x="606.1" y="150.9" text-anchor="start">Panama City</text></g>
+        <g class="map-point map-point--causeway" data-point="causeway"><text x="536.25" y="622.3499999999999" transform="rotate(53 536.25 622.3499999999999)" text-anchor="middle">Amador Causeway</text></g>
         <g class="map-project">
           <circle cx="405" cy="470.8" r="34" class="map-project__glow"/>
           <circle cx="405" cy="470.8" r="16" class="map-project__halo"/>
@@ -248,7 +248,7 @@
       </svg>
                     </div>
   </div>
-  <p class="location__close reveal">La ciudad queda a la vista.<br><span>El ruido, no.</span></p>
+  <p class="location__close reveal">The city stays in view.<br><span>The noise doesn't.</span></p>
 
   <div class="scroll-line scroll-line--light" aria-hidden="true"><span></span></div>
 </section>
@@ -259,44 +259,44 @@
   <div class="residences__head">
     <div class="section-index">
       <span class="idx">03</span>
-      <span class="idx-label">Residencias</span>
+      <span class="idx-label">Residences</span>
     </div>
-    <h2 class="residences__title reveal">Vivir abierto<br>al horizonte</h2>
+    <h2 class="residences__title reveal">Living open<br>to the horizon</h2>
   </div>
 
   <div class="residences__body">
-    <img src="img/isotipo-g.png" width="453" height="800" alt="" class="residences__iso" aria-hidden="true" loading="lazy">
+    <img src="../img/isotipo-g.png" width="453" height="800" alt="" class="residences__iso" aria-hidden="true" loading="lazy">
     <figure class="residences__hero-img reveal">
-      <img src="img/living.jpg" width="1672" height="941" alt="Sala principal abierta a la terraza y al Pacífico" loading="lazy">
+      <img src="../img/living.jpg" width="1672" height="941" alt="Main living room open to the terrace and the Pacific" loading="lazy">
     </figure>
 
     <div class="residences__copy reveal">
-      <p>Ventanales de piso a techo y terrazas que borran el límite entre dentro y fuera. Cada residencia mira al Pacífico y respira la brisa de la bahía.</p>
+      <p>Floor-to-ceiling glass and terraces that erase the line between inside and out. Every residence faces the Pacific and breathes the bay breeze.</p>
     </div>
 
     <dl class="ledger reveal">
       <div class="ledger__row">
-        <dt>Recámaras</dt>
+        <dt>Bedrooms</dt>
         <dd><span class="num">01</span><span class="dash"></span><span class="num">03</span></dd>
       </div>
       <div class="ledger__row">
-        <dt>Superficie</dt>
+        <dt>Floor area</dt>
         <dd><span class="num">51</span><span class="dash"></span><span class="num">213</span><small>m²</small></dd>
       </div>
       <div class="ledger__row ledger__row--text">
-        <dt>Carácter</dt>
+        <dt>Character</dt>
         <dd>
-          <span>Vistas al Pacífico</span>
-          <span>Brisa cruzada en cada balcón</span>
-          <span>Intimidad</span>
-          <span>Oficio en cada detalle</span>
+          <span>Pacific views</span>
+          <span>Cross breeze on every balcony</span>
+          <span>Privacy</span>
+          <span>Craft in every detail</span>
         </dd>
       </div>
     </dl>
 
     <figure class="residences__detail-img reveal">
-      <img src="img/terrace-bridge.jpg" width="1600" height="1200" alt="Balcón privado con vista al Puente de las Américas" loading="lazy">
-      <figcaption>La residencia no termina donde comienza la terraza.</figcaption>
+      <img src="../img/terrace-bridge.jpg" width="1600" height="1200" alt="Private balcony with a view of the Bridge of the Americas" loading="lazy">
+      <figcaption>The residence doesn't end where the terrace begins.</figcaption>
     </figure>
   </div>
   <div class="scroll-line scroll-line--dark scroll-line--tight" aria-hidden="true"><span></span></div>
@@ -311,62 +311,62 @@
     <div class="types__head">
       <div class="section-index">
         <span class="idx">04</span>
-        <span class="idx-label">Tipologías</span>
+        <span class="idx-label">Layouts</span>
       </div>
-      <h2 class="types__title reveal">Tu espacio<br>en Amador</h2>
-      <p class="types__lead reveal">Distintas tipologías, una misma relación con el exterior: luz, terrazas y el paisaje de Amador como parte de la vida cotidiana.</p>
+      <h2 class="types__title reveal">Your place<br>in Amador</h2>
+      <p class="types__lead reveal">Different layouts, one same relationship with the outdoors: light, terraces and the Amador landscape as part of everyday life.</p>
     </div>
 
     <div class="types__table reveal">
       <div class="types__thead">
-        <span>Modelo</span>
-        <span>Recámaras · Baños</span>
-        <span>Superficie</span>
+        <span>Model</span>
+        <span>Bedrooms · Baths</span>
+        <span>Floor area</span>
       </div>
       <a href="#contacto" class="type-row is-active" data-unit="casia">
-        <span class="type-row__figure" aria-hidden="true"><img src="img/unit-casia.png" width="778" height="882" alt="" loading="lazy"></span>
+        <span class="type-row__figure" aria-hidden="true"><img src="../img/unit-casia.png" width="778" height="882" alt="" loading="lazy"></span>
         <span class="type-row__type">Casia<small>Single</small></span>
-        <span class="type-row__beds">1 recámara · 1 baño<small>Balcón doble acceso</small></span>
+        <span class="type-row__beds">1 bedroom · 1 bath<small>Double-access balcony</small></span>
         <span class="type-row__area">51 <small>m²</small></span>
-        <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
+        <span class="type-row__cta">Request details<i aria-hidden="true">→</i></span>
       </a>
       <a href="#contacto" class="type-row" data-unit="almendro">
-        <span class="type-row__figure" aria-hidden="true"><img src="img/unit-almendro.png" width="993" height="954" alt="" loading="lazy"></span>
+        <span class="type-row__figure" aria-hidden="true"><img src="../img/unit-almendro.png" width="993" height="954" alt="" loading="lazy"></span>
         <span class="type-row__type">Almendro<small>Flex</small></span>
-        <span class="type-row__beds">2 recámaras · 2 baños<small>Balcón triple acceso</small></span>
+        <span class="type-row__beds">2 bedrooms · 2 baths<small>Triple-access balcony</small></span>
         <span class="type-row__area">80 <small>m²</small></span>
-        <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
+        <span class="type-row__cta">Request details<i aria-hidden="true">→</i></span>
       </a>
       <a href="#contacto" class="type-row" data-unit="cedro">
-        <span class="type-row__figure" aria-hidden="true"><img src="img/unit-cedro.png" width="731" height="937" alt="" loading="lazy"></span>
+        <span class="type-row__figure" aria-hidden="true"><img src="../img/unit-cedro.png" width="731" height="937" alt="" loading="lazy"></span>
         <span class="type-row__type">Cedro</span>
-        <span class="type-row__beds">3 recámaras · 2 baños<small>Balcón doble acceso</small></span>
+        <span class="type-row__beds">3 bedrooms · 2 baths<small>Double-access balcony</small></span>
         <span class="type-row__area">116 <small>m²</small></span>
-        <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
+        <span class="type-row__cta">Request details<i aria-hidden="true">→</i></span>
       </a>
       <a href="#contacto" class="type-row" data-unit="panama">
-        <span class="type-row__figure" aria-hidden="true"><img src="img/unit-panama.png" width="896" height="939" alt="" loading="lazy"></span>
+        <span class="type-row__figure" aria-hidden="true"><img src="../img/unit-panama.png" width="896" height="939" alt="" loading="lazy"></span>
         <span class="type-row__type">Panamá</span>
-        <span class="type-row__beds">3 recámaras · 2 baños<small>Balcón triple acceso</small></span>
+        <span class="type-row__beds">3 bedrooms · 2 baths<small>Triple-access balcony</small></span>
         <span class="type-row__area">122 <small>m²</small></span>
-        <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
+        <span class="type-row__cta">Request details<i aria-hidden="true">→</i></span>
       </a>
       <a href="#contacto" class="type-row" data-unit="palma-real">
-        <span class="type-row__figure" aria-hidden="true"><img src="img/unit-palma-real.png" width="1069" height="859" alt="" loading="lazy"></span>
+        <span class="type-row__figure" aria-hidden="true"><img src="../img/unit-palma-real.png" width="1069" height="859" alt="" loading="lazy"></span>
         <span class="type-row__type">Palma Real<small>Penthouse</small></span>
-        <span class="type-row__beds">3 recámaras + servicio · 5 baños<small>Balcón tipo terraza</small></span>
+        <span class="type-row__beds">3 bedrooms + staff room · 5 baths<small>Terrace-style balcony</small></span>
         <span class="type-row__area">213 <small>m²</small></span>
-        <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
+        <span class="type-row__cta">Request details<i aria-hidden="true">→</i></span>
       </a>
-      <p class="types__note">Superficies aproximadas según brochure; pueden variar por torre y nivel. Selecciona un modelo para solicitar plantas, orientaciones y disponibilidad actualizada.</p>
+      <p class="types__note">Approximate floor areas per brochure; they may vary by tower and level. Select a model to request floor plans, orientations and current availability.</p>
     </div>
       <div class="types__figure reveal types__figure--side" aria-hidden="true">
-        <img src="img/unit-casia.png" width="778" height="882" alt="" data-unit="casia" class="is-active" loading="lazy">
-        <img src="img/unit-almendro.png" width="993" height="954" alt="" data-unit="almendro" loading="lazy">
-        <img src="img/unit-cedro.png" width="731" height="937" alt="" data-unit="cedro" loading="lazy">
-        <img src="img/unit-panama.png" width="896" height="939" alt="" data-unit="panama" loading="lazy">
-        <img src="img/unit-palma-real.png" width="1069" height="859" alt="" data-unit="palma-real" loading="lazy">
-        <span class="types__figure-label"><i>Modelo</i><b>Casia</b></span>
+        <img src="../img/unit-casia.png" width="778" height="882" alt="" data-unit="casia" class="is-active" loading="lazy">
+        <img src="../img/unit-almendro.png" width="993" height="954" alt="" data-unit="almendro" loading="lazy">
+        <img src="../img/unit-cedro.png" width="731" height="937" alt="" data-unit="cedro" loading="lazy">
+        <img src="../img/unit-panama.png" width="896" height="939" alt="" data-unit="panama" loading="lazy">
+        <img src="../img/unit-palma-real.png" width="1069" height="859" alt="" data-unit="palma-real" loading="lazy">
+        <span class="types__figure-label"><i>Model</i><b>Casia</b></span>
       </div>
   </div>
   <div class="scroll-line scroll-line--dark" aria-hidden="true"><span></span></div>
@@ -379,45 +379,45 @@
 <section class="amenities" id="amenidades">
   <div class="amenities__pin">
   <div class="amenities__media" aria-hidden="true">
-      <img src="img/am-rooftop.jpg" width="2000" height="1125" alt="" data-amenity="rooftop" class="is-active" loading="lazy">
-      <img src="img/am-wellness.jpg" width="1672" height="941" alt="" data-amenity="casaclub" loading="lazy">
-      <img src="img/am-social.jpg" width="1672" height="941" alt="" data-amenity="deporte" loading="lazy">
-      <img src="img/am-paisaje.jpg" width="2000" height="1125" alt="" data-amenity="comunidad" loading="lazy">
+      <img src="../img/am-rooftop.jpg" width="2000" height="1125" alt="" data-amenity="rooftop" class="is-active" loading="lazy">
+      <img src="../img/am-wellness.jpg" width="1672" height="941" alt="" data-amenity="casaclub" loading="lazy">
+      <img src="../img/am-social.jpg" width="1672" height="941" alt="" data-amenity="deporte" loading="lazy">
+      <img src="../img/am-paisaje.jpg" width="2000" height="1125" alt="" data-amenity="comunidad" loading="lazy">
     </div>
 
   <div class="amenities__inner">
     <div class="amenities__intro">
       <div class="section-index section-index--light">
         <span class="idx">05</span>
-        <span class="idx-label">Amenidades</span>
+        <span class="idx-label">Amenities</span>
       </div>
-      <h2 class="amenities__lead reveal">Cada torre tiene su rooftop. La comunidad, su Casa Club. Y Amador, todo lo demás.</h2>
+      <h2 class="amenities__lead reveal">Every tower has its rooftop. The community, its Clubhouse. And Amador, everything else.</h2>
     </div>
 
     <ul class="amenities__list">
       <li class="amenity is-active" data-amenity="rooftop">
         <span class="amenity__n">01</span>
         <span class="amenity__name">Rooftop</span>
-        <span class="amenity__desc">Privado, en cada torre</span>
-        <span class="amenity__items"><em>Piscina infinita</em><em>Solar deck</em><em>Lounge</em><em>Área BBQ</em><em>Co-working</em></span>
+        <span class="amenity__desc">Private, on every tower</span>
+        <span class="amenity__items"><em>Infinity pool</em><em>Solar deck</em><em>Lounge</em><em>BBQ area</em><em>Co-working</em></span>
       </li>
       <li class="amenity" data-amenity="casaclub">
         <span class="amenity__n">02</span>
-        <span class="amenity__name">Casa Club</span>
-        <span class="amenity__desc">El área común de la comunidad</span>
-        <span class="amenity__items"><em>Spa con masajes, sauna y vapor</em><em>Piscina y solárium</em><em>BBQ</em><em>Salón lounge</em></span>
+        <span class="amenity__name">Clubhouse</span>
+        <span class="amenity__desc">The community's shared space</span>
+        <span class="amenity__items"><em>Spa with massage, sauna and steam</em><em>Pool and sun deck</em><em>BBQ</em><em>Lounge room</em></span>
       </li>
       <li class="amenity" data-amenity="deporte">
         <span class="amenity__n">03</span>
-        <span class="amenity__name">Deporte</span>
-        <span class="amenity__desc">En movimiento</span>
-        <span class="amenity__items"><em>Cancha de pádel</em><em>Bike station</em><em>La Calzada para correr y pedalear</em></span>
+        <span class="amenity__name">Sport</span>
+        <span class="amenity__desc">In motion</span>
+        <span class="amenity__items"><em>Padel court</em><em>Bike station</em><em>The Causeway, for running and cycling</em></span>
       </li>
       <li class="amenity" data-amenity="comunidad">
         <span class="amenity__n">04</span>
-        <span class="amenity__name">Comunidad</span>
-        <span class="amenity__desc">Amador, a la puerta</span>
-        <span class="amenity__items"><em>Área comercial</em><em>Parque comunitario</em><em>Canchas de tenis comunitarias</em></span>
+        <span class="amenity__name">Community</span>
+        <span class="amenity__desc">Amador, at the door</span>
+        <span class="amenity__items"><em>Retail area</em><em>Community park</em><em>Community tennis courts</em></span>
       </li>
     </ul>
   </div>
@@ -432,25 +432,25 @@
     <div class="arch__text">
       <div class="section-index">
         <span class="idx">06</span>
-        <span class="idx-label">Arquitectura y diseño</span>
+        <span class="idx-label">Architecture and design</span>
       </div>
-      <h2 class="arch__title reveal">Una fachada<br>pensada para<br>la sombra<br>y la brisa</h2>
-      <p class="arch__lead reveal">Balcones profundos, ventanales de piso a techo y un ritmo vertical que ordena la fachada. Inspirada en la arquitectura canalera, responde primero al clima de Amador; el estilo viene después. Cuatro torres, como las cuatro islas que la Calzada unió a la ciudad.</p>
+      <h2 class="arch__title reveal">A façade<br>designed for<br>shade<br>and breeze</h2>
+      <p class="arch__lead reveal">Deep balconies, floor-to-ceiling glass and a vertical rhythm that orders the façade. Inspired by Canal Zone architecture, it answers first to Amador's climate; style comes after. Four towers, like the four islands the Causeway joined to the city.</p>
       <ul class="arch__ficha reveal">
-        <li><span>Arquitectura</span>RAWA · Arq. Ricardo Arosemena</li>
-        <li><span>Paisajismo</span>LA_AP · Arq. Luis Alfaro</li>
-        <li><span>Sostenibilidad</span><em><b class="edge">EDGE</b>Certificación EDGE · paneles solares · pisos Active Plus</em></li>
-        <li><span>Acabados</span>Pisos porcelánicos gris 1.20 × 0.60 · sobres de cuarzo blanco · mobiliario hidrófugo en roble y gris coco</li>
-        <li><span>Grifería y baños</span>TEKA · grifería cromada de última generación y muebles de baño</li>
+        <li><span>Architecture</span>RAWA · Ricardo Arosemena, Architect</li>
+        <li><span>Landscape</span>LA_AP · Luis Alfaro, Architect</li>
+        <li><span>Sustainability</span><em><b class="edge">EDGE</b>EDGE certification · solar panels · Active Plus flooring</em></li>
+        <li><span>Finishes</span>Grey porcelain floors 1.20 × 0.60 · white quartz countertops · water-resistant cabinetry in oak and coconut grey</li>
+        <li><span>Fixtures and baths</span>TEKA · latest-generation chrome fixtures and bathroom furniture</li>
       </ul>
-      <ul class="swatches reveal" aria-label="Materiales">
-        <li><img src="img/mat-porcelanico.jpg" width="700" height="700" alt="Porcelánico gris" loading="lazy"><span><i>01</i>Porcelánico gris</span></li>
-        <li><img src="img/mat-cuarzo.jpg" width="700" height="700" alt="Cuarzo blanco" loading="lazy"><span><i>02</i>Cuarzo blanco</span></li>
-        <li><img src="img/mat-roble.jpg" width="400" height="400" alt="Roble" loading="lazy"><span><i>03</i>Roble</span></li>
+      <ul class="swatches reveal" aria-label="Materials">
+        <li><img src="../img/mat-porcelanico.jpg" width="700" height="700" alt="Grey porcelain" loading="lazy"><span><i>01</i>Grey porcelain</span></li>
+        <li><img src="../img/mat-cuarzo.jpg" width="700" height="700" alt="White quartz" loading="lazy"><span><i>02</i>White quartz</span></li>
+        <li><img src="../img/mat-roble.jpg" width="400" height="400" alt="Oak" loading="lazy"><span><i>03</i>Oak</span></li>
       </ul>
     </div>
     <figure class="arch__strip reveal">
-      <img src="img/arch-facade.jpg" width="1200" height="1500" alt="Fachada de Passage Amador con balcones profundos" loading="lazy">
+      <img src="../img/arch-facade.jpg" width="1200" height="1500" alt="Passage Amador façade with deep balconies" loading="lazy">
     </figure>
   </div>
 </section>
@@ -464,44 +464,44 @@
     <svg class="orn orn-head" viewBox="0 0 520 400" aria-hidden="true" preserveAspectRatio="xMaxYMin meet"><path d="M 118.558 6.248 C 108.767 8.835, 101.014 21.956, 102.457 33.499 C 103.828 44.475, 109.147 50.228, 126.809 59.836 C 141.555 67.858, 147.753 76.633, 148.729 90.870 C 149.704 105.101, 145.869 113.893, 136.691 118.467 C 128.265 122.665, 120.023 121.413, 112.501 114.792 C 106.518 109.526, 104.176 102.924, 103.038 88.120 C 102.038 75.113, 101.010 69.794, 97.860 61.315 C 89.594 39.067, 70.042 21.376, 47 15.295 C 36.742 12.588, 17.638 12.891, 7.750 15.919 L 0 18.291 0 32.146 C 0 39.766, 0.112 45.991, 0.250 45.980 C 0.388 45.970, 4.100 45.310, 8.500 44.515 C 36.455 39.464, 68.975 46.824, 85.241 61.883 C 94.946 70.869, 97.519 77.147, 99.955 97.791 C 102.501 119.373, 113.476 137.721, 127.783 144.316 C 135.150 147.711, 148.568 147.429, 156.143 143.720 C 167.142 138.333, 174.112 127.622, 176.193 112.907 C 178.922 93.615, 171.003 76.173, 155.189 66.642 C 152.060 64.756, 142.819 60.405, 134.654 56.974 C 126.489 53.543, 117.939 49.326, 115.654 47.603 C 103.408 38.370, 104.284 18.697, 117.251 11.770 C 121.442 9.531, 121.988 9.500, 157.500 9.500 L 193.500 9.500 200 12.610 C 222.118 23.194, 233.915 49.467, 232.728 85.500 C 232.147 103.142, 230.155 111.822, 223.545 125.500 C 214.238 144.761, 204.466 151.300, 181 153.972 C 163.664 155.947, 151.496 160.888, 141.724 169.924 C 128.884 181.795, 125.910 197.676, 133.789 212.304 C 137.189 218.617, 142.736 223.505, 150.877 227.362 C 157.244 230.379, 158.002 230.500, 170.500 230.500 C 183.008 230.500, 183.746 230.382, 190 227.374 C 203.021 221.113, 209.089 213.465, 218.024 192.053 C 225.645 173.790, 227.191 170.964, 231.871 166.736 C 241.192 158.315, 257.069 159.944, 263.299 169.962 C 265.339 173.241, 265.541 175.112, 266.066 195.500 C 266.560 214.667, 266.893 218.080, 268.656 222 C 274.450 234.886, 290.087 240.106, 303.392 233.596 C 310.227 230.252, 313.026 226.938, 319.969 213.966 C 328.263 198.469, 335.369 192.585, 348.889 190.021 C 354.252 189.004, 364.079 189.876, 369.056 191.810 C 382.705 197.113, 386.130 214.755, 375.792 226.499 C 370.722 232.259, 364.243 234.658, 351.404 235.529 C 324.982 237.321, 309.584 244.097, 293.909 260.830 C 280.210 275.453, 274.862 289.226, 274.816 310 C 274.795 319.567, 275.234 322.993, 277.430 330.385 C 284.979 355.798, 306.543 377.060, 332.500 384.686 C 337.987 386.298, 345.872 386.475, 424.750 386.761 C 510.954 387.073, 511 387.072, 511 385.037 C 511 383.005, 510.814 383, 430.250 382.984 C 343.291 382.968, 342.637 382.932, 333.853 377.736 C 320.405 369.782, 311.279 354.707, 306.430 332.439 C 304.334 322.811, 304.042 300.511, 305.887 291 C 310.419 267.648, 323.141 248.463, 337.715 243.002 C 340.897 241.810, 348.675 240.190, 355 239.401 C 387.739 235.322, 406.508 220.951, 407.766 199 C 408.388 188.152, 405.716 181.436, 397.579 173.397 C 388.591 164.517, 383.160 162.588, 367 162.538 C 354.972 162.501, 354.245 162.621, 347.741 165.701 C 334.750 171.855, 328.606 179.717, 318.983 202.500 C 312.901 216.899, 309.577 223.132, 306.344 226.197 C 297.725 234.369, 282.406 233.700, 275.732 224.859 C 271.765 219.604, 271.012 214.863, 271.006 195.116 C 271.002 184.250, 270.533 175.174, 269.859 172.922 C 264.646 155.523, 238.290 151.240, 225.944 165.786 C 224.050 168.018, 220.475 173.817, 218 178.672 C 209.086 196.159, 198.609 203.338, 181.930 203.386 C 166.337 203.432, 157.093 196.429, 156.185 183.885 C 155.621 176.088, 157.845 170.320, 163.381 165.216 C 168.934 160.098, 174.666 158.356, 190 157.125 C 210.637 155.469, 226.137 149.203, 238.959 137.332 C 255.838 121.705, 263.895 101.627, 262.753 78.046 C 261.850 59.413, 255.147 44.412, 241.202 29.816 C 228.565 16.589, 216.179 9.694, 199.162 6.414 C 190.237 4.694, 124.950 4.559, 118.558 6.248 M 0 205.376 C 0 228.720, 0.384 238.343, 1.628 246.201 C 3.416 257.486, 3.082 287.815, 1.087 295.500 C 0.475 297.856, 0.038 312.785, 0.024 331.818 L 0 364.136 3.250 361.892 C 9.805 357.365, 25.049 340.994, 30.510 332.616 C 56.465 292.797, 55.209 240.897, 27.370 202.900 C 22.214 195.862, 9.628 182.497, 3.750 177.818 L 0 174.832 0 205.376 M 9.434 385.894 C 0.993 388.992, -0 389.924, 0 394.755 L 0 399.028 3.903 396.446 C 15.299 388.904, 33.251 389.450, 42.977 397.634 C 45.360 399.639, 46.809 400.054, 50.566 399.806 L 55.210 399.500 50.855 395.193 C 48.460 392.824, 43.610 389.462, 40.079 387.721 C 34.422 384.933, 32.518 384.526, 24.079 384.296 C 16.728 384.095, 13.322 384.467, 9.434 385.894"/></svg>
         <div class="section-index">
       <span class="idx">07</span>
-      <span class="idx-label">Galería</span>
+      <span class="idx-label">Gallery</span>
     </div>
-    <h2 class="gallery__title reveal">La vida,<br>mirando hacia afuera</h2>
-    <p class="gallery__lead reveal">Interiores abiertos a la luz, terrazas frente al paisaje y materiales elegidos para acompañar la vida junto al Pacífico.</p>
+    <h2 class="gallery__title reveal">Life,<br>looking outward</h2>
+    <p class="gallery__lead reveal">Interiors open to the light, terraces facing the landscape and materials chosen to accompany life by the Pacific.</p>
   </div>
 
   <div class="gallery__grid" id="galleryGrid">
     <svg class="gallery__thread" aria-hidden="true"><defs><mask id="threadMask" maskUnits="userSpaceOnUse"><path class="gallery__thread-mask" d=""/></mask></defs><path class="gallery__thread-path" d="" mask="url(#threadMask)"/><g class="gallery__thread-nodes"></g></svg>
     <figure class="g g-1 reveal">
-      <img src="img/g-bedroom.jpg" width="1672" height="941" alt="Recámara principal con vista a la bahía" loading="lazy">
-      <figcaption><span>01</span><b>Recámara principal</b><em>Despertar con la bahía como primera luz del día.</em></figcaption>
+      <img src="../img/g-bedroom.jpg" width="1672" height="941" alt="Master bedroom with a view of the bay" loading="lazy">
+      <figcaption><span>01</span><b>Master bedroom</b><em>Waking up with the bay as the first light of day.</em></figcaption>
     </figure>
     <figure class="g g-2 reveal">
-      <img src="img/g-bano.jpg" width="753" height="941" alt="Baño con porcelánico gris, mueble en roble y grifería TEKA" loading="lazy">
-      <figcaption><span>02</span><b>Baños</b><em>Porcelánico gris, roble y grifería TEKA.</em></figcaption>
+      <img src="../img/g-bano.jpg" width="753" height="941" alt="Bathroom with grey porcelain, oak vanity and TEKA fixtures" loading="lazy">
+      <figcaption><span>02</span><b>Baths</b><em>Grey porcelain, oak and TEKA fixtures.</em></figcaption>
     </figure>
     <figure class="g g-3 reveal">
-      <img src="img/g-aerial.jpg" width="1600" height="900" alt="Vista aérea del proyecto entre jardines y Pacífico" loading="lazy">
-      <figcaption><span>03</span><b>Desde el agua</b><em>El conjunto entre jardines y Pacífico, con la Calzada al fondo.</em></figcaption>
+      <img src="../img/g-aerial.jpg" width="1600" height="900" alt="Aerial view of the project between gardens and the Pacific" loading="lazy">
+      <figcaption><span>03</span><b>From the water</b><em>The complex between gardens and the Pacific, with the Causeway beyond.</em></figcaption>
     </figure>
     <figure class="g g-4 reveal">
-      <img src="img/g-terrace.jpg" width="1200" height="1200" alt="Terraza con vista al mar" loading="lazy">
-      <figcaption><span>04</span><b>Terraza</b><em>El deck donde la tarde se alarga sin prisa.</em></figcaption>
+      <img src="../img/g-terrace.jpg" width="1200" height="1200" alt="Terrace with a sea view" loading="lazy">
+      <figcaption><span>04</span><b>Terrace</b><em>The deck where the afternoon lingers.</em></figcaption>
     </figure>
     <figure class="g g-5 reveal">
-      <img src="img/g-clubhouse.jpg" width="1600" height="900" alt="Club house" loading="lazy">
-      <figcaption><span>05</span><b>Club house</b><em>Un salón para reunirse sin salir de casa.</em></figcaption>
+      <img src="../img/g-clubhouse.jpg" width="1600" height="900" alt="Clubhouse" loading="lazy">
+      <figcaption><span>05</span><b>Clubhouse</b><em>A room to gather without leaving home.</em></figcaption>
     </figure>
     <figure class="g g-6 reveal">
-      <img src="img/g-pool.jpg" width="1400" height="788" alt="Jacuzzi al aire libre con vegetación" loading="lazy">
-      <figcaption><span>06</span><b>Spa</b><em>Sauna, vapor y masajes en la Casa Club.</em></figcaption>
+      <img src="../img/g-pool.jpg" width="1400" height="788" alt="Outdoor jacuzzi surrounded by greenery" loading="lazy">
+      <figcaption><span>06</span><b>Spa</b><em>Sauna, steam and massage at the Clubhouse.</em></figcaption>
     </figure>
     <svg class="orn orn-1" viewBox="0 0 375 365" aria-hidden="true" preserveAspectRatio="xMinYMid meet"><path d="M 135 9.316 C 135 12.964, 137.407 22.878, 139.097 26.190 C 143.641 35.098, 150.915 40.908, 164.592 46.559 C 178.536 52.320, 184.423 55.579, 187.769 59.390 C 191.825 64.010, 192.882 70.402, 190.584 76.419 C 187.115 85.502, 183.090 86.891, 160 86.978 C 145.137 87.034, 141.880 87.326, 138.384 88.913 C 128.683 93.319, 124.362 107.029, 129.533 117 C 131.650 121.082, 136.995 125.442, 145.500 130.024 C 155.328 135.318, 160.175 140.180, 162.908 147.482 C 169.495 165.089, 160.594 181.454, 145.363 179.737 C 134.508 178.514, 129.280 170.997, 127.964 154.718 C 126.842 140.839, 125.610 135.905, 120.858 126.259 C 116.290 116.987, 108.716 108.438, 100 102.718 C 81.747 90.738, 56.309 90.334, 37.127 101.718 C 28.688 106.727, 16.039 120.125, 12.079 128.251 C 5.602 141.542, 5.500 142.573, 5.500 195 C 5.500 241.069, 5.562 242.605, 7.548 245.986 C 14.115 257.164, 30.822 259.248, 39.930 250.025 C 41.894 248.037, 45.602 242.605, 48.170 237.955 C 56.141 223.525, 63.580 218.517, 77 218.545 C 89.855 218.572, 98 225.024, 98 235.180 C 98 241.538, 96.150 245.783, 91.662 249.724 C 87.365 253.496, 83.459 254.651, 72 255.534 C 53.923 256.928, 42.836 261.277, 30.494 271.814 C 17.703 282.735, 11.602 296.633, 11.537 315 C 11.507 323.470, 11.967 326.926, 13.916 332.876 C 16.901 341.991, 23.900 352.819, 31.286 359.750 L 36.880 365 44.544 365 L 52.207 365 48.956 361.297 C 39.100 350.072, 33.244 324.768, 35.895 304.858 C 38.086 288.404, 43.024 277.136, 51.648 268.914 C 58.782 262.113, 64.916 259.617, 78 258.193 C 98.785 255.931, 114.530 245.887, 118.105 232.612 C 119.561 227.204, 118.822 217.397, 116.614 212.821 C 114.312 208.048, 108.866 202.483, 104.139 200.071 C 94.991 195.404, 79.676 195.103, 70.412 199.407 C 59.853 204.314, 55.974 209.357, 46.965 229.891 C 40.031 245.695, 36.404 250.458, 30.452 251.575 C 25.113 252.577, 18.560 251.535, 15.215 249.153 C 8.990 244.720, 9 244.808, 9 194.759 L 9 149.319 12.018 143.280 C 20.228 126.850, 39.857 117.728, 67 117.728 C 86.527 117.728, 101.107 122.169, 112.744 131.662 C 120.143 137.698, 123.179 144.327, 124.986 158.398 C 127.669 179.297, 135.079 192.467, 147.600 198.593 C 158.475 203.913, 172.711 200.394, 180.159 190.545 C 185.549 183.418, 187.322 176.777, 186.801 165.677 C 185.979 148.165, 178.703 139.360, 157.824 130.613 C 143.916 124.785, 137.924 121.654, 135.317 118.849 C 128.795 111.833, 129.805 99.090, 137.320 93.571 C 139.893 91.682, 141.960 91.453, 160.820 90.963 C 182.847 90.391, 185.006 89.932, 189.633 84.845 C 195.511 78.383, 196.885 68.526, 193.021 60.544 C 190.595 55.532, 187.603 53.055, 176.878 47.178 C 162.429 39.260, 157.431 31.060, 158.194 16.524 L 158.641 8 146.821 8 C 137.713 8, 135 8.302, 135 9.316 M 157.220 256.018 C 135.780 261.635, 119.274 276.741, 113.533 296 C 112.631 299.025, 111.501 307.859, 111.023 315.631 C 109.727 336.680, 105.865 349.578, 97.664 360.250 L 94.013 365 102.744 365 L 111.475 365 118.162 358.043 C 129.323 346.430, 134.944 332.008, 134.983 314.881 C 135.027 295.328, 140.548 278.725, 150.344 268.687 C 161.294 257.468, 161.157 257.500, 198.176 257.500 C 228.750 257.500, 229.950 257.573, 232.676 259.592 C 237.609 263.246, 240 267.756, 239.996 273.398 C 239.989 282.770, 235.334 287.461, 219.493 294.054 C 199.322 302.448, 192.262 307.669, 187.283 317.874 C 184.816 322.929, 184.539 324.565, 184.552 334 C 184.569 345.234, 185.567 348.843, 190.726 356.313 C 195.463 363.172, 200.022 365, 212.388 365 C 224.816 365, 226.513 364.366, 233.189 357.229 C 240.865 349.022, 243.907 341.292, 246.428 323.584 C 247.330 317.250, 248.911 310.750, 250.194 308.100 C 254.986 298.201, 266.677 290.403, 283.500 285.882 C 294.726 282.866, 314.140 282.879, 325.500 285.911 C 342.179 290.362, 354.127 298.593, 359.468 309.311 C 361.892 314.177, 362 315.149, 362 332.196 C 362 349.661, 362.040 350, 364.117 350 C 366.216 350, 366.230 349.837, 365.788 330.250 C 365.379 312.100, 365.127 309.870, 362.672 302.731 C 356.794 285.632, 345.520 273.621, 327.682 265.455 C 305.136 255.133, 278.626 260.436, 259.967 279 C 249.511 289.403, 244.592 301.547, 243.389 319.932 C 242.464 334.060, 239.274 340.549, 231.500 344.119 C 215.076 351.661, 201.437 335.478, 207.431 315.562 C 210.298 306.038, 213.801 302.587, 229.416 293.903 C 235.376 290.588, 238.023 288.417, 240.125 285.120 C 245.362 276.903, 244.818 267.280, 238.724 260.338 C 233.241 254.093, 232.578 253.994, 196.782 254.055 C 168.348 254.104, 163.632 254.337, 157.220 256.018"/></svg>
     <svg class="orn orn-2" viewBox="0 0 220 385" aria-hidden="true" preserveAspectRatio="xMaxYMin meet"><path d="M 25 9.500 L 25 13 56.290 13 C 90.757 13, 94.465 13.466, 105.087 19.127 C 129.209 31.984, 144.261 57.725, 151.048 97.726 C 153.827 114.101, 153.440 139.913, 150.189 155.019 C 140.750 198.878, 121.897 224.295, 93.500 231.443 C 90.200 232.274, 80 233.863, 70.832 234.976 C 40.116 238.703, 15.615 250.744, 2.828 268.396 L -0 272.300 0 299.560 L 0 326.820 3.916 331.774 C 15.229 346.086, 30.211 352.839, 52.633 353.731 C 74.491 354.600, 90.097 349.389, 103.675 336.687 C 114.285 326.762, 120.015 317.133, 130.268 292 C 145.380 254.954, 152.186 247.307, 171 246.233 C 181.426 245.637, 188.637 248.356, 195.685 255.539 C 204.138 264.154, 204 263.030, 204 323.182 L 204 375 207.532 375 L 211.065 375 210.782 319.750 L 210.500 264.500 207.854 259.500 C 197.405 239.754, 171.523 233.005, 151.240 244.737 C 144.341 248.728, 137.947 256.928, 129.958 272.030 C 121.117 288.741, 115.283 296.310, 106.954 301.872 C 87.073 315.148, 56.563 314.658, 42.746 300.841 C 35.864 293.959, 33.599 288.429, 33.596 278.500 C 33.592 267.832, 36.368 260.761, 43.377 253.582 C 52.609 244.126, 60.224 241.591, 84 240.058 C 119.442 237.773, 143.948 227.406, 165.698 205.495 C 183.715 187.344, 193.835 167.488, 197.548 143 C 203.589 103.155, 191.312 68.583, 160.763 39.418 C 145.651 24.990, 132.757 17.169, 114.663 11.453 C 100.411 6.951, 90.344 6.012, 56.250 6.006 L 25 6 25 9.500"/></svg>
     <svg class="orn orn-3" viewBox="0 0 520 400" aria-hidden="true" preserveAspectRatio="xMaxYMax meet"><path d="M 118.558 6.248 C 108.767 8.835, 101.014 21.956, 102.457 33.499 C 103.828 44.475, 109.147 50.228, 126.809 59.836 C 141.555 67.858, 147.753 76.633, 148.729 90.870 C 149.704 105.101, 145.869 113.893, 136.691 118.467 C 128.265 122.665, 120.023 121.413, 112.501 114.792 C 106.518 109.526, 104.176 102.924, 103.038 88.120 C 102.038 75.113, 101.010 69.794, 97.860 61.315 C 89.594 39.067, 70.042 21.376, 47 15.295 C 36.742 12.588, 17.638 12.891, 7.750 15.919 L 0 18.291 0 32.146 C 0 39.766, 0.112 45.991, 0.250 45.980 C 0.388 45.970, 4.100 45.310, 8.500 44.515 C 36.455 39.464, 68.975 46.824, 85.241 61.883 C 94.946 70.869, 97.519 77.147, 99.955 97.791 C 102.501 119.373, 113.476 137.721, 127.783 144.316 C 135.150 147.711, 148.568 147.429, 156.143 143.720 C 167.142 138.333, 174.112 127.622, 176.193 112.907 C 178.922 93.615, 171.003 76.173, 155.189 66.642 C 152.060 64.756, 142.819 60.405, 134.654 56.974 C 126.489 53.543, 117.939 49.326, 115.654 47.603 C 103.408 38.370, 104.284 18.697, 117.251 11.770 C 121.442 9.531, 121.988 9.500, 157.500 9.500 L 193.500 9.500 200 12.610 C 222.118 23.194, 233.915 49.467, 232.728 85.500 C 232.147 103.142, 230.155 111.822, 223.545 125.500 C 214.238 144.761, 204.466 151.300, 181 153.972 C 163.664 155.947, 151.496 160.888, 141.724 169.924 C 128.884 181.795, 125.910 197.676, 133.789 212.304 C 137.189 218.617, 142.736 223.505, 150.877 227.362 C 157.244 230.379, 158.002 230.500, 170.500 230.500 C 183.008 230.500, 183.746 230.382, 190 227.374 C 203.021 221.113, 209.089 213.465, 218.024 192.053 C 225.645 173.790, 227.191 170.964, 231.871 166.736 C 241.192 158.315, 257.069 159.944, 263.299 169.962 C 265.339 173.241, 265.541 175.112, 266.066 195.500 C 266.560 214.667, 266.893 218.080, 268.656 222 C 274.450 234.886, 290.087 240.106, 303.392 233.596 C 310.227 230.252, 313.026 226.938, 319.969 213.966 C 328.263 198.469, 335.369 192.585, 348.889 190.021 C 354.252 189.004, 364.079 189.876, 369.056 191.810 C 382.705 197.113, 386.130 214.755, 375.792 226.499 C 370.722 232.259, 364.243 234.658, 351.404 235.529 C 324.982 237.321, 309.584 244.097, 293.909 260.830 C 280.210 275.453, 274.862 289.226, 274.816 310 C 274.795 319.567, 275.234 322.993, 277.430 330.385 C 284.979 355.798, 306.543 377.060, 332.500 384.686 C 337.987 386.298, 345.872 386.475, 424.750 386.761 C 510.954 387.073, 511 387.072, 511 385.037 C 511 383.005, 510.814 383, 430.250 382.984 C 343.291 382.968, 342.637 382.932, 333.853 377.736 C 320.405 369.782, 311.279 354.707, 306.430 332.439 C 304.334 322.811, 304.042 300.511, 305.887 291 C 310.419 267.648, 323.141 248.463, 337.715 243.002 C 340.897 241.810, 348.675 240.190, 355 239.401 C 387.739 235.322, 406.508 220.951, 407.766 199 C 408.388 188.152, 405.716 181.436, 397.579 173.397 C 388.591 164.517, 383.160 162.588, 367 162.538 C 354.972 162.501, 354.245 162.621, 347.741 165.701 C 334.750 171.855, 328.606 179.717, 318.983 202.500 C 312.901 216.899, 309.577 223.132, 306.344 226.197 C 297.725 234.369, 282.406 233.700, 275.732 224.859 C 271.765 219.604, 271.012 214.863, 271.006 195.116 C 271.002 184.250, 270.533 175.174, 269.859 172.922 C 264.646 155.523, 238.290 151.240, 225.944 165.786 C 224.050 168.018, 220.475 173.817, 218 178.672 C 209.086 196.159, 198.609 203.338, 181.930 203.386 C 166.337 203.432, 157.093 196.429, 156.185 183.885 C 155.621 176.088, 157.845 170.320, 163.381 165.216 C 168.934 160.098, 174.666 158.356, 190 157.125 C 210.637 155.469, 226.137 149.203, 238.959 137.332 C 255.838 121.705, 263.895 101.627, 262.753 78.046 C 261.850 59.413, 255.147 44.412, 241.202 29.816 C 228.565 16.589, 216.179 9.694, 199.162 6.414 C 190.237 4.694, 124.950 4.559, 118.558 6.248 M 0 205.376 C 0 228.720, 0.384 238.343, 1.628 246.201 C 3.416 257.486, 3.082 287.815, 1.087 295.500 C 0.475 297.856, 0.038 312.785, 0.024 331.818 L 0 364.136 3.250 361.892 C 9.805 357.365, 25.049 340.994, 30.510 332.616 C 56.465 292.797, 55.209 240.897, 27.370 202.900 C 22.214 195.862, 9.628 182.497, 3.750 177.818 L 0 174.832 0 205.376 M 9.434 385.894 C 0.993 388.992, -0 389.924, 0 394.755 L 0 399.028 3.903 396.446 C 15.299 388.904, 33.251 389.450, 42.977 397.634 C 45.360 399.639, 46.809 400.054, 50.566 399.806 L 55.210 399.500 50.855 395.193 C 48.460 392.824, 43.610 389.462, 40.079 387.721 C 34.422 384.933, 32.518 384.526, 24.079 384.296 C 16.728 384.095, 13.322 384.467, 9.434 385.894"/></svg>
     <figure class="g g-7 reveal">
-      <img src="img/g-architecture.jpg" width="2000" height="909" alt="Fachada lateral del proyecto" loading="lazy">
-      <figcaption><span>07</span><b>Arquitectura</b><em>Balcones que ordenan la fachada y regalan sombra.</em></figcaption>
+      <img src="../img/g-architecture.jpg" width="2000" height="909" alt="Side façade of the project" loading="lazy">
+      <figcaption><span>07</span><b>Architecture</b><em>Balconies that order the façade and give shade.</em></figcaption>
     </figure>
   </div>
   <div class="scroll-line scroll-line--dark" aria-hidden="true"><span></span></div>
@@ -513,33 +513,33 @@
   <svg class="orn orn-faq" viewBox="0 0 375 365" aria-hidden="true" preserveAspectRatio="xMinYMin meet"><use href="#orn1-path"/></svg>
   <div class="faq__inner">
     <div class="faq__head">
-      <div class="section-index section-index--coda"><span class="idx-label">Preguntas frecuentes</span></div>
-      <h2 class="faq__title reveal">Lo que<br>querrás saber</h2>
+      <div class="section-index section-index--coda"><span class="idx-label">Frequently asked questions</span></div>
+      <h2 class="faq__title reveal">What you'll<br>want to know</h2>
     </div>
     <div class="faq__list reveal">
       <details class="faq__item is-open" open>
-        <summary>¿Dónde está ubicado Passage Amador?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>Passage está ubicado en la Calzada de Amador, Ciudad de Panamá, entre el Canal, el Pacífico y la ciudad, a minutos del Casco Antiguo.</p></div></div>
+        <summary>Where is Passage Amador located?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>Passage is located on the Amador Causeway, Panama City, between the Canal, the Pacific and the city, minutes from Casco Antiguo.</p></div></div>
       </details>
       <details class="faq__item" open>
-        <summary>¿Qué tipos de residencias ofrece?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>Passage ofrece distintas tipologías de residencias. En esta página presentamos una selección de cinco: Casia, Almendro, Cedro, Panamá y Palma Real, con opciones desde 51 hasta 213 m². Solicita información para conocer otras configuraciones y disponibilidad.</p></div></div>
+        <summary>What types of residences are offered?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>Passage offers a range of residence layouts. This page presents a selection of five: Casia, Almendro, Cedro, Panamá and Palma Real, with options from 51 to 213 m². Request information to learn about other configurations and availability.</p></div></div>
       </details>
       <details class="faq__item" open>
-        <summary>¿Cómo puedo conocer precios y disponibilidad?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>La disponibilidad puede variar por tipología, torre y nivel. Solicita información y nuestro equipo te compartirá las opciones y precios disponibles actualmente.</p></div></div>
+        <summary>How can I find out about prices and availability?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>Availability may vary by layout, tower and level. Request information and our team will share the options and prices currently available.</p></div></div>
       </details>
       <details class="faq__item" open>
-        <summary>¿Cuándo está prevista la entrega?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>Torres 3 y 4: primer trimestre de 2028. Torres 1 y 2: tercer trimestre de 2029. Fechas estimadas y sujetas a confirmación del desarrollador.</p></div></div>
+        <summary>When is delivery expected?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>Towers 3 and 4: first quarter of 2028. Towers 1 and 2: third quarter of 2029. Estimated dates, subject to developer confirmation.</p></div></div>
       </details>
       <details class="faq__item" open>
-        <summary>¿Qué amenidades ofrece el proyecto?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>Cada torre cuenta con un rooftop privado con piscina infinita, solar deck, lounge, área de BBQ y espacio de co-working. La Casa Club, común a toda la comunidad, reúne un spa con área de masajes, sauna y vapor, piscina con área para tomar sol, BBQ y salón lounge para reuniones. El proyecto incluye además cancha de pádel y bike station; a nivel comunitario, área comercial, parque y canchas de tenis.</p></div></div>
+        <summary>What amenities does the project offer?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>Every tower has a private rooftop with an infinity pool, solar deck, lounge, BBQ area and co-working space. The Clubhouse, shared by the whole community, brings together a spa with massage area, sauna and steam room, a pool with sun deck, BBQ and a lounge room for gatherings. The project also includes a padel court and a bike station; at the community level, a retail area, a park and tennis courts.</p></div></div>
       </details>
       <details class="faq__item" open>
-        <summary>¿Cómo puedo conocer Passage personalmente?<span aria-hidden="true"></span></summary>
-        <div class="faq__body"><div><p>Puedes solicitar una visita y conversar con nuestro equipo en la sala de ventas de Passage en la Calzada de Amador. Déjanos tus datos o contáctanos directamente por WhatsApp para coordinar.</p></div></div>
+        <summary>How can I visit Passage in person?<span aria-hidden="true"></span></summary>
+        <div class="faq__body"><div><p>You can request a visit and meet our team at the Passage sales gallery on the Amador Causeway. Leave us your details or contact us directly via WhatsApp to arrange it.</p></div></div>
       </details>
     </div>
   </div>
@@ -548,24 +548,24 @@
 <!-- 10 PROYECTO — banda oscura sobre render al atardecer (img/behind-dusk.jpg) con el ledger de credenciales:
      desarrollador, constructora, banco, etapa de obra, entrega estimada, arquitectura y paisajismo (con enlaces). -->
 <section class="behind behind--dark" id="proyecto">
-  <div class="behind__ground" aria-hidden="true"><img src="img/behind-dusk.jpg" width="1672" height="941" alt="" loading="lazy"></div>
+  <div class="behind__ground" aria-hidden="true"><img src="../img/behind-dusk.jpg" width="1672" height="941" alt="" loading="lazy"></div>
   <div class="behind__inner">
     <div class="behind__head">
       <div class="section-index section-index--light">
         <span class="idx">08</span>
-        <span class="idx-label">El proyecto</span>
+        <span class="idx-label">The project</span>
       </div>
-      <h2 class="behind__title reveal">Quienes lo<br>hacen posible</h2>
-      <p class="behind__lead reveal">Un proyecto de esta escala también se define por quienes están detrás de él. La trayectoria, el estado de la obra y los equipos responsables, a la vista.</p>
+      <h2 class="behind__title reveal">Those who<br>make it possible</h2>
+      <p class="behind__lead reveal">A project of this scale is also defined by the people behind it. Track record, construction status and the teams responsible, in plain sight.</p>
     </div>
     <dl class="ledger ledger--behind reveal">
-      <div class="ledger__row"><dt>Desarrollador</dt><dd><span class="big">Inmobiliaria 360</span><small>Desarrollo y comercialización del proyecto</small></dd></div>
-      <div class="ledger__row"><dt>Constructora</dt><dd><span class="big">Constructora RM</span><small>Ejecución de obra</small></dd></div>
-      <div class="ledger__row"><dt>Financiamiento</dt><dd><span class="big">BAC Panamá</span><small>Banco financiador del proyecto</small></dd></div>
-      <div class="ledger__row"><dt>Etapa actual</dt><dd><span class="big">Infraestructura y cimientos</span><small>Movimiento de tierra en curso. Avance verificable en sala de ventas.</small></dd></div>
-      <div class="ledger__row"><dt>Entrega estimada</dt><dd><span class="big">Torres 3 y 4 · 1.er trimestre 2028</span><small>Torres 1 y 2 · 3.er trimestre 2029. Fechas sujetas a confirmación del desarrollador.</small></dd></div>
-      <div class="ledger__row"><dt>Arquitectura</dt><dd><span class="big">RAWA</span><small>Arq. Ricardo Arosemena · <a href="https://rawarq.com/" target="_blank" rel="noopener">rawarq.com</a></small></dd></div>
-      <div class="ledger__row"><dt>Paisajismo</dt><dd><span class="big">LA_AP</span><small>Arq. Luis Alfaro · <a href="https://www.laaparq.com/" target="_blank" rel="noopener">laaparq.com</a></small></dd></div>
+      <div class="ledger__row"><dt>Developer</dt><dd><span class="big">Inmobiliaria 360</span><small>Project development and sales</small></dd></div>
+      <div class="ledger__row"><dt>Builder</dt><dd><span class="big">Constructora RM</span><small>Construction</small></dd></div>
+      <div class="ledger__row"><dt>Financing</dt><dd><span class="big">BAC Panamá</span><small>Project financing bank</small></dd></div>
+      <div class="ledger__row"><dt>Current stage</dt><dd><span class="big">Infrastructure and foundations</span><small>Earthworks under way. Progress verifiable at the sales gallery.</small></dd></div>
+      <div class="ledger__row"><dt>Estimated delivery</dt><dd><span class="big">Towers 3 and 4 · Q1 2028</span><small>Towers 1 and 2 · Q3 2029. Dates subject to developer confirmation.</small></dd></div>
+      <div class="ledger__row"><dt>Architecture</dt><dd><span class="big">RAWA</span><small>Ricardo Arosemena, Architect · <a href="https://rawarq.com/" target="_blank" rel="noopener">rawarq.com</a></small></dd></div>
+      <div class="ledger__row"><dt>Landscape</dt><dd><span class="big">LA_AP</span><small>Luis Alfaro, Architect · <a href="https://www.laaparq.com/" target="_blank" rel="noopener">laaparq.com</a></small></dd></div>
     </dl>
   </div>
 </section>
@@ -578,13 +578,13 @@
   <div class="contact__left">
     <svg class="orn orn-contact" viewBox="0 0 375 365" aria-hidden="true" preserveAspectRatio="xMinYMax meet"><use href="#orn1-path"/></svg>
     <div class="contact__left-inner">
-      <div class="section-index section-index--light section-index--coda"><span class="idx-label">Contacto</span></div>
-      <h2 class="contact__title reveal">Descubre tu<br>próximo capítulo</h2>
-      <p class="contact__lead reveal">Conoce las residencias, tipologías y disponibilidad actual de Passage Amador.</p>
+      <div class="section-index section-index--light section-index--coda"><span class="idx-label">Contact</span></div>
+      <h2 class="contact__title reveal">Discover your<br>next chapter</h2>
+      <p class="contact__lead reveal">Get to know the residences, layouts and current availability at Passage Amador.</p>
       <div class="contact__direct reveal">
         <address>
-          <span>Sala de ventas</span>
-          <span>Causeway de Amador, Panamá</span>
+          <span>Sales gallery</span>
+          <span>Amador Causeway, Panama</span>
         </address>
       </div>
     </div>
@@ -593,7 +593,7 @@
   <div class="contact__right">
     <form class="form" id="leadForm" novalidate>
       <div class="form__field">
-        <label for="f-nombre">Nombre completo</label>
+        <label for="f-nombre">Full name</label>
         <input type="text" id="f-nombre" name="nombre" autocomplete="name" required>
       </div>
       <div class="form__row">
@@ -602,30 +602,30 @@
           <input type="email" id="f-email" name="email" autocomplete="email" required>
         </div>
         <div class="form__field">
-          <label for="f-tel">Teléfono / WhatsApp</label>
+          <label for="f-tel">Phone / WhatsApp</label>
           <input type="tel" id="f-tel" name="telefono" autocomplete="tel" required>
         </div>
       </div>
       <div class="form__field">
-        <label for="f-interes">¿Qué estás buscando?</label>
+        <label for="f-interes">What are you looking for?</label>
         <select id="f-interes" name="interes" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="vivir">Vivir en Passage</option>
-          <option value="segunda-residencia">Segunda residencia</option>
-          <option value="inversion">Oportunidad de inversión</option>
-          <option value="opciones">Conocer opciones disponibles</option>
+          <option value="" disabled selected>Select an option</option>
+          <option value="vivir">Living at Passage</option>
+          <option value="segunda-residencia">Second home</option>
+          <option value="inversion">Investment opportunity</option>
+          <option value="opciones">See available options</option>
         </select>
       </div>
       <div class="form__foot">
-        <p class="form__legal">Al enviar tus datos, aceptas que el equipo de Passage te contacte con información del proyecto. <a href="#privacidad">Política de privacidad</a>.</p>
+        <p class="form__legal">By submitting your details, you agree to be contacted by the Passage team with project information. <a href="#privacidad">Privacy policy</a>.</p>
         <div class="form__actions">
-          <button type="submit" class="btn btn--dark">Solicitar información</button>
-          <a href="https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR." target="_blank" rel="noopener" class="btn btn--outline-green"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8.4 19.3L4 20z"/><path d="M9.2 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6.6 1 1.6 1.9 2.7 2.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5-.1.9-.7 1.6-1.6 1.8-1.1.2-2.6-.4-4.4-2-1.7-1.6-2.5-3.1-2.6-4.3-.1-.8.1-1.4.6-2.1z"/></svg>Contactar por WhatsApp</a>
+          <button type="submit" class="btn btn--dark">Request information</button>
+          <a href="https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR." target="_blank" rel="noopener" class="btn btn--outline-green"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8.4 19.3L4 20z"/><path d="M9.2 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6.6 1 1.6 1.9 2.7 2.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5-.1.9-.7 1.6-1.6 1.8-1.1.2-2.6-.4-4.4-2-1.7-1.6-2.5-3.1-2.6-4.3-.1-.8.1-1.4.6-2.1z"/></svg>Contact via WhatsApp</a>
         </div>
       </div>
       <div class="form__success" id="formSuccess" hidden>
-        <span class="idx">Gracias</span>
-        <p>Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir información y disponibilidad actualizada.</p>
+        <span class="idx">Thank you</span>
+        <p>We have received your request. An advisor will contact you shortly with information and current availability.</p>
       </div>
     </form>
   </div>
@@ -638,17 +638,17 @@
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__brand">
-      <img src="img/logo-white.png" width="900" height="262" alt="Passage Panamá" class="footer__logo-img">
-      <p class="footer__tag">Entre el Canal, el Pacífico y la ciudad.</p>
+      <img src="../img/logo-white.png" width="900" height="262" alt="Passage Panama" class="footer__logo-img">
+      <p class="footer__tag">Between the Canal, the Pacific and the city.</p>
     </div>
     <nav class="footer__nav footer__nav--cols">
-      <div><span class="footer__col-title">Proyecto</span><a href="#residencias">Residencias</a><a href="#ubicacion">Ubicación</a><a href="#amenidades">Estilo de vida</a><a href="#proyecto">El proyecto</a></div>
-      <div><span class="footer__col-title">Contacto</span><a href="#contacto">Solicitar información</a><a href="https://wa.me/50760000000" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:ventas@passagepanama.com">Correo de ventas</a></div>
-      <div><span class="footer__col-title">Legal</span><a href="#privacidad">Política de privacidad</a><a href="#cookies">Preferencias de cookies</a><a href="#terminos">Términos</a></div>
+      <div><span class="footer__col-title">Project</span><a href="#residencias">Residences</a><a href="#ubicacion">Location</a><a href="#amenidades">Lifestyle</a><a href="#proyecto">The project</a></div>
+      <div><span class="footer__col-title">Contact</span><a href="#contacto">Request information</a><a href="https://wa.me/50760000000" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:ventas@passagepanama.com">Sales email</a></div>
+      <div><span class="footer__col-title">Legal</span><a href="#privacidad">Privacy policy</a><a href="#cookies">Cookie preferences</a><a href="#terminos">Terms</a></div>
     </nav>
     <div class="footer__meta">
-      <span>Amador, Panamá</span>
-      <span>8°55′ N — 79°32′ O</span>
+      <span>Amador, Panama</span>
+      <span>8°55′ N — 79°32′ W</span>
       <div class="footer__social">
         <!-- PENDIENTE: URLs de redes sociales -->
         <a href="#">Instagram</a>
@@ -658,11 +658,11 @@
     </div>
   </div>
   <div class="footer__bottom">
-    <span>© 2026 Passage. Imágenes referenciales; los renders pueden variar respecto al proyecto final.</span><a href="en/" class="footer__lang" lang="en" hreflang="en"><span class="is-on">ES</span> / <span>EN</span></a>
-    <span>Amador, Panamá</span>
+    <span>© 2026 Passage. Reference images; renders may differ from the final project.</span><a href="../" class="footer__lang" lang="es" hreflang="es"><span>ES</span> / <span class="is-on">EN</span></a>
+    <span>Amador, Panama</span>
   </div>
 </footer>
 
-<script src="main.js?v=202609181757"></script>
+<script src="../main.js?v=202609181757"></script>
 </body>
 </html>

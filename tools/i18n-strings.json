@@ -1,0 +1,1352 @@
+[
+  {
+    "kind": "text",
+    "text": "Passage Amador — Residencias en la Calzada de Amador, vecinas del Canal de Panamá",
+    "ctx": "meta>title"
+  },
+  {
+    "kind": "attr:content",
+    "text": "Passage Amador: residencias en la Calzada de Amador, vecinas del Canal de Panamá. Un nuevo capítulo entre el Pacífico, la naturaleza y la ciudad.",
+    "ctx": "meta"
+  },
+  {
+    "kind": "attr:content",
+    "text": "Passage Amador",
+    "ctx": "meta"
+  },
+  {
+    "kind": "attr:content",
+    "text": "Passage Amador — Un nuevo capítulo en Amador",
+    "ctx": "meta"
+  },
+  {
+    "kind": "attr:content",
+    "text": "Residencias en la Calzada de Amador: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.",
+    "ctx": "meta"
+  },
+  {
+    "kind": "attr:content",
+    "text": "summary_large_image",
+    "ctx": "meta"
+  },
+  {
+    "kind": "attr:content",
+    "text": "https://passage-amador.vercel.app/img/hero.jpg",
+    "ctx": "meta"
+  },
+  {
+    "kind": "jsonld",
+    "text": "Residencias en la Calzada de Amador, vecinas del Canal de Panamá. Cinco tipologías de 51 a 213 m², rooftop privado por torre y Casa Club.",
+    "ctx": "description"
+  },
+  {
+    "kind": "jsonld",
+    "text": "Rooftop privado por torre con piscina infinita",
+    "ctx": "name"
+  },
+  {
+    "kind": "jsonld",
+    "text": "Casa Club con spa, piscina y salón lounge",
+    "ctx": "name"
+  },
+  {
+    "kind": "jsonld",
+    "text": "Cancha de pádel",
+    "ctx": "name"
+  },
+  {
+    "kind": "text",
+    "text": "Saltar al contenido",
+    "ctx": "body>a"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Passage Panamá",
+    "ctx": "a"
+  },
+  {
+    "kind": "text",
+    "text": "Residencias",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "Ubicación",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "Estilo de vida",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "Proyecto",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Cambiar idioma",
+    "ctx": "a"
+  },
+  {
+    "kind": "text",
+    "text": "ES",
+    "ctx": "a>span"
+  },
+  {
+    "kind": "text",
+    "text": "/",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "EN",
+    "ctx": "a>span"
+  },
+  {
+    "kind": "text",
+    "text": "Solicitar información",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Abrir menú",
+    "ctx": "button"
+  },
+  {
+    "kind": "text",
+    "text": "01",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "02",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "03",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "Tipologías",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "04",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "05",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "Arquitectura",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "06",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "Galería",
+    "ctx": "nav>a"
+  },
+  {
+    "kind": "text",
+    "text": "07",
+    "ctx": "a>i"
+  },
+  {
+    "kind": "text",
+    "text": "Contactar por WhatsApp →",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "Amador, Panamá",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Passage Amador al atardecer en la Calzada de Amador",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Panamá: 8°55′ N — 79°32′ O",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Un nuevo",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "capítulo",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "en Amador",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Residencias en la Calzada: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "Explorar proyecto",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "Passage",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Donde la",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "ciudad respira",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "El agua abre el horizonte. La ciudad marca el ritmo. La naturaleza devuelve la calma. Amador no es un destino: es una forma única de vivir en Panamá.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Datos clave",
+    "ctx": "ul"
+  },
+  {
+    "kind": "text",
+    "text": "Vista al Pacífico",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "Espacios desde · 51 a 213 m²",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "Calzada de Amador",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "15 min del centro",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Amanecer sobre el Pacífico desde la piscina del rooftop",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Rooftop",
+    "ctx": "figcaption>span"
+  },
+  {
+    "kind": "text",
+    "text": "Amanecer sobre el Pacífico, desde casa",
+    "ctx": "img>figcaption"
+  },
+  {
+    "kind": "text",
+    "text": "I",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Mar",
+    "ctx": "svg>h3"
+  },
+  {
+    "kind": "text",
+    "text": "Un siglo de historia del Canal como horizonte, el Pacífico al frente y la brisa que cruza cada balcón.",
+    "ctx": "svg>p"
+  },
+  {
+    "kind": "text",
+    "text": "II",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Ciudad",
+    "ctx": "svg>h3"
+  },
+  {
+    "kind": "text",
+    "text": "El Casco Antiguo y el centro a minutos. La energía de Panamá, con el refugio de vivir a su orilla.",
+    "ctx": "svg>p"
+  },
+  {
+    "kind": "text",
+    "text": "III",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Naturaleza",
+    "ctx": "svg>h3"
+  },
+  {
+    "kind": "text",
+    "text": "Más de 5.000 m² de paisajismo con especies nativas envuelven las torres. Aquí, la mejor amenidad es el jardín.",
+    "ctx": "svg>p"
+  },
+  {
+    "kind": "text",
+    "text": "Entre el Canal",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "y la ciudad",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "En la Calzada de Amador, construida con las rocas del Corte Culebra, con el Canal de Panamá como vecino y el Casco Antiguo a minutos.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "text",
+    "text": "Biomuseo",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "3",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "min",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "Marina de Amador",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Casco Antiguo",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "10",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Ciudad de Panamá",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "15",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Causeway de Amador",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "A tus pies",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Puente de las Américas",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "5",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Mapa esquemático de Amador con los puntos de interés cercanos",
+    "ctx": "div"
+  },
+  {
+    "kind": "text",
+    "text": "1 km",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "2 km",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "3 km",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Canal de Panamá",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Bahía de Panamá",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Océano Pacífico",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Cerro Ancón",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Isla Naos",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "Isla Flamenco",
+    "ctx": "circle>text"
+  },
+  {
+    "kind": "text",
+    "text": "N",
+    "ctx": "line>text"
+  },
+  {
+    "kind": "text",
+    "text": "La ciudad queda a la vista.",
+    "ctx": "line>p"
+  },
+  {
+    "kind": "text",
+    "text": "El ruido, no.",
+    "ctx": "br>span"
+  },
+  {
+    "kind": "text",
+    "text": "Vivir abierto",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "al horizonte",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Sala principal abierta a la terraza y al Pacífico",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Ventanales de piso a techo y terrazas que borran el límite entre dentro y fuera. Cada residencia mira al Pacífico y respira la brisa de la bahía.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "Recámaras",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Superficie",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "51",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "213",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "m²",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "Carácter",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Vistas al Pacífico",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Brisa cruzada en cada balcón",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Intimidad",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Oficio en cada detalle",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Balcón privado con vista al Puente de las Américas",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "La residencia no termina donde comienza la terraza.",
+    "ctx": "img>figcaption"
+  },
+  {
+    "kind": "text",
+    "text": "Tu espacio",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "Distintas tipologías, una misma relación con el exterior: luz, terrazas y el paisaje de Amador como parte de la vida cotidiana.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "text",
+    "text": "Modelo",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Recámaras · Baños",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Casia",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Single",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "1 recámara · 1 baño",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Balcón doble acceso",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "Solicitar detalles",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "→",
+    "ctx": "span>i"
+  },
+  {
+    "kind": "text",
+    "text": "Almendro",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Flex",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "2 recámaras · 2 baños",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Balcón triple acceso",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "80",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Cedro",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "3 recámaras · 2 baños",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "116",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Panamá",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "122",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Palma Real",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Penthouse",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "3 recámaras + servicio · 5 baños",
+    "ctx": "span>span"
+  },
+  {
+    "kind": "text",
+    "text": "Balcón tipo terraza",
+    "ctx": "span>small"
+  },
+  {
+    "kind": "text",
+    "text": "Superficies aproximadas según brochure; pueden variar por torre y nivel. Selecciona un modelo para solicitar plantas, orientaciones y disponibilidad actualizada.",
+    "ctx": "a>p"
+  },
+  {
+    "kind": "text",
+    "text": "Amenidades",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Cada torre tiene su rooftop. La comunidad, su Casa Club. Y Amador, todo lo demás.",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "Privado, en cada torre",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Piscina infinita",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Solar deck",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Lounge",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Área BBQ",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Co-working",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Casa Club",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "El área común de la comunidad",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Spa con masajes, sauna y vapor",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Piscina y solárium",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "BBQ",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Salón lounge",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Deporte",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "En movimiento",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Bike station",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "La Calzada para correr y pedalear",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Comunidad",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Amador, a la puerta",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Área comercial",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Parque comunitario",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Canchas de tenis comunitarias",
+    "ctx": "span>em"
+  },
+  {
+    "kind": "text",
+    "text": "Arquitectura y diseño",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Una fachada",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "pensada para",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "la sombra",
+    "ctx": "br>br"
+  },
+  {
+    "kind": "text",
+    "text": "y la brisa",
+    "ctx": "br>br"
+  },
+  {
+    "kind": "text",
+    "text": "Balcones profundos, ventanales de piso a techo y un ritmo vertical que ordena la fachada. Inspirada en la arquitectura canalera, responde primero al clima de Amador; el estilo viene después. Cuatro torres, como las cuatro islas que la Calzada unió a la ciudad.",
+    "ctx": "br>p"
+  },
+  {
+    "kind": "text",
+    "text": "RAWA · Arq. Ricardo Arosemena",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "Paisajismo",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "LA_AP · Arq. Luis Alfaro",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "Sostenibilidad",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "EDGE",
+    "ctx": "em>b"
+  },
+  {
+    "kind": "text",
+    "text": "Certificación EDGE · paneles solares · pisos Active Plus",
+    "ctx": "li>em"
+  },
+  {
+    "kind": "text",
+    "text": "Acabados",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "Pisos porcelánicos gris 1.20 × 0.60 · sobres de cuarzo blanco · mobiliario hidrófugo en roble y gris coco",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "text",
+    "text": "Grifería y baños",
+    "ctx": "li>span"
+  },
+  {
+    "kind": "text",
+    "text": "TEKA · grifería cromada de última generación y muebles de baño",
+    "ctx": "ul>li"
+  },
+  {
+    "kind": "attr:aria-label",
+    "text": "Materiales",
+    "ctx": "ul"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Porcelánico gris",
+    "ctx": "img"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Cuarzo blanco",
+    "ctx": "img"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Roble",
+    "ctx": "img"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Fachada de Passage Amador con balcones profundos",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "La vida,",
+    "ctx": "svg>h2"
+  },
+  {
+    "kind": "text",
+    "text": "mirando hacia afuera",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "Interiores abiertos a la luz, terrazas frente al paisaje y materiales elegidos para acompañar la vida junto al Pacífico.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Recámara principal con vista a la bahía",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Recámara principal",
+    "ctx": "figcaption>b"
+  },
+  {
+    "kind": "text",
+    "text": "Despertar con la bahía como primera luz del día.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Baño con porcelánico gris, mueble en roble y grifería TEKA",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Baños",
+    "ctx": "figcaption>b"
+  },
+  {
+    "kind": "text",
+    "text": "Porcelánico gris, roble y grifería TEKA.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Vista aérea del proyecto entre jardines y Pacífico",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Desde el agua",
+    "ctx": "figcaption>b"
+  },
+  {
+    "kind": "text",
+    "text": "El conjunto entre jardines y Pacífico, con la Calzada al fondo.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Terraza con vista al mar",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Terraza",
+    "ctx": "figcaption>b"
+  },
+  {
+    "kind": "text",
+    "text": "El deck donde la tarde se alarga sin prisa.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Club house",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Un salón para reunirse sin salir de casa.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Jacuzzi al aire libre con vegetación",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Spa",
+    "ctx": "figcaption>b"
+  },
+  {
+    "kind": "text",
+    "text": "Sauna, vapor y masajes en la Casa Club.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "attr:alt",
+    "text": "Fachada lateral del proyecto",
+    "ctx": "img"
+  },
+  {
+    "kind": "text",
+    "text": "Balcones que ordenan la fachada y regalan sombra.",
+    "ctx": "figcaption>em"
+  },
+  {
+    "kind": "text",
+    "text": "Preguntas frecuentes",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Lo que",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "querrás saber",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "¿Dónde está ubicado Passage Amador?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "Passage está ubicado en la Calzada de Amador, Ciudad de Panamá, entre el Canal, el Pacífico y la ciudad, a minutos del Casco Antiguo.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "¿Qué tipos de residencias ofrece?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "Passage ofrece distintas tipologías de residencias. En esta página presentamos una selección de cinco: Casia, Almendro, Cedro, Panamá y Palma Real, con opciones desde 51 hasta 213 m². Solicita información para conocer otras configuraciones y disponibilidad.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "¿Cómo puedo conocer precios y disponibilidad?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "La disponibilidad puede variar por tipología, torre y nivel. Solicita información y nuestro equipo te compartirá las opciones y precios disponibles actualmente.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "¿Cuándo está prevista la entrega?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "Torres 3 y 4: primer trimestre de 2028. Torres 1 y 2: tercer trimestre de 2029. Fechas estimadas y sujetas a confirmación del desarrollador.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "¿Qué amenidades ofrece el proyecto?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "Cada torre cuenta con un rooftop privado con piscina infinita, solar deck, lounge, área de BBQ y espacio de co-working. La Casa Club, común a toda la comunidad, reúne un spa con área de masajes, sauna y vapor, piscina con área para tomar sol, BBQ y salón lounge para reuniones. El proyecto incluye además cancha de pádel y bike station; a nivel comunitario, área comercial, parque y canchas de tenis.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "¿Cómo puedo conocer Passage personalmente?",
+    "ctx": "details>summary"
+  },
+  {
+    "kind": "text",
+    "text": "Puedes solicitar una visita y conversar con nuestro equipo en la sala de ventas de Passage en la Calzada de Amador. Déjanos tus datos o contáctanos directamente por WhatsApp para coordinar.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "08",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "El proyecto",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Quienes lo",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "hacen posible",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "Un proyecto de esta escala también se define por quienes están detrás de él. La trayectoria, el estado de la obra y los equipos responsables, a la vista.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "text",
+    "text": "Desarrollador",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Inmobiliaria 360",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Desarrollo y comercialización del proyecto",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "Constructora",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Constructora RM",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Ejecución de obra",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "Financiamiento",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "BAC Panamá",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Banco financiador del proyecto",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "Etapa actual",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Infraestructura y cimientos",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Movimiento de tierra en curso. Avance verificable en sala de ventas.",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "Entrega estimada",
+    "ctx": "div>dt"
+  },
+  {
+    "kind": "text",
+    "text": "Torres 3 y 4 · 1.er trimestre 2028",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Torres 1 y 2 · 3.er trimestre 2029. Fechas sujetas a confirmación del desarrollador.",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "RAWA",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Arq. Ricardo Arosemena ·",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "rawarq.com",
+    "ctx": "small>a"
+  },
+  {
+    "kind": "text",
+    "text": "LA_AP",
+    "ctx": "dd>span"
+  },
+  {
+    "kind": "text",
+    "text": "Arq. Luis Alfaro ·",
+    "ctx": "dd>small"
+  },
+  {
+    "kind": "text",
+    "text": "laaparq.com",
+    "ctx": "small>a"
+  },
+  {
+    "kind": "text",
+    "text": "Contacto",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Descubre tu",
+    "ctx": "div>h2"
+  },
+  {
+    "kind": "text",
+    "text": "próximo capítulo",
+    "ctx": "h2>br"
+  },
+  {
+    "kind": "text",
+    "text": "Conoce las residencias, tipologías y disponibilidad actual de Passage Amador.",
+    "ctx": "h2>p"
+  },
+  {
+    "kind": "text",
+    "text": "Sala de ventas",
+    "ctx": "address>span"
+  },
+  {
+    "kind": "text",
+    "text": "Causeway de Amador, Panamá",
+    "ctx": "address>span"
+  },
+  {
+    "kind": "text",
+    "text": "Nombre completo",
+    "ctx": "div>label"
+  },
+  {
+    "kind": "text",
+    "text": "Email",
+    "ctx": "div>label"
+  },
+  {
+    "kind": "text",
+    "text": "Teléfono / WhatsApp",
+    "ctx": "div>label"
+  },
+  {
+    "kind": "text",
+    "text": "¿Qué estás buscando?",
+    "ctx": "div>label"
+  },
+  {
+    "kind": "text",
+    "text": "Selecciona una opción",
+    "ctx": "select>option"
+  },
+  {
+    "kind": "text",
+    "text": "Vivir en Passage",
+    "ctx": "select>option"
+  },
+  {
+    "kind": "text",
+    "text": "Segunda residencia",
+    "ctx": "select>option"
+  },
+  {
+    "kind": "text",
+    "text": "Oportunidad de inversión",
+    "ctx": "select>option"
+  },
+  {
+    "kind": "text",
+    "text": "Conocer opciones disponibles",
+    "ctx": "select>option"
+  },
+  {
+    "kind": "text",
+    "text": "Al enviar tus datos, aceptas que el equipo de Passage te contacte con información del proyecto.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "Política de privacidad",
+    "ctx": "p>a"
+  },
+  {
+    "kind": "text",
+    "text": ".",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "Contactar por WhatsApp",
+    "ctx": "svg>path"
+  },
+  {
+    "kind": "text",
+    "text": "Gracias",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir información y disponibilidad actualizada.",
+    "ctx": "div>p"
+  },
+  {
+    "kind": "text",
+    "text": "Entre el Canal, el Pacífico y la ciudad.",
+    "ctx": "img>p"
+  },
+  {
+    "kind": "text",
+    "text": "WhatsApp",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "Correo de ventas",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "Legal",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Preferencias de cookies",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "Términos",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "8°55′ N — 79°32′ O",
+    "ctx": "div>span"
+  },
+  {
+    "kind": "text",
+    "text": "Instagram",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "LinkedIn",
+    "ctx": "div>a"
+  },
+  {
+    "kind": "text",
+    "text": "© 2026 Passage. Imágenes referenciales; los renders pueden variar respecto al proyecto final.",
+    "ctx": "div>span"
+  }
+]
