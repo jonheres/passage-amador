@@ -2101,3 +2101,13 @@ body { overflow-x: clip; }
   .amenity__items { max-height: 0; opacity: 0; margin-top: 0; overflow: hidden; transition: max-height .5s var(--ease), opacity .4s, margin .4s var(--ease); }
   .amenity.is-active .amenity__items { max-height: 90px; opacity: 1; margin-top: 6px; }
 }
+
+/* Mobile map: bigger labels (viewBox units ≈ 0.47px on a 375px phone) */
+@media (max-width: 720px) {
+  .location__map .map text { font-size: 18px; }
+  .location__map .map-water { font-size: 17px; }
+  .location__map .map-project text { font-size: 30px !important; letter-spacing: 0.14em; }
+}
+@media (max-width: 720px) {
+  .location__map .map-point[data-point="puente"] text { transform: translateY(-12px); }
+}
