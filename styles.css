@@ -2119,3 +2119,14 @@ body { overflow-x: clip; }
   .location__map .map-project text { font-size: 27px !important; }
 }
 
+
+/* Section titles: staggered line reveal (same language as the hero) */
+.reveal-lines { opacity: 1; transform: none; transition: none; }
+.reveal-lines .line { display: block; overflow: hidden; padding-bottom: .12em; margin-bottom: -.12em; }
+.reveal-lines .line > span { display: block; transform: translateY(110%); }
+.reveal-lines.in .line > span { animation: lineUp 1.2s var(--ease) forwards; }
+.reveal-lines.in .line:nth-child(1) > span { animation-delay: .05s; }
+.reveal-lines.in .line:nth-child(2) > span { animation-delay: .18s; }
+.reveal-lines.in .line:nth-child(3) > span { animation-delay: .31s; }
+.reveal-lines.in .line:nth-child(4) > span { animation-delay: .44s; }
+@media (prefers-reduced-motion: reduce) { .reveal-lines .line > span { transform: none; animation: none; } }

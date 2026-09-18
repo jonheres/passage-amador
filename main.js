@@ -1,4 +1,14 @@
 /* PASSAGE AMADOR — interactions */
+/* Section titles: split <br> lines so they rise one by one, like the hero */
+(function () {
+  document.querySelectorAll('h2.reveal').forEach((h) => {
+    const lines = h.innerHTML.split(/<br\s*\/?>/i).map((l) => l.trim()).filter(Boolean);
+    if (lines.length < 2) return;
+    h.innerHTML = lines.map((l) => '<span class="line"><span>' + l + '</span></span>').join('');
+    h.classList.add('reveal-lines');
+  });
+})();
+
 (function () {
   "use strict";
 
