@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609180115">
+<link rel="stylesheet" href="styles.css?v=202609180127">
 </head>
 <body>
 
@@ -262,35 +262,35 @@
         <span>Recámaras · Baños</span>
         <span>Superficie</span>
       </div>
-      <a href="#contacto" class="type-row is-active" data-unit="casia" data-interes="casia">
+      <a href="#contacto" class="type-row is-active" data-unit="casia">
         <span class="type-row__figure" aria-hidden="true"><img src="img/unit-casia.png" alt="" loading="lazy"></span>
         <span class="type-row__type">Casia<small>Single</small></span>
         <span class="type-row__beds">1 recámara · 1 baño<small>Balcón doble acceso</small></span>
         <span class="type-row__area">51 <small>m²</small></span>
         <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
       </a>
-      <a href="#contacto" class="type-row" data-unit="almendro" data-interes="almendro">
+      <a href="#contacto" class="type-row" data-unit="almendro">
         <span class="type-row__figure" aria-hidden="true"><img src="img/unit-almendro.png" alt="" loading="lazy"></span>
         <span class="type-row__type">Almendro<small>Flex</small></span>
         <span class="type-row__beds">2 recámaras · 2 baños<small>Balcón triple acceso</small></span>
         <span class="type-row__area">80 <small>m²</small></span>
         <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
       </a>
-      <a href="#contacto" class="type-row" data-unit="cedro" data-interes="cedro">
+      <a href="#contacto" class="type-row" data-unit="cedro">
         <span class="type-row__figure" aria-hidden="true"><img src="img/unit-cedro.png" alt="" loading="lazy"></span>
         <span class="type-row__type">Cedro</span>
         <span class="type-row__beds">3 recámaras · 2 baños<small>Balcón doble acceso</small></span>
         <span class="type-row__area">116 <small>m²</small></span>
         <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
       </a>
-      <a href="#contacto" class="type-row" data-unit="panama" data-interes="panama">
+      <a href="#contacto" class="type-row" data-unit="panama">
         <span class="type-row__figure" aria-hidden="true"><img src="img/unit-panama.png" alt="" loading="lazy"></span>
         <span class="type-row__type">Panamá</span>
         <span class="type-row__beds">3 recámaras · 2 baños<small>Balcón triple acceso</small></span>
         <span class="type-row__area">122 <small>m²</small></span>
         <span class="type-row__cta">Solicitar detalles<i aria-hidden="true">→</i></span>
       </a>
-      <a href="#contacto" class="type-row" data-unit="palma-real" data-interes="palma-real">
+      <a href="#contacto" class="type-row" data-unit="palma-real">
         <span class="type-row__figure" aria-hidden="true"><img src="img/unit-palma-real.png" alt="" loading="lazy"></span>
         <span class="type-row__type">Palma Real<small>Penthouse</small></span>
         <span class="type-row__beds">3 recámaras + servicio · 5 baños<small>Balcón tipo terraza</small></span>
@@ -518,7 +518,7 @@
   <div class="contact__right">
     <form class="form" id="leadForm" novalidate>
       <div class="form__field">
-        <label for="f-nombre">Nombre</label>
+        <label for="f-nombre">Nombre completo</label>
         <input type="text" id="f-nombre" name="nombre" autocomplete="name" required>
       </div>
       <div class="form__row">
@@ -528,33 +528,26 @@
         </div>
         <div class="form__field">
           <label for="f-tel">Teléfono / WhatsApp</label>
-          <input type="tel" id="f-tel" name="telefono" autocomplete="tel">
+          <input type="tel" id="f-tel" name="telefono" autocomplete="tel" required>
         </div>
       </div>
       <div class="form__field">
-        <label for="f-interes">Interés</label>
+        <label for="f-interes">¿Qué estás buscando?</label>
         <select id="f-interes" name="interes" required>
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="casia">Casia — 1 recámara</option>
-          <option value="almendro">Almendro — 2 recámaras</option>
-          <option value="cedro">Cedro — 3 recámaras</option>
-          <option value="panama">Panamá — 3 recámaras</option>
-          <option value="palma-real">Palma Real — 3 recámaras + servicio</option>
-          <option value="inversion">Inversión</option>
-          <option value="segunda">Segunda residencia</option>
+          <option value="vivir">Vivir en Passage</option>
+          <option value="segunda-residencia">Segunda residencia</option>
+          <option value="inversion">Oportunidad de inversión</option>
+          <option value="opciones">Conocer opciones disponibles</option>
         </select>
       </div>
-      <div class="form__field">
-        <label for="f-msg">Mensaje</label>
-        <textarea id="f-msg" name="mensaje" rows="3"></textarea>
-      </div>
       <div class="form__foot">
-        <p class="form__legal">Al enviar aceptas que el equipo de Passage te contacte con información del proyecto. <a href="#privacidad">Política de privacidad</a>.</p>
+        <p class="form__legal">Al enviar tus datos, aceptas que el equipo de Passage te contacte con información del proyecto. <a href="#privacidad">Política de privacidad</a>.</p>
         <button type="submit" class="btn btn--dark">Solicitar información</button>
       </div>
       <div class="form__success" id="formSuccess" hidden>
         <span class="idx">Gracias</span>
-        <p>Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir el brochure y la disponibilidad actualizada.</p>
+        <p>Hemos recibido tu solicitud. Un asesor te contactará en breve para compartir información y disponibilidad actualizada.</p>
       </div>
     </form>
   </div>
@@ -590,6 +583,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=202609180115"></script>
+<script src="main.js?v=202609180127"></script>
 </body>
 </html>

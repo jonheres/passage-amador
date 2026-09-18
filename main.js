@@ -182,24 +182,13 @@
     r.addEventListener("focus", () => { if (!mobile.matches) set(r.dataset.unit); });
     r.addEventListener("click", (e) => {
       if (!mobile.matches) return;
-      if (e.target.closest(".type-row__cta")) return; // CTA navigates to the form
+      if (e.target.closest(".type-row__cta")) return; // CTA scrolls to the contact section
       e.preventDefault();
       set(r.dataset.unit);
     });
   });
 })();
 
-/* Tipologías CTA: preselect the model in the form */
-(function () {
-  const select = document.getElementById("f-interes");
-  if (!select) return;
-  document.querySelectorAll("[data-interes]").forEach((a) => {
-    a.addEventListener("click", () => {
-      const v = a.dataset.interes;
-      if ([...select.options].some((o) => o.value === v)) select.value = v;
-    });
-  });
-})();
 
 /* FAQ: animated accordion, one open at a time */
 (function () {
