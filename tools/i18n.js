@@ -95,6 +95,7 @@ if (mode === "extract") {
     ['<a href="en/" class="nav__lang" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>', '<a href="../" class="nav__lang" aria-label="Cambiar a español" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a>'],
     ['<a href="en/" class="nav__lang" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>', '<a href="../" class="nav__lang" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a>'],
     ['<a href="en/" class="footer__lang" lang="en" hreflang="en"><span class="is-on">ES</span> / <span>EN</span></a>', '<a href="../" class="footer__lang" lang="es" hreflang="es"><span>ES</span> / <span class="is-on">EN</span></a>'],
+    ['<a href="en/" class="nav__lang nav__lang--mobile" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>', '<a href="../" class="nav__lang nav__lang--mobile" aria-label="Cambiar a español" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a>'],
     ['data-label-open="Abrir menú" data-label-close="Cerrar menú"', 'data-label-open="Open menu" data-label-close="Close menu"'],
   ];
   let en = out.replace(/(href|src)="(img\/|styles\.css|main\.js)/g, '$1="../$2').replace(/srcset="img\//g, 'srcset="../img/');

@@ -1,0 +1,26 @@
+<!-- 01 HERO — 100vh. <picture> sirve hero-mobile.jpg (vertical) ≤720px y hero.jpg en desktop.
+     Título en 3 renglones (.line > span) con animación lineUp escalonada; meta con coordenadas;
+     dos CTA (relleno claro + ghost); línea de scroll animada (.hero__scroll). -->
+<section class="hero" id="inicio">
+  <div class="hero__media">
+    <picture><source media="(max-width: 720px)" srcset="img/hero-mobile.jpg"><img src="img/hero.jpg" width="1672" height="941" alt="Passage Amador al atardecer en la Calzada de Amador" fetchpriority="high"></picture>
+  </div>
+  <div class="hero__frame">
+    <div class="hero__meta">
+      <span>Panamá: 8°55′ N — 79°32′ O</span>
+    </div>
+    <h1 class="hero__title">
+      <span class="line"><span>Un nuevo</span></span>
+      <span class="line"><span>capítulo</span></span>
+      <span class="line"><span>en Amador</span></span>
+    </h1>
+    <div class="hero__aside">
+      <p>Residencias en la Calzada: vecinas del Canal, entre el Pacífico, la naturaleza y la ciudad.</p>
+      <div class="hero__actions">
+        <a href="#intro" class="btn btn--light">Explorar proyecto</a>
+        <a href="#contacto" class="btn btn--ghost-light">Solicitar información</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </div>
+</section>

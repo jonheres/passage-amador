@@ -37,7 +37,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/hero.jpg" media="(min-width: 721px)">
 <link rel="preload" as="image" href="img/hero-mobile.jpg" media="(max-width: 720px)">
-<link rel="stylesheet" href="styles.css?v=202609181757">
+<link rel="stylesheet" href="styles.css?v=202609181809">
 
 <!-- Datos estructurados (schema.org). Completar teléfono/correo definitivos. -->
 <script type="application/ld+json">
@@ -78,6 +78,8 @@
     <a href="en/" class="nav__lang" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>
     <a href="#contacto" class="nav__cta">Solicitar información</a>
   </div>
+  <!-- Selector de idioma siempre visible en móvil/tablet (≤1100px), junto al burger -->
+  <a href="en/" class="nav__lang nav__lang--mobile" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>
   <button type="button" class="nav__burger" id="navBurger" aria-label="Abrir menú" data-label-open="Abrir menú" data-label-close="Cerrar menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
 </header>
 
@@ -663,6 +665,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=202609181757"></script>
+<script src="main.js?v=202609181809"></script>
 </body>
 </html>

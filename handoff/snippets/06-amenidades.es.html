@@ -1,0 +1,51 @@
+<!-- 06 AMENIDADES — capítulo sobre render a pantalla completa. Desktop ≥1101px: sección de 2.6 pantallas con
+     contenido sticky; el scroll activa cada ítem (li.amenity[data-amenity]) y cambia la imagen de fondo
+     (.amenities__media img[data-amenity]). Móvil: lista normal; tocar un ítem cambia el fondo y despliega
+     su línea de detalle (.amenity__items). Contenido validado por el desarrollador (sep-2026). -->
+<section class="amenities" id="amenidades">
+  <div class="amenities__pin">
+  <div class="amenities__media" aria-hidden="true">
+      <img src="img/am-rooftop.jpg" width="2000" height="1125" alt="" data-amenity="rooftop" class="is-active" loading="lazy">
+      <img src="img/am-wellness.jpg" width="1672" height="941" alt="" data-amenity="casaclub" loading="lazy">
+      <img src="img/am-social.jpg" width="1672" height="941" alt="" data-amenity="deporte" loading="lazy">
+      <img src="img/am-paisaje.jpg" width="2000" height="1125" alt="" data-amenity="comunidad" loading="lazy">
+    </div>
+
+  <div class="amenities__inner">
+    <div class="amenities__intro">
+      <div class="section-index section-index--light">
+        <span class="idx">05</span>
+        <span class="idx-label">Amenidades</span>
+      </div>
+      <h2 class="amenities__lead reveal">Cada torre tiene su rooftop. La comunidad, su Casa Club. Y Amador, todo lo demás.</h2>
+    </div>
+
+    <ul class="amenities__list">
+      <li class="amenity is-active" data-amenity="rooftop">
+        <span class="amenity__n">01</span>
+        <span class="amenity__name">Rooftop</span>
+        <span class="amenity__desc">Privado, en cada torre</span>
+        <span class="amenity__items"><em>Piscina infinita</em><em>Solar deck</em><em>Lounge</em><em>Área BBQ</em><em>Co-working</em></span>
+      </li>
+      <li class="amenity" data-amenity="casaclub">
+        <span class="amenity__n">02</span>
+        <span class="amenity__name">Casa Club</span>
+        <span class="amenity__desc">El área común de la comunidad</span>
+        <span class="amenity__items"><em>Spa con masajes, sauna y vapor</em><em>Piscina y solárium</em><em>BBQ</em><em>Salón lounge</em></span>
+      </li>
+      <li class="amenity" data-amenity="deporte">
+        <span class="amenity__n">03</span>
+        <span class="amenity__name">Deporte</span>
+        <span class="amenity__desc">En movimiento</span>
+        <span class="amenity__items"><em>Cancha de pádel</em><em>Bike station</em><em>La Calzada para correr y pedalear</em></span>
+      </li>
+      <li class="amenity" data-amenity="comunidad">
+        <span class="amenity__n">04</span>
+        <span class="amenity__name">Comunidad</span>
+        <span class="amenity__desc">Amador, a la puerta</span>
+        <span class="amenity__items"><em>Área comercial</em><em>Parque comunitario</em><em>Canchas de tenis comunitarias</em></span>
+      </li>
+    </ul>
+  </div>
+  </div>
+</section>

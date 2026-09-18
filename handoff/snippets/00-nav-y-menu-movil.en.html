@@ -1,0 +1,36 @@
+<!-- NAV — cabecera fija (position: fixed). Transparente sobre el hero con logo blanco;
+     al pasar el hero, main.js añade .is-solid (fondo papel, logo negro, altura menor).
+     ≤1100px: se ocultan enlaces y CTA, aparece el burger (#navBurger) que abre #mobileMenu.
+     Elementor: Header template sticky + Nav Menu; el menú móvil es un Popup a pantalla completa. -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav__brand" aria-label="Passage Panama"><img src="../img/logo-white.png" width="900" height="262" alt="Passage Panama" class="nav__logo nav__logo--light"><img src="../img/logo-black.png" width="900" height="262" alt="" class="nav__logo nav__logo--dark" aria-hidden="true"></a>
+  <nav class="nav__links">
+    <a href="#residencias">Residences</a>
+    <a href="#ubicacion">Location</a>
+    <a href="#amenidades">Lifestyle</a>
+    <a href="#proyecto">Project</a>
+  </nav>
+  <div class="nav__right">
+    <a href="../" class="nav__lang" aria-label="Cambiar a español" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a>
+    <a href="#contacto" class="nav__cta">Request information</a>
+  </div>
+  <button type="button" class="nav__burger" id="navBurger" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="mobileMenu" aria-hidden="true">
+  <nav class="menu__links">
+    <a href="#residencias"><i>01</i>Residences</a>
+    <a href="#ubicacion"><i>02</i>Location</a>
+    <a href="#tipologias"><i>03</i>Layouts</a>
+    <a href="#amenidades"><i>04</i>Lifestyle</a>
+    <a href="#arquitectura"><i>05</i>Architecture</a>
+    <a href="#galeria"><i>06</i>Gallery</a>
+    <a href="#proyecto"><i>07</i>Project</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="#contacto" class="btn btn--dark">Request information</a>
+    <a href="https://wa.me/50760000000" target="_blank" rel="noopener" class="menu__wa">Contact via WhatsApp →</a>
+    <div class="menu__meta"><span>Amador, Panama</span><a href="../" class="nav__lang" lang="es" hreflang="es"><span>ES</span><i>/</i><span class="is-on">EN</span></a></div>
+  </div>
+</div>
+

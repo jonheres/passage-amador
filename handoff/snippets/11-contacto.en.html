@@ -1,0 +1,61 @@
+<!-- 11 CONTACTO — panel izquierdo verde institucional (33%) con ornamento, título y sala de ventas; panel derecho
+     con formulario de 4 campos obligatorios (nombre, email, teléfono, interés). Sin backend: main.js valida
+     y muestra #formSuccess. CTA secundaria: WhatsApp (outline verde). PENDIENTE: número real de WhatsApp,
+     endpoint/CRM y página de privacidad. -->
+<section class="contact" id="contacto">
+  <div class="contact__left">
+    <svg class="orn orn-contact" viewBox="0 0 375 365" aria-hidden="true" preserveAspectRatio="xMinYMax meet"><use href="#orn1-path"/></svg>
+    <div class="contact__left-inner">
+      <div class="section-index section-index--light section-index--coda"><span class="idx-label">Contact</span></div>
+      <h2 class="contact__title reveal">Discover your<br>next chapter</h2>
+      <p class="contact__lead reveal">Get to know the residences, layouts and current availability at Passage Amador.</p>
+      <div class="contact__direct reveal">
+        <address>
+          <span>Sales gallery</span>
+          <span>Amador Causeway, Panama</span>
+        </address>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact__right">
+    <form class="form" id="leadForm" novalidate>
+      <div class="form__field">
+        <label for="f-nombre">Full name</label>
+        <input type="text" id="f-nombre" name="nombre" autocomplete="name" required>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form__field">
+          <label for="f-tel">Phone / WhatsApp</label>
+          <input type="tel" id="f-tel" name="telefono" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="form__field">
+        <label for="f-interes">What are you looking for?</label>
+        <select id="f-interes" name="interes" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="vivir">Living at Passage</option>
+          <option value="segunda-residencia">Second home</option>
+          <option value="inversion">Investment opportunity</option>
+          <option value="opciones">See available options</option>
+        </select>
+      </div>
+      <div class="form__foot">
+        <p class="form__legal">By submitting your details, you agree to be contacted by the Passage team with project information. <a href="#privacidad">Privacy policy</a>.</p>
+        <div class="form__actions">
+          <button type="submit" class="btn btn--dark">Request information</button>
+          <a href="https://wa.me/50760000000?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20PASSAGE%20AMADOR." target="_blank" rel="noopener" class="btn btn--outline-green"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8.4 19.3L4 20z"/><path d="M9.2 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6.6 1 1.6 1.9 2.7 2.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5-.1.9-.7 1.6-1.6 1.8-1.1.2-2.6-.4-4.4-2-1.7-1.6-2.5-3.1-2.6-4.3-.1-.8.1-1.4.6-2.1z"/></svg>Contact via WhatsApp</a>
+        </div>
+      </div>
+      <div class="form__success" id="formSuccess" hidden>
+        <span class="idx">Thank you</span>
+        <p>We have received your request. An advisor will contact you shortly with information and current availability.</p>
+      </div>
+    </form>
+  </div>
+</section>
+

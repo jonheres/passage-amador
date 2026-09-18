@@ -1,0 +1,36 @@
+<!-- NAV — cabecera fija (position: fixed). Transparente sobre el hero con logo blanco;
+     al pasar el hero, main.js añade .is-solid (fondo papel, logo negro, altura menor).
+     ≤1100px: se ocultan enlaces y CTA, aparece el burger (#navBurger) que abre #mobileMenu.
+     Elementor: Header template sticky + Nav Menu; el menú móvil es un Popup a pantalla completa. -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav__brand" aria-label="Passage Panamá"><img src="img/logo-white.png" width="900" height="262" alt="Passage Panamá" class="nav__logo nav__logo--light"><img src="img/logo-black.png" width="900" height="262" alt="" class="nav__logo nav__logo--dark" aria-hidden="true"></a>
+  <nav class="nav__links">
+    <a href="#residencias">Residencias</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#amenidades">Estilo de vida</a>
+    <a href="#proyecto">Proyecto</a>
+  </nav>
+  <div class="nav__right">
+    <a href="en/" class="nav__lang" aria-label="Switch to English" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a>
+    <a href="#contacto" class="nav__cta">Solicitar información</a>
+  </div>
+  <button type="button" class="nav__burger" id="navBurger" aria-label="Abrir menú" data-label-open="Abrir menú" data-label-close="Cerrar menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="mobileMenu" aria-hidden="true">
+  <nav class="menu__links">
+    <a href="#residencias"><i>01</i>Residencias</a>
+    <a href="#ubicacion"><i>02</i>Ubicación</a>
+    <a href="#tipologias"><i>03</i>Tipologías</a>
+    <a href="#amenidades"><i>04</i>Estilo de vida</a>
+    <a href="#arquitectura"><i>05</i>Arquitectura</a>
+    <a href="#galeria"><i>06</i>Galería</a>
+    <a href="#proyecto"><i>07</i>Proyecto</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="#contacto" class="btn btn--dark">Solicitar información</a>
+    <a href="https://wa.me/50760000000" target="_blank" rel="noopener" class="menu__wa">Contactar por WhatsApp →</a>
+    <div class="menu__meta"><span>Amador, Panamá</span><a href="en/" class="nav__lang" lang="en" hreflang="en"><span class="is-on">ES</span><i>/</i><span>EN</span></a></div>
+  </div>
+</div>
+

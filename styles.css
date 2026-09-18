@@ -292,6 +292,7 @@ body { overflow-x: clip; }
 .nav__lang span { opacity: .45; }
 .nav__lang span.is-on { opacity: 1; font-weight: 500; }
 .nav__burger { display: none; color: inherit; }
+.nav__lang--mobile { display: none; } /* visible sólo ≤1100px, junto al burger */
 .menu { display: none; }
 .nav__logo { height: 40px; }
 .nav.is-solid .nav__logo { height: 33px; }
@@ -1483,13 +1484,15 @@ body { overflow-x: clip; }
   .nav.is-open { background: var(--paper); color: var(--ink); backdrop-filter: none; box-shadow: none; }
   .nav.is-open .nav__logo--light { display: none; }
   .nav.is-open .nav__logo--dark { display: block; }
+  .nav__lang--mobile { display: inline-flex; position: absolute; right: calc(var(--gutter) + 56px); top: 50%; transform: translateY(-50%); z-index: 60; color: inherit; }
   .menu {
     position: fixed;
     inset: 0;
     z-index: 40;
     background: var(--paper);
     color: var(--ink);
-    padding: 100px var(--gutter) 32px;
+    padding: 88px var(--gutter) 28px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1504,9 +1507,9 @@ body { overflow-x: clip; }
     display: flex;
     align-items: baseline;
     gap: 18px;
-    padding: 16px 0;
+    padding: 12px 0;
     border-bottom: var(--rule);
-    font-size: clamp(26px, 7.4vw, 34px);
+    font-size: clamp(22px, 6vw, 28px);
     font-weight: 300;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -1645,6 +1648,7 @@ body { overflow-x: clip; }
     width: 44px;
     height: 44px;
   }
+  .nav__lang--mobile { right: 76px; top: 34px; }
   .nav__logo { height: 38px; }
   .nav.is-solid .nav__logo { height: 34px; }
 
