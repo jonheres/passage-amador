@@ -2111,3 +2111,10 @@ body { overflow-x: clip; }
 @media (max-width: 720px) {
   .location__map .map-point[data-point="puente"] text { transform: translateY(-12px); }
 }
+
+/* Mobile map: crisp text (no transform rasterization fringe), Passage label -10% */
+@media (max-width: 720px) {
+  .location__map .map { transform: none; width: 112%; margin-left: -6%; text-rendering: geometricPrecision; -webkit-font-smoothing: antialiased; }
+  .location__map .map text { stroke: none; paint-order: normal; }
+  .location__map .map-project text { font-size: 27px !important; }
+}
