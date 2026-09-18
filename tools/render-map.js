@@ -75,7 +75,7 @@ const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMaxYMid meet" xm
   ${lab("biomuseo", p.biomuseo.x, p.biomuseo.y, "Biomuseo")}
   ${lab("marina", p.marina.x, p.marina.y, "Marina de Amador", "end")}
   ${lab("casco", p.casco.x, p.casco.y, "Casco Antiguo")}
-  ${lab("ciudad", p.ciudad.x, p.ciudad.y, "Ciudad de Panamá", "end")}
+  ${lab("ciudad", p.ciudad.x, p.ciudad.y, "Ciudad de Panamá", "start")}
   <g class="map-point map-point--causeway" data-point="causeway"><text x="${(p.biomuseo.x + p.naos.x) / 2 + 22}" y="${(p.biomuseo.y + p.naos.y) / 2}" transform="rotate(53 ${(p.biomuseo.x + p.naos.x) / 2 + 22} ${(p.biomuseo.y + p.naos.y) / 2})" text-anchor="middle">Causeway de Amador</text></g>
   <g class="map-project">
     <circle cx="${p.project.x}" cy="${p.project.y}" r="34" class="map-project__glow"/>
@@ -83,11 +83,11 @@ const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMaxYMid meet" xm
     <circle cx="${p.project.x}" cy="${p.project.y}" r="5"/>
     <text x="${p.project.x}" y="${p.project.y - 24}" text-anchor="middle">Passage Amador</text>
   </g>
-  <g class="map-scale" transform="translate(${W - 40 - kmPx}, ${H - 48})">
+  <g class="map-scale" transform="translate(${W - 40 - kmPx}, ${H - 175})">
     <line x1="0" y1="0" x2="${kmPx.toFixed(1)}" y2="0"/><line x1="0" y1="-4" x2="0" y2="4"/><line x1="${kmPx.toFixed(1)}" y1="-4" x2="${kmPx.toFixed(1)}" y2="4"/>
     <text x="${(kmPx / 2).toFixed(1)}" y="16" text-anchor="middle">1 km</text>
   </g>
-  <g class="map-compass" transform="translate(${W - 40}, 60)"><line x1="0" y1="-16" x2="0" y2="16"/><line x1="-16" y1="0" x2="16" y2="0"/><text x="0" y="-22" text-anchor="middle">N</text></g>
+  <g class="map-compass" transform="translate(${W - 40}, ${H - 250})"><line x1="0" y1="-16" x2="0" y2="16"/><line x1="-16" y1="0" x2="16" y2="0"/><text x="0" y="-22" text-anchor="middle">N</text></g>
 </svg>`;
 
 // inject into index.html between the map container's open tag and its closing
