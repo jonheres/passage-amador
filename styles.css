@@ -2094,3 +2094,10 @@ body { overflow-x: clip; }
 
 /* Mobile: no gap between Tipologías and Amenidades */
 @media (max-width: 720px) { .amenities { margin-top: 0 !important; } .types { padding-bottom: 0; } .types .scroll-line { margin-top: 28px; margin-bottom: 0; } }
+
+/* Mobile: amenities as toggle — only the active item reveals its detail line */
+@media (max-width: 720px) {
+  .amenity { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .amenity__items { max-height: 0; opacity: 0; margin-top: 0; overflow: hidden; transition: max-height .5s var(--ease), opacity .4s, margin .4s var(--ease); }
+  .amenity.is-active .amenity__items { max-height: 90px; opacity: 1; margin-top: 6px; }
+}
