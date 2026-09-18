@@ -2091,3 +2091,6 @@ body { overflow-x: clip; }
   .location__map .map-project circle:not(.map-project__halo):not(.map-project__glow) { r: 7; }
   .location__map .map-project__halo { r: 22; }
 }
+
+/* Mobile: no gap between Tipologías and Amenidades */
+@media (max-width: 720px) { .amenities { margin-top: 0 !important; } .types { padding-bottom: 0; } .types .scroll-line { margin-top: 28px; margin-bottom: 0; } }
