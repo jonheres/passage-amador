@@ -1980,3 +1980,11 @@ body { overflow-x: clip; }
 
 /* Amenities pin: shorter travel so each item needs ~3 wheel ticks, not 10 */
 @media (min-width: 1101px) { .amenities { height: calc(100vh * 2.6); } }
+
+/* Typology figure (desktop): label sits below the image, centered, never overlapped */
+@media (min-width: 1101px) {
+  .types__figure--side { display: flex; flex-direction: column; align-items: center; aspect-ratio: auto; }
+  .types__figure--side img { position: static; width: 100%; aspect-ratio: 1 / 1; height: auto; object-fit: contain; display: none; }
+  .types__figure--side img.is-active { display: block; }
+  .types__figure--side .types__figure-label { position: static; margin-top: 18px; justify-content: center; }
+}
