@@ -1944,3 +1944,13 @@ body { overflow-x: clip; }
   .type-row__beds { font-size: 15px; }
   .type-row__area { font-size: 16px; }
 }
+
+/* Logo a bit larger; hero coordinates centered on mobile */
+.nav__logo { height: 40px; }
+.nav.is-solid .nav__logo { height: 33px; }
+@media (max-width: 720px) {
+  .nav__logo, .nav.is-solid .nav__logo { height: 38px; }
+  .nav.is-solid .nav__logo { height: 34px; }
+  .hero__meta { display: flex !important; justify-content: center !important; width: 100%; text-align: center; }
+  .hero__meta span { display: inline-block; width: 100%; text-align: center; }
+}
