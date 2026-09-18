@@ -1977,3 +1977,6 @@ body { overflow-x: clip; }
   .residences__iso { width: 46vw; right: -10%; top: auto; bottom: 2%; opacity: .09; }
   .residences__hero-img img { border-top-right-radius: 20px; }
 }
+
+/* Amenities pin: shorter travel so each item needs ~3 wheel ticks, not 10 */
+@media (min-width: 1101px) { .amenities { height: calc(100vh * 2.6); } }
