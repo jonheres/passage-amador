@@ -2034,3 +2034,38 @@ body { overflow-x: clip; }
   .contact__title { font-size: clamp(36px, 11vw, 48px); }
   .form__actions { max-width: none; }
 }
+
+/* ==========================================================
+   SELECT — customizable dropdown in the brand language (Chromium base-select), tasteful fallback elsewhere
+   ========================================================== */
+.form__field select option { background: var(--paper); color: var(--ink); font-family: var(--font); }
+.form__field select option:checked { background: var(--green); color: var(--paper); }
+@supports (appearance: base-select) {
+  .form__field select, .form__field select::picker(select) { appearance: base-select; }
+  .form__field select { background-image: none; padding-right: 0; display: flex; align-items: center; justify-content: space-between; }
+  .form__field select::picker-icon { content: ""; width: 12px; height: 12px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); transform: rotate(45deg) translateY(-4px); margin-right: 4px; transition: transform .35s var(--ease); }
+  .form__field select:open::picker-icon { transform: rotate(225deg) translateY(-2px); }
+  .form__field select::picker(select) {
+    background: var(--paper);
+    border: 1px solid rgba(14,14,13,0.14);
+    border-radius: 0;
+    padding: 6px 0;
+    margin-top: 8px;
+    box-shadow: 0 24px 48px rgba(14,14,13,0.10);
+    opacity: 0; transform: translateY(-6px);
+    transition: opacity .3s var(--ease), transform .35s var(--ease), display .35s allow-discrete, overlay .35s allow-discrete;
+  }
+  .form__field select:open::picker(select) { opacity: 1; transform: none; }
+  @starting-style { .form__field select:open::picker(select) { opacity: 0; transform: translateY(-6px); } }
+  .form__field select option {
+    font-family: var(--font); font-weight: 300; font-size: 17px; letter-spacing: -0.005em;
+    padding: 14px 22px; border-top: 1px solid rgba(14,14,13,0.08);
+    background: transparent; color: var(--ink); cursor: pointer;
+  }
+  .form__field select option:first-of-type { border-top: 0; }
+  .form__field select option::checkmark { display: none; }
+  .form__field select option:hover, .form__field select option:focus-visible { background: rgba(47,74,16,0.06); }
+  .form__field select option:checked { background: transparent; color: var(--green); font-weight: 400; }
+  .form__field select option[disabled] { color: rgba(14,14,13,0.4); }
+  .form__field selectedcontent { color: var(--ink); }
+}
